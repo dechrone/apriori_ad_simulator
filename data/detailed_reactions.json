@@ -1,0 +1,1274 @@
+[
+  {
+    "persona": {
+      "uuid": "6356fcbd257d4c3bb9541460d0404c0f",
+      "occupation": "Manager, Export",
+      "age": 24,
+      "location": "Vadodara, Gujarat",
+      "zone": "Urban",
+      "income": 75000,
+      "digital_literacy": 9,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 9,
+      "relevance_score": 5,
+      "action": "CLICK",
+      "intent_level": "Medium",
+      "reasoning": "Fallback heuristic",
+      "emotional_response": "Neutral",
+      "barriers": []
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6356fcbd257d4c3bb9541460d0404c0f",
+      "occupation": "Manager, Export",
+      "age": 24,
+      "location": "Vadodara, Gujarat",
+      "zone": "Urban",
+      "income": 75000,
+      "digital_literacy": 9,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 6,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Oh, this looks interesting, it's about client acquisition for exporters. | [Audit] The topic is perfectly aligned with my career goals, but I've never heard of this company, 'Skydo'. Before I give them my details, I'll do a quick LinkedIn search on them and this 'Atul Mohan' to see if they're a legitimate entity. Since it's a webinar, the risk is low, but I still want to check. | [Decision] System 1's initial interest was validated by System 2. The topic is extremely relevant to my ambition of becoming an Export Director and finding data-driven strategies. While the brand is unknown, the risk associated with registering for a webinar is minimal. My professional fluency and financial independence mean there are no barriers, so I'll click to investigate further on their landing page and do a quick background check.",
+      "emotional_response": "Professionally curious",
+      "barriers": [
+        "Unfamiliar brand 'Skydo'",
+        "PRIMARY: Brand unfamiliarity"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6356fcbd257d4c3bb9541460d0404c0f",
+      "occupation": "Manager, Export",
+      "age": 24,
+      "location": "Vadodara, Gujarat",
+      "zone": "Urban",
+      "income": 75000,
+      "digital_literacy": 9,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 10,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Hmm, interesting, this is directly related to my work and claims to save a lot on Forex. | [Audit] Zero FX charges sounds a bit too good to be true, I'd need to see the fine print for hidden fees or markup in the exchange rate. However, the mention of the RBI PA-CB framework is a strong trust signal that makes it worth investigating for my company, not for me personally. | [Decision] System 1's professional curiosity was validated by System 2. While I'm skeptical of the 'zero FX' claim, the ad is hyper-relevant to my role as an Export Manager. The mention of RBI regulations gives it enough credibility to warrant clicking and conducting professional due diligence for my company's benefit.",
+      "emotional_response": "Professionally curious",
+      "barriers": [
+        "Skepticism about 'zero fee' claims",
+        "Need to conduct due diligence before recommending it at work",
+        "PRIMARY: The need for corporate-level due diligence before adoption."
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6356fcbd257d4c3bb9541460d0404c0f",
+      "occupation": "Manager, Export",
+      "age": 24,
+      "location": "Vadodara, Gujarat",
+      "zone": "Urban",
+      "income": 75000,
+      "digital_literacy": 9,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 6,
+      "relevance_score": 10,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Oh, interesting, a fintech for exporters? This addresses our FX leakage issue directly. | [Audit] The '\u20b90 lost in FX charges' claim is a huge red flag; no service is truly free, so the cost must be hidden in the exchange rate spread. I need to see a detailed fee schedule and compare their live rates against the RBI reference rate and what our current bank offers. This is a B2B decision, not a personal one, so I'd need to vet them thoroughly before even suggesting it to my Director. | [Decision] System 1's initial interest was extremely high due to the ad's direct relevance to my professional role and pain points. System 2 didn't override the interest but channeled it from an impulse buy into a professional evaluation. My job is to find efficiencies, so ignoring a potential tool would be negligent. The click isn't to sign up, but to begin due diligence for my company.",
+      "emotional_response": "Professionally curious.",
+      "barriers": [
+        "Bold, unverified financial claims ('\u20b90 lost')",
+        "Lack of immediate social proof from my professional network",
+        "PRIMARY: Unverified claims"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "504d85fd11444dd29fb5e45417dac4f9",
+      "occupation": "Fork Lift Truck Operator",
+      "age": 34,
+      "location": "Salem, Tamil Nadu",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 4,
+      "relevance_score": 1,
+      "action": "IGNORE",
+      "intent_level": "None",
+      "reasoning": "[Gut] Oh, 'international payments in 24 hours' and 'no hidden charges'? That sounds very good. My supervisors always complain about the bank fees for the overseas payments. If this is cheaper, maybe I can suggest it at work. And 'RBI approved' makes it sound like it's not one of those fake apps. | [Audit] Wait, 'international business payments'? I am a forklift operator. I don't send or receive international business payments. This is for big companies, not for a person like me. Even if it is good, it's not for my personal use. My company handles all that. And what if I put my company's details here? My supervisor will be very angry. Also, I don't understand all the big English words like 'forex margin' and 'OPGSP framework'. It looks too complicated for me to understand fully, and I don't want to make a mistake with money matters. I've seen too many people lose money to things that look good on the internet. | [Decision] My System 1 thought it looked good because of the 'RBI approved' and 'cheaper payments' (which is always attractive). But System 2 quickly realized this is for 'international business payments', which I, as a forklift operator, do not handle. It's not relevant to my personal life. Even for my work, I wouldn't dare to suggest something like this without proper understanding and approval from my supervisor, and I don't understand enough of the English here to be confident. The risk of misunderstanding or making a mistake, especially with something involving money and my company, is too high, especially with my past experiences with online scams. It's better to ignore what I don't fully understand.",
+      "emotional_response": "Irrelevant",
+      "barriers": [
+        "Digital comfort",
+        "PRIMARY: Relevance",
+        "Language barrier",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "504d85fd11444dd29fb5e45417dac4f9",
+      "occupation": "Fork Lift Truck Operator",
+      "age": 34,
+      "location": "Salem, Tamil Nadu",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 2,
+      "action": "IGNORE",
+      "intent_level": "None",
+      "reasoning": "[Gut] Hmm, 'International Client Acquisition Playbook' and 'Top Service Exporters'. This sounds important, like for big companies. Maybe it has some secrets to making more money, which is what I want for my family. 'Growth 2026' sounds modern. I wonder if it could help me achieve my goal to start my own business one day. 'Register Now' makes it feel urgent. | [Audit] Wait, 'Indian Service Exporters'. I'm a forklift operator, not an exporter. And 'cold outbound is failing in 2026'? What is 'cold outbound'? This is all very corporate English. It's not for small guys like me. They are talking about 'Skydo' and 'Atul Mohan Sales Head'. These are big words. This looks like something for very educated people who work in offices, not for someone like me who handles goods in a warehouse. It's probably very expensive and they will ask for money later, like other online things that promised much but gave nothing. The date 2026, it's far away. Why talk about 2026 now? This feels like a trap. My gut says it's interesting, but my mind says it's not for me and could be a waste of time or even money. | [Decision] My System 1 felt a flicker of hope because it mentioned 'growth' and 'international', which aligns with my ambition to grow my business and refine Arabic. However, my System 2 quickly realized this ad is not for me. The language is too complex and corporate, I don't understand the jargon like 'cold outbound' or 'signal-based systems'. I'm a forklift operator, not a 'service exporter'. It feels too slick and promises something big without being clear about what it is, which reminds me of past online scams. I can't risk my time or money on something I don't fully understand and that seems targeted at a completely different profession. My family would also question why I'm looking at such things when I should focus on my current job or certifications for supervision.",
+      "emotional_response": "Confused",
+      "barriers": [
+        "Language barrier",
+        "PRIMARY: Language barrier",
+        "Education",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "504d85fd11444dd29fb5e45417dac4f9",
+      "occupation": "Fork Lift Truck Operator",
+      "age": 34,
+      "location": "Salem, Tamil Nadu",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 2,
+      "action": "IGNORE",
+      "intent_level": "None",
+      "reasoning": "[Gut] Hmm, '\u20b90 lost in FX charges' and 'Additional Profit of \u20b94 Lakhs' sounds very good. More money is always good, especially for my family's future. It talks about 'service exporters' and 'global payments' which is like what my company does a little with the overseas suppliers. Maybe this can help me somehow, make me more valuable at work or even start my own small business later. | [Audit] Wait, what is 'FX charges'? Is it like some kind of tax? \u20b94 Lakhs profit from \u20b92 Crore revenue... that's a huge difference. My salary is \u20b918,000. \u20b94 Lakhs is more than my two years' salary! This sounds too good to be true. And 'service exporter'? I am a forklift operator, not an exporter. My company exports, not me. Will this even apply to me? It says 'Build for Indian Businesses', but am I a business? I don't want to lose money again like that online investment thing. My wife would be very angry if I put family money into something I don't understand. And it's all in English, complicated words like 'PA-CB Framework' and '500Mn+'. My English is for safety signs, not for understanding financial terms. How do I even 'Sign Up'? Is it an app? My phone is basic. What if they ask for my bank details? | [Decision] My System 2 completely overrode System 1. The initial excitement about 'more profit' quickly turned into deep suspicion and confusion. I am not a 'service exporter' or a 'business'. The numbers are too big, and the claims too good. My past experience with online scams makes me very wary of anything promising large sums of money for 'nothing lost'. The English is too complex, and I don't understand the core offering. I cannot afford to risk even a small amount, let alone potential bank details, for something I don't fully grasp. My family would disapprove of me engaging with such an ambiguous online service.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "Income constraint",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "504d85fd11444dd29fb5e45417dac4f9",
+      "occupation": "Fork Lift Truck Operator",
+      "age": 34,
+      "location": "Salem, Tamil Nadu",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 2,
+      "relevance_score": 1,
+      "action": "IGNORE",
+      "intent_level": "None",
+      "reasoning": "[Gut] Oh, '\u20b92 Crore revenue. \u20b90 lost in FX charges.' That sounds like a lot of money! And 'Additional Profit of \u20b94 Lakhs' - that's more than two years of my salary! How can they do that? It's for 'Indian Businesses' too, maybe it's for people like me who send money? | [Audit] Wait, 'Service Exporter'? What is that? I'm a forklift operator, not an exporter. And 'Global Payments'? I don't receive global payments, I get my salary here in Salem. \u20b92 Crore, \u20b94 Lakhs... this all sounds too big, too much money. Every time I've seen something promise so much money, it was a trick. My neighbor lost his savings to one of those 'online trading' apps. This English is also a bit difficult, 'FX charges' - what is that? It says 'Built for Indian Businesses', but it doesn't look like it's for a small person like me. It's 'sponsored' too, like those ads that just want your money. | [Decision] My gut felt a flicker of hope seeing big numbers, but my mind quickly shut it down. This ad is not for me. I don't understand half the words, and the amounts of money mentioned are so huge that they trigger my scam paranoia. I've seen too many people lose their hard-earned money to things that sound too good to be true. This is clearly for big businesses, not a forklift operator earning \u20b918000. I can't risk even looking into something I don't fully understand, especially with these big claims.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Language barrier",
+        "Income constraint",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6dde7ee63a1d4a9881ba3eb3a1140912",
+      "occupation": "Embroiderer, Chikan",
+      "age": 33,
+      "location": "South Twenty Four Parganas, West Bengal",
+      "zone": "Urban",
+      "income": 8500,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 4,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Ami bidesh theke taka pabo? Besh bhalo toh, bank er moto eto khorcha hobe na bolche. Amar Kolkata r customer rao to bideshe pathate pare. Kintu, ki jani baba, eto bhalo katha shunte gele bhoy kore. (I will get money from abroad? That's good, they say it won't be as expensive as the bank. My Kolkata customers might also send money from abroad. But, I don't know, hearing such good things makes me scared.) | [Audit] Dada, etake ki bolbo? 'RBI approved' bolche, amar mone pore sei online kajer byapar ta, jekhane bolchilo 'government approved' kintu sheshe shob taka chole gelo. Ei 'Skydo' ta ki jinish? Ami to shuni ni. '3x cheaper', 'no hidden charges' - eto bhalo shona jai na. Bank er moto jinish to, kothao na kothao to khorcha thakbei. Aar amar to bidesh theke beshi taka ashe na, jodi asheo, bank diyei chole. Amar phone e ki ei shob kaj hobe? Jodi kono problem hoy, ke help korbe? Ami to eto English bujhi na. Baar baar loker kache jete hobe. Bou ke to kichu bolte parbo na, jodi abar taka harai, tahole to shanti thakbe na ghore. Amar bondhu ba poribarer keu to ei rokom kichu byabohar kore na. (Brother, what should I say about this? They are saying 'RBI approved', it reminds me of that online work thing where they said 'government approved' but in the end, all my money was gone. What is this 'Skydo'? I haven't heard of it. '3x cheaper', 'no hidden charges' - it sounds too good. It's like a bank, there must be some charges somewhere. And I don't get much money from abroad, even if I do, it comes through the bank. Will all this work on my phone? If there's a problem, who will help me? I don't understand so much English. I'll have to go to people again and again. I can't tell my wife, if I lose money again, there will be no peace at home. None of my friends or family use anything like this.) | [Decision] System 2 completely overrode System 1. Even though the idea of cheaper international payments sounds good, my past scam experience makes me extremely wary of anything that sounds 'too good to be true'. The 'RBI approved' is a strong trust signal, but I've seen similar claims before that turned out to be false. My low digital comfort and limited English mean I wouldn't be able to understand the process or troubleshoot issues. The risk of losing even a small amount of money is too high for my income, and I cannot afford a repeat of past mistakes, especially with my wife's disapproval. No one in my circle uses such services, so there's no social proof.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Social stigma",
+        "PRIMARY: Scam trauma",
+        "Family veto power",
+        "Language & Communication",
+        "Digital comfort",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6dde7ee63a1d4a9881ba3eb3a1140912",
+      "occupation": "Embroiderer, Chikan",
+      "age": 33,
+      "location": "South Twenty Four Parganas, West Bengal",
+      "zone": "Urban",
+      "income": 8500,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 4,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Oh, 'International Client Acquisition Playbook for Growth 2026'? That sounds important. 'Top Exporters'\u2026 maybe something about getting my embroidery work to other countries, like I dream of, Bangladesh or Gulf. 'Register Now!' It's free, right? Maybe I can learn something new. | [Audit] Wait, 'Skydo'? I've never heard of them. 'Cold outbound is failing in 2026'? What is 'cold outbound'? And 'signal-based systems'? This English is too complicated. It talks about 'service exporters', am I a 'service exporter'? I make and sell things. What if this is just another trick to get my information or make me pay for something I don't understand? I lost money before trying to sell online. My wife would be very upset if I get involved in something like this again without understanding it properly. What if it's a scam to get my bank details? | [Decision] My initial hope was to find a way to export my work, which is my big dream. But the language is too difficult, I don't understand what they are actually offering. The terms like 'cold outbound' and 'signal-based systems' are completely new and confusing. My past bad experience with online things makes me very cautious. I can't risk getting into something I don't fully understand, especially if it might cost money or lead to problems. My wife would not approve of me signing up for something so unclear.",
+      "emotional_response": "Confused",
+      "barriers": [
+        "Language barrier",
+        "PRIMARY: Language barrier",
+        "Education",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6dde7ee63a1d4a9881ba3eb3a1140912",
+      "occupation": "Embroiderer, Chikan",
+      "age": 33,
+      "location": "South Twenty Four Parganas, West Bengal",
+      "zone": "Urban",
+      "income": 8500,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Aah, if I could save money like this, it would be good. Four lakh rupees! That's a lot of money. Maybe this can help me send my kantha work to other countries, like Bangladesh or even Dubai, and not lose money. More profit means I can expand my workshop, buy new threads, maybe even hire another person. | [Audit] Four lakh rupees just from not paying 'FX charges'? That sounds too good, like those investment schemes that promise double money in a month. They say 'RBI's PA-CB Framework', but what is that? Does it mean it's safe like a bank, or is it just fancy English words? My neighbour, Bimal-da, he lost all his savings to one such online thing. He always says, 'If it sounds too easy, it's a trap.' And 'Skydo.com'? Is it a real company or just some website? I don't know anyone who uses this 'Skydo'. | [Decision] My initial hope was high, thinking of the 'more profit' and 'global payments' for my embroidery. But the numbers, '\u20b94 Lakhs additional profit', sound too exaggerated, almost like a scam I've heard about. The English is also too much for me to fully understand the details, especially the 'RBI's PA-CB Framework' part. I don't know anyone who uses this 'Skydo', so I can't ask if it's real or safe. It's too risky for my small earnings. I can't afford to lose any money, even \u20b9500, let alone trust something so complex with my earnings from foreign orders.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "6dde7ee63a1d4a9881ba3eb3a1140912",
+      "occupation": "Embroiderer, Chikan",
+      "age": 33,
+      "location": "South Twenty Four Parganas, West Bengal",
+      "zone": "Urban",
+      "income": 8500,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 2,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Hmm, '\u20b92 Crore revenue', '\u20b94 Lakhs additional profit'. That sounds like a lot of money. My workshop could really use more money. 'Global Payments' - maybe this is how I can sell my Kantha work to other countries, like Bangladesh or the Gulf, like I dream. 'More Savings to More Profit!' - who doesn't want more profit? It says 'Built for Indian Businesses'. That's good, it's for people like me. | [Audit] Two crore? Four lakh? That's too big numbers. How can a small business like mine even think of such money? I only make 8500 rupees a month. This 'Skydo' thing, I have never heard of it. 'FX charges' - what is that? It's all in English, and big words. 'Service Exporter' - am I that? I just make Kantha. This sounds too good to be true, like those online scams my friend got caught in, where they promised big returns and took all his money. My wife would never agree to put money into something like this. What if I sign up and they ask for money, and it vanishes? I don't have money to lose. And how would I even sign up? It's all on a website, I don't use computers much, just my phone. What if it's too complicated? | [Decision] My gut felt a flicker of hope seeing the big money numbers and the idea of 'global payments' for my work. But my mind quickly realized these numbers are out of reach for me right now. The English words are confusing, and I don't understand what 'FX charges' are. The biggest concern is my past experience with scams; this ad feels too grand and vague, like those that promise a lot but deliver nothing, or worse, take your money. I don't have spare money to risk, and my family would never approve of such an unknown venture. It's better to stick to what I know and trusted methods.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Social Stigma",
+        "PRIMARY: Scam trauma",
+        "Language & Communication",
+        "Digital comfort",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "ea3802f4980a4ae7a6cdb936b1d0a5fc",
+      "occupation": "Sewers, Embroiderers and Related Workers, Other",
+      "age": 35,
+      "location": "Varanasi, Uttar Pradesh",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 3,
+      "device": "Feature Phone"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 4,
+      "relevance_score": 8,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Oh, this looks interesting! 'International Business Payments' - this is exactly what I need for my dream of selling Banarasi silks overseas. '3x cheaper' and 'no hidden charges' sounds very good. And it says 'RBI approved' - that gives some confidence. Maybe this is the way to finally sell my work directly to foreign buyers without losing so much money to banks. | [Audit] Wait. 'International Business Payments.' I've heard of people losing money trying to do business online, especially with foreign things. 'RBI approved' is good, yes, but what does 'OPGSP framework' mean? I don't know this 'Skydo' name. My neighbour, Rajesh, he tried something similar for his carpets, and he lost a lot of money. He said the rates they showed were not what he actually got. And this 'Sign Up' button... will it ask for my bank details? My feature phone, it can't handle complex apps or websites easily. How will I 'track every transfer in real-time' if my phone only shows basic text? And the language is mostly English. I can understand some, but what if there are important terms I miss? My wife, she always says to be careful with anything new that promises too much. She wouldn't approve if I risked money on something I don't fully understand. | [Decision] My System 1 felt a spark of hope because it directly addresses my ambition to sell internationally and save money. But System 2 immediately brought up all the problems. The 'RBI approved' is a strong point, but my past experience with scams and hearing about others losing money makes me very cautious. The English language, my basic phone, and my low digital comfort mean I would struggle to even sign up or use it properly, and I fear making a mistake that costs me money I cannot afford to lose. My family would also question me spending time and potential money on something so new and unproven in our circle. It's too risky for me right now.",
+      "emotional_response": "Skeptical hope",
+      "barriers": [
+        "Social stigma",
+        "Language & communication",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Device",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "ea3802f4980a4ae7a6cdb936b1d0a5fc",
+      "occupation": "Sewers, Embroiderers and Related Workers, Other",
+      "age": 35,
+      "location": "Varanasi, Uttar Pradesh",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 3,
+      "device": "Feature Phone"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 5,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Indian Service Exporters? That sounds like me, I export my embroidery work. 'Growth 2026' - maybe this can help my boutique dream. 'How Top Exporters Win Clients' - I want to win more clients, especially international ones. It has a date and time, 27th January 2026, 11:00 AM IST, so it seems real. 'Register Now!' - maybe it's a free workshop. Atul Mohan, Sales Head - a real person's name. | [Audit] Wait, 'cold outbound failing in 2026'? What is 'cold outbound'? And 'signal-based systems'? These are big English words I don't fully understand. It talks about 'service exporters' \u2013 I make physical goods, not 'services'. Is that the same? And 'playbook breaks down how leading service exporters' \u2013 again, 'service exporters'. My neighbor, Ramesh, he exports saris, he never talks about 'playbooks' or 'signal-based systems'. He just goes to fairs and talks to people. This 'Skydo' brand, I've never heard of it. Is it a company? What do they do? It doesn't say. 'Register Now!' \u2013 but for what? Is it free? They're not asking for money directly, but what if it's a trick to get my details and then they call me to sell something very expensive? I remember that 'online investment' scam from last year, they also used fancy English words and promised big returns, then took my \u20b92000. I cannot afford to lose even a single rupee. My phone is a simple one, not a smartphone. How will I 'register'? Will it need an app? And what is '2026'? That's still far away. Is this a prediction or something happening now? My wife would ask what I'm spending time on with these English things when I should be focusing on orders. | [Decision] System 2 completely overrode System 1. While the idea of 'winning clients' and 'growth' for exporters sounds appealing, the ad is full of complex English terms I don't understand, which immediately makes me suspicious because of past scam experiences. I don't know what 'cold outbound' or 'signal-based systems' are. My basic feature phone wouldn't be able to handle any complex registration process or online event. The biggest concern is the risk of being scammed again, even if it's just giving my details for unwanted calls or trying to sell me something expensive I can't afford. My family would question why I'm wasting time on something so unclear and in English.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Social stigma filter",
+        "Language & Communication",
+        "Digital comfort",
+        "Device",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "ea3802f4980a4ae7a6cdb936b1d0a5fc",
+      "occupation": "Sewers, Embroiderers and Related Workers, Other",
+      "age": 35,
+      "location": "Varanasi, Uttar Pradesh",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 3,
+      "device": "Feature Phone"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 2,
+      "relevance_score": 4,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Ah, 'Additional Profit of \u20b94 Lakhs'! That's a lot of money. My workshop could really use that. \u20b92 Crore revenue, that sounds like big business. They say '0 lost in FX charges' \u2013 that's good, I always worry about money disappearing when sending abroad. Maybe this is how I can finally get my designs to those international buyers, like in Italy, without losing money. It says 'Build for Indian Businesses', so it should understand my problems. | [Audit] \u20b94 Lakhs additional profit? For a \u20b92 Crore business? My business is tiny, not \u20b92 Crore. Most of my work is for local buyers, or I sell to bigger exporters who handle the international side. How would I even get \u20b92 Crore revenue? This talk of 'FX charges' and 'global payments' is complicated English. My friend's cousin lost all his money to an online scam that promised big profits. This '0 FX' sounds too good to be true. And '30,000+ Customers', '500Mn+' processed \u2013 these numbers are too big, they don't mean anything to me or my small workshop. I only have a feature phone, how would I use this 'skydo' even if it was real? I'd have to ask someone to help with the English and the phone, and what if they misuse my money? My wife would never agree to put our savings into something like this that I don't fully understand. | [Decision] My System 1 was excited by the large profit number and the idea of reaching international markets, which is my ambition. However, System 2 immediately identified too many red flags. The numbers are too big and unrealistic for my current business. The English is too complex, and I don't have the digital literacy or a smartphone to use such a service. Most importantly, my past experiences and the stories of others being scammed make me deeply suspicious of anything that promises '\u20b90 lost' and 'additional profit' so easily. My family would never approve of me risking our hard-earned money on something so foreign and unproven by people I know. It feels too slick and complicated for me.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Social stigma filter",
+        "Language & communication",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Device",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "ea3802f4980a4ae7a6cdb936b1d0a5fc",
+      "occupation": "Sewers, Embroiderers and Related Workers, Other",
+      "age": 35,
+      "location": "Varanasi, Uttar Pradesh",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 3,
+      "device": "Feature Phone"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 5,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] \u20b92 Crore! \u20b94 Lakhs profit! My workshop could grow so much with this. Maybe this is how I can finally get enough money for the children's education and that land. | [Audit] These numbers are too big. \u20b92 Crore? My whole life's work won't make that much. 'Service Exporter' \u2013 what does that even mean for my embroidery work? And 'FX charges'? Is that some hidden fee they will take? I remember that 'investment scheme' that promised big returns, and I lost 5000 rupees. This sounds too good to be true, just like that one. My neighbour, Suresh, he got tricked by one of these online things too. He always says, if it sounds like magic, it's probably a trick. How will I even sign up on this 'skydo.com' on my small phone? It's all in English too, I'll need someone to read it for me, and then they might laugh at me for falling for such things. | [Decision] My initial hope was high because of the big numbers, but the language, the complicated terms, and the memory of losing money to a similar-sounding scheme made me very suspicious. My small phone won't handle this, and I don't want to ask for help and look foolish or get scammed again. My System 2 immediately shut down the excitement, reminding me of past losses and practical limitations. It feels like another one of those traps.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Device",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "056795863fa5489abd47fdb73a7dfea8",
+      "occupation": "Manager, Export",
+      "age": 30,
+      "location": "Samastipur, Bihar",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 7,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 8,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Ah, this is exactly what I've been looking for! My current bank charges are so high for international payments, it eats into the profit margins. '3x cheaper' and 'No hidden charges' sounds fantastic. The RBI approval makes it seem legitimate. This could really help my business dealings. | [Audit] Okay, '3x cheaper' is a big claim. I need to see the actual numbers, not just a promise. 'No hidden charges' is something every financial service says, but often there's some small print. The RBI approval is a strong point, but I need to check if Skydo is actually listed under their OPGSP framework or if it's just a marketing trick. I'll need to understand the full process \u2013 how long does it really take? And how secure is it? My clients trust me with their payments, I can't risk anything going wrong just to save a few rupees. Also, what if there's a problem, who do I call? Is there local support? | [Decision] System 2 largely confirmed System 1's positive initial reaction. The ad addresses a direct pain point in my professional life (high international payment fees). The RBI approval is a significant trust signal, which overrides my general skepticism about financial claims. While I will proceed with caution and verify details, the potential benefit is too high to ignore. My income is stable enough that I'm not worried about a small setup fee, and my digital literacy is good enough to navigate a new platform. There are no social or language barriers here.",
+      "emotional_response": "Hopeful",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "056795863fa5489abd47fdb73a7dfea8",
+      "occupation": "Manager, Export",
+      "age": 30,
+      "location": "Samastipur, Bihar",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 7,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 8,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Hmm, 'International Client Acquisition Playbook for Growth 2026' and 'How Top Exporters Win Clients'. This sounds directly relevant to my career goals of becoming an Export Director and even starting my own consultancy. 'Replacing cold outreach' and 'Targeting real buying intent' sounds very efficient. Atul Mohan, Sales Head at Skydo, seems like a credible person to learn from. I definitely want to know what top exporters are doing today. | [Audit] The ad is in English, which is fine for business communication, but the '2026' in the title and date (27th January 2026) makes me wonder if this is a future-dated event or if it's a webinar about future strategies. It's 'Sponsored', which is normal, but I'll check Skydo's website to see if they are a legitimate company. It's a webinar, so no direct cost mentioned, but sometimes these lead to paid courses or subscriptions. I need to make sure it's not just a sales pitch for something expensive. My digital comfort is good enough to register and attend, and it aligns with my professional growth. My family would be supportive of me learning new skills to advance my career. | [Decision] System 2 confirms System 1's positive reaction. The content is highly relevant to my professional ambitions and aligns with my goal of continuous learning in export management. The language is manageable, there's no immediate financial cost, and my digital literacy is sufficient. The '2026' date is a minor confusion but not a deal-breaker, I'll clarify that on the landing page. It seems like a valuable opportunity to gain insights into modern export strategies.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "056795863fa5489abd47fdb73a7dfea8",
+      "occupation": "Manager, Export",
+      "age": 30,
+      "location": "Samastipur, Bihar",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 7,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Wow, 4 extra lakhs profit! That's a huge saving. My company deals with international payments all the time, and those FX charges do eat into profits. This sounds like a smart way to save money and increase our bottom line. I should definitely check this out for my company. | [Audit] Hold on, '0 lost in FX charges' sounds too good to be true. Every bank charges something for foreign exchange. Is this a hidden fee? Or maybe it's only for very specific currencies or transaction types? \u20b92 Crore revenue, \u20b94 Lakhs profit difference... this is for big businesses, not small ones. My company isn't doing \u20b92 Crore in revenue yet, but even if it was, saving 4 lakhs is significant. They say 'Trusted by 30,000+ Customers' and 'Operating Under RBI's PA-CB Framework', which is good, an RBI framework gives it some credibility. But still, '0 FX' is hard to believe. I need to understand the catch. Is it a subscription model? What are the other costs? And is this only for service exporters? My company does both goods and services. | [Decision] System 1 was excited by the potential savings. System 2 raised valid questions about the '0 FX' claim and the specifics of the service. However, the RBI framework mention and the overall professional look of the ad, combined with my professional interest in optimizing export operations, make me want to investigate further. The potential benefit for my company is too large to ignore, even with the skepticism. I'll click to see the details, but I'll be very cautious and read the fine print.",
+      "emotional_response": "Intrigued, Cautious",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "056795863fa5489abd47fdb73a7dfea8",
+      "occupation": "Manager, Export",
+      "age": 30,
+      "location": "Samastipur, Bihar",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 7,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 6,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "Medium",
+      "reasoning": "[Gut] Oh, '\u20b90 lost in FX charges' and 'Additional Profit of \u20b94 Lakhs'? That sounds really good for my business. I'm always looking for ways to save money, especially on international payments. This could really help me grow my export business, maybe even reach my goal of becoming an Export Director faster. 'Built for Indian Businesses' also makes it sound trustworthy. | [Audit] \u20b90 lost in FX charges seems too good to be true. How is that possible? There's always some charge, even if it's hidden. And \u20b94 Lakhs additional profit? That's a huge claim. I need to understand the terms and conditions. The ad is in English, which I can read for business, but I'll need to be careful with the fine print. I wonder if any of my colleagues or other exporters in Samastipur use something like this. If it's real, it could be a game-changer, but I've heard stories of people losing money to things that promise high returns or zero fees. My digital comfort is 7/10, so I can navigate a website, but what if it's complex? I should check skydo.com first, see if it's a legitimate company. | [Decision] System 2 confirms that the core offer is highly relevant to my professional goals as an Export Manager. While the '\u20b90 lost' claim triggers some skepticism, my scam trauma is low, and the visual cues don't scream 'scam'. My English proficiency is functional for business, so I can navigate the website. The potential for significant savings and increased profit outweighs the initial skepticism, prompting me to investigate further. However, I will approach the website with caution, looking for concrete details and testimonials.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "fc14a55b947e47fab009f07789b9f72d",
+      "occupation": "Hand Dyer",
+      "age": 28,
+      "location": "Arwal, Bihar",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 4,
+      "relevance_score": 7,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Arre wah! International payments, aur itna sasta? Bank wale toh khoon choos lete hain. Agar sach mein 3x sasta hai aur jaldi paise milte hain, toh mere business ke liye kitna achha hoga. Yeh 'RBI approved' bhi likha hai, toh shayad theek hi hoga. Man kar raha hai click karke dekhoon. | [Audit] Hmm, 'RBI approved' toh acchi baat hai, par poora kya hai yeh OPGSP framework? Mujhe toh pata nahi. Aur 150+ countries se payment lena, mera toh abhi ek-do jagah se hi kaam hai. Itna bada claim, aur 'no hidden charges' bhi bol rahe hain. Pehle bhi aise 'no hidden charges' bolke kitno ne loota hai. Pichli baar woh online course wala scam yaad hai, \u20b92000 lag gaye the aur kuch nahi mila. Kahin yeh bhi waisa hi na ho. Aur yeh English mein hai sab, agar kuch samajh nahi aaya registration ke time, ya koi dikkat ho gayi toh kisse poochunga? Mere gaon mein toh koi itna tech-savvy nahi hai. Phone pe sab karna padega, aur mera toh bas basic Android hai, agar app download karna pada aur phone lagg karne laga toh? Ya fir account band ho gaya toh? Mera \u20b98000 ka mahine ka kamai hai, agar \u20b9500 bhi isme phas gaye toh ghar kaise chalega? Biwi ko kya jawab dunga? | [Decision] System 2 completely overrode System 1. Although the initial thought was positive due to the 'RBI approved' tag and the promise of cheaper, faster payments, the deep-seated scam trauma and the high risk associated with potential loss of even a small amount of money are too great. The English language barrier for detailed understanding, low digital comfort for troubleshooting, and the social pressure of not risking family finances make it too dangerous to proceed without external validation from trusted sources.",
+      "emotional_response": "Suspicious, Cautious",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "Income constraint",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "fc14a55b947e47fab009f07789b9f72d",
+      "occupation": "Hand Dyer",
+      "age": 28,
+      "location": "Arwal, Bihar",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Oh, 'Skydo' 'Exporters' 'Growth 2026'. This sounds like something about selling my fabrics outside India, which is my big dream! 'International Client Acquisition Playbook' sounds very official and important. Maybe this is the way to finally get my batik and tie-dye to those big city boutiques and even abroad. 'Register Now!' it says, and it's free, right? It's about 'replacing cold outreach' and 'targeting real buying intent', which I don't fully understand, but it sounds smart, like finding customers who actually want to buy. I want to know what 'Top Service Exporters Are Doing Today'. | [Audit] Wait a minute. 'Cold outbound failing in 2026'? It's 2024 now. Why are they talking about 2026? That's two years away. And 'high-intent, signal-based systems'? What even is that? It's all in English, and while I can manage basic English, these words are too big and confusing. 'Atul Mohan Sales Head at Skydo' \u2013 who is this person? I don't know anyone named Atul Mohan. Is Skydo a big company or just some new website? They're talking about 'service exporters', but I make physical products, fabrics. Is it even for people like me? And 'Register Now!' \u2013 what if it asks for money later? I've heard of these things where they promise big, then slowly take your money. My cousin lost a lot to one of these online 'training' things. My \u20b98000 a month is for my family, for colors, for cloth, not for some unknown English 'playbook'. | [Decision] My initial excitement about exporting was quickly overshadowed by the confusing English, the talk of 2026 which feels far off and irrelevant to my immediate needs, and the general vagueness of the 'systems' they're talking about. My past experience with scams makes me very wary of anything that promises 'growth' and 'playbooks' without clear, understandable details. I don't know this 'Skydo' or 'Atul Mohan', and I cannot risk even a small amount of money or time on something I don't fully grasp, especially if it's not directly related to my specific craft of hand-dyeing fabrics. My family's well-being depends on my caution.",
+      "emotional_response": "Suspicious_Confused",
+      "barriers": [
+        "Language barrier",
+        "Income constraint",
+        "PRIMARY: Language barrier",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "fc14a55b947e47fab009f07789b9f72d",
+      "occupation": "Hand Dyer",
+      "age": 28,
+      "location": "Arwal, Bihar",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Wah! 4 lakh zyada profit? Itna paisa bach sakta hai? Lagta hai kuch naya tareeka hai international payment lene ka. Mera kaam bhi toh badhana hai, bahar bhi kapde bhejne hain. Yeh 'Skydo' kuch accha lag raha hai, 'RBI' bhi likha hai. | [Audit] Hmm, char lakh rupaye... itna zyada. Jab main 8 hazar kamata hoon, toh char lakh ka fayda sunke thoda darr bhi lagta hai. Pata nahi yeh 'FX charges' kya hota hai, aur 0 FX ka matlab kya hai. English mein zyada hai, thoda samajhne mein mushkil ho rahi hai. 'RBI' likha hai toh shayad theek ho, par pichli baar bhi ek 'company' ne bade bade vaade kiye the aur mere 5000 leke gayab ho gaya. Mere paas itna paisa nahi hai ki galti karu. Aur '30,000+ customers' bol rahe hain, par mere gaon mein toh kisi ne iska naam bhi nahi suna. Kahi phir se koi jhanse mein na phasa de. | [Decision] System 2 completely overrode System 1. While the idea of more profit is very appealing, the English language barrier makes it hard to understand the details. The '\u20b94 Lakhs additional profit' sounds too good to be true, especially after my past scam experience where I lost money. I can't risk even a small amount from my \u20b98000 monthly income. Nobody in my circle uses this, and I wouldn't know who to ask if something went wrong. It feels too complicated and risky for me right now.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Social Stigma",
+        "Language & Communication",
+        "Digital comfort",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "fc14a55b947e47fab009f07789b9f72d",
+      "occupation": "Hand Dyer",
+      "age": 28,
+      "location": "Arwal, Bihar",
+      "zone": "Rural",
+      "income": 8000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Bhaiyya, 2 crore revenue? Aur upar se 0 FX charges? Matlab kitna paisa bach jayega! Agar sach mein aisa ho gaya toh mein toh apna kaarobar kitna bada kar sakta hoon. 4 lakh extra profit? Yeh toh bahut badi baat hai. Mera sapna pura ho sakta hai isse. | [Audit] Arre Ravi, shaant ho jaa. Pichli baar bhi ek 'online business' ka chakkar tha, saara jama kiya hua paisa doob gaya tha. Yeh 'Skydo' kaun hai? Maine toh kabhi suna nahi. Aur 'Service Exporter' kya hota hai? Main toh kapde rangta hoon, usko 'export' kaise karte hain? Yeh angrezi mein bahut kuch likha hai, samajh nahi aa raha poora. 'Sponsored' bhi likha hai, matlab paisa dekar dikha rahe hain. Jab bhi koi itna bada daawa karta hai na, darr lagta hai. Pata nahi kitna paisa maangenge sign up karne ke liye. Mere paas toh abhi koi extra paisa nahi hai, aur agar isme bhi kuch gadbad ho gayi toh ghar mein kya bolunga? | [Decision] System 2 ne System 1 ko override kar diya. Mera mann toh kar raha tha click karne ka, bade sapne dikh rahe the, lekin pichle dhokhe ka darr bahut zyada hai. '2 Crore revenue' aur '4 Lakhs additional profit' sunkar lalch toh aaya, lekin sochta hoon ki mere jaise aadmi ke liye yeh itna aasaan nahi ho sakta. Angrezi mein ad hai, mujhe poora samajh nahi aa raha kya bech rahe hain. Aur yeh 'FX charges' kya hai, mujhe pata hi nahi. Agar kuch galat ho gaya aur paise lag gaye toh bahut mushkil ho jayegi. Ghar mein bhi koi support nahi karega aise 'online' cheezon ke liye. Pehle kisi bharosemand se poochunga, tab tak ignore karna hi behtar hai.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Social Stigma",
+        "PRIMARY: Scam trauma",
+        "Language & Communication",
+        "Digital comfort",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3f5dc61c9043474f8db741091bf3333a",
+      "occupation": "Manager, Import and Export",
+      "age": 35,
+      "location": "Thane, Maharashtra",
+      "zone": "Urban",
+      "income": 120000,
+      "digital_literacy": 8,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 9,
+      "relevance_score": 10,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Hmm, '3x cheaper,' 'no hidden charges,' and 'live FX rates' sounds very good. I send and receive payments for work all the time, and the bank fees and fluctuating rates are a constant headache. If it's really approved by RBI, that's a big plus. This could make my job easier and save the company money. | [Audit] Okay, '3x cheaper' is a strong claim. While I'm not directly paying for these transactions, saving money for the company reflects well on me. The 'RBI's OPGSP framework' is a crucial detail. I need to verify what OPGSP means and if Skydo is genuinely approved. I'll check the RBI website. 'No hidden charges' sounds too good to be true, but FinTech often disrupts traditional banking fees. The 24-hour payment receipt is also very appealing, as bank transfers can sometimes drag. The phone screen showing the conversion is a nice touch, makes it feel transparent. I'm thinking about how this could improve my department's efficiency. | [Decision] My System 1 was immediately interested because it directly addresses pain points in my professional life \u2013 high fees and slow international payments. System 2 confirms this interest by recognizing the strong trust signals, especially the RBI approval claim, which I intend to verify. The ad's professional presentation and clear value proposition align with my goals of optimizing supply chain efficiency and saving costs for my company. There are no red flags, and the claims, while bold, are plausible within the FinTech space. My digital comfort is high, and there's no language barrier. This could be a valuable tool for my work.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3f5dc61c9043474f8db741091bf3333a",
+      "occupation": "Manager, Import and Export",
+      "age": 35,
+      "location": "Thane, Maharashtra",
+      "zone": "Urban",
+      "income": 120000,
+      "digital_literacy": 8,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 8,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Hmm, 'International Client Acquisition Playbook for Growth 2026'. This sounds interesting. 'How top exporters win clients' \u2013 this is exactly what I'm trying to do. And 'replacing cold outreach' is good, I don't like that method. 'Signal-based systems' sounds like something modern and data-driven, which I appreciate. 'Register Now!' It's a webinar, probably free. I should check it out, maybe it has some good insights for my career goals. | [Audit] Okay, Skydo... never heard of them. 'Sponsored' means it's an ad, not organic. '27th January 2026, 11:00 AM IST' \u2013 that's a specific date, which is good, not some vague promise. 'Atul Mohan Sales Head at Skydo' \u2013 a real person, not just a generic company. The language is sharp and professional, aimed at people like me. It's about 'service exporters', and I'm in import-export, so it's relevant. It's a webinar, so probably no direct cost involved, just my time. My digital comfort is high, so signing up should be easy. My wife won't mind me attending a free webinar to improve my skills; she understands my ambition. No immediate red flags for scams, it's not asking for money or personal banking details, just registration. It aligns with my goal of expanding into emerging markets and implementing tech-driven solutions. | [Decision] System 2 confirmed System 1's positive initial reaction. The ad is highly relevant to my professional goals and current role. It's a free webinar, so there's no financial risk. The information presented seems credible, with a specific date and speaker. There are no elements that trigger my low scam trauma, and the language and format are easily understandable. It aligns with my ambition to leverage data and improve efficiency in client acquisition for international trade.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3f5dc61c9043474f8db741091bf3333a",
+      "occupation": "Manager, Import and Export",
+      "age": 35,
+      "location": "Thane, Maharashtra",
+      "zone": "Urban",
+      "income": 120000,
+      "digital_literacy": 8,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Hmm, 0% FX charges? That sounds too good to be true, but if it's real, it could really help my company save a lot of money. My current bank charges a fair bit, and even a small percentage adds up when you're dealing with crores. 'More savings, faster global payments' is exactly what we need. This could be a game-changer for our bottom line. | [Audit] \u20b90 lost in FX charges? That's a bold claim. Banks always take a cut. How do they make money then? 'Operating Under RBI's PA-CB Framework' and 'Trusted by 30,000+ Customers' are good signs, but I'd need to properly investigate the RBI framework and maybe see some independent reviews. The '500Mn+ processed' is impressive, but for what duration? And the '2 Crore revenue' example is for a service exporter, which isn't exactly what I do, but the principle of saving on FX charges is relevant to import-export too. I need to check if this is applicable for import payments as well, not just receiving global payments. My company handles both. If it's only for receiving payments, it's less useful. | [Decision] System 1's excitement about savings is tempered by System 2's skepticism about '0 FX charges.' However, the mention of RBI framework and a significant customer base provides enough trust to warrant a click to investigate further. My professional role makes this highly relevant, and I'm digitally comfortable enough to evaluate their website.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3f5dc61c9043474f8db741091bf3333a",
+      "occupation": "Manager, Import and Export",
+      "age": 35,
+      "location": "Thane, Maharashtra",
+      "zone": "Urban",
+      "income": 120000,
+      "digital_literacy": 8,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "Medium",
+      "reasoning": "[Gut] Hmm, '\u20b90 lost in FX charges' and 'Additional Profit of \u20b94 Lakhs' sounds very appealing. As someone in import-export, I know how much those FX charges eat into margins. This could really help my company, and perhaps even my own consultancy ambitions later. It's 'Built for Indian Businesses' which is good, means they understand our local context. I'm curious to see how they manage this. | [Audit] \u20b94 Lakhs additional profit is a big number, almost sounds too good. How exactly do they achieve '\u20b90 lost in FX charges'? Nothing is truly free. I need to understand the mechanism. Is it a subscription fee? A percentage of the transaction? What are the hidden costs? If it's a flat fee, how does it scale for smaller vs. larger transactions? And 'Sign Up' is a bit vague. What does that entail? Just giving my email, or full company details? I'll need to research Skydo more thoroughly before I commit anything. While the numbers are attractive, my experience tells me to look for the fine print. | [Decision] System 2 confirms the relevance of the ad to my professional goals and current work. The potential savings on FX charges are a significant draw for any import-export business. While the '\u20b90 lost' claim needs further investigation for hidden costs or mechanisms, the overall proposition of turning FX savings into profit is highly relevant. My scam trauma is low, and the ad doesn't feel overtly scammy, just a bit aggressive with the numbers. I'll click to learn more, but with a healthy dose of skepticism, ready to scrutinize their claims and terms of service.",
+      "emotional_response": "Intrigued, Cautious",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "733323bed5c74d50a86d342a51f6ec2a",
+      "occupation": "Manager, Export",
+      "age": 21,
+      "location": "Panna, Madhya Pradesh",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 5,
+      "relevance_score": 9,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Arre wah! Yeh toh bohot accha lag raha hai. International payments mein kitna paisa bach jayega! Humare clients ko bhi aasani hogi. 'No hidden charges' aur 'Live FX rates' sunke toh mann khush ho gaya. Jaldi se dekhna chahiye kya hai yeh Skydo. | [Audit] Ratan, dimaag mat kharab kar. Pichli baar bhi aise hi ek cheez mein paise lagaye the, sab doob gaye. '3x cheaper' bol rahe hain, par asliyat mein kitna hoga? Aur yeh 'RBI approved' toh theek hai, par kya sach mein? Kitne apps aaye aur chale gaye. English mein sab likha hai, kahin kuch galat na samajh loon. Aur agar kuch gadbad hui toh kisse poochunga? Koi apna toh use karta nahi hai yeh sab. | [Decision] System 1 ko laga ki yeh bohot faydemand ho sakta hai, kyunki international payments mein sach mein bohot dikkat aati hai aur fees bhi lagti hain. Magar System 2 ne turant rok diya. Pichle scam ka darr abhi bhi hai. Ad mein English zyada hai, aur mujhe hamesha darr rehta hai ki kuch galat na samajh loon. 'RBI approved' sunke thoda bharosa aaya, par phir bhi, apne gaon mein koi aisa app use nahi karta. Agar kuch hua toh kisse madad mangunga? Akele handle karna mushkil hoga. Abhi filhal ignore karna hi sahi hai, pehle kisi aur se poochunga iske baare mein.",
+      "emotional_response": "Skeptical Hope",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "733323bed5c74d50a86d342a51f6ec2a",
+      "occupation": "Manager, Export",
+      "age": 21,
+      "location": "Panna, Madhya Pradesh",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 4,
+      "relevance_score": 7,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] \u092f\u0939 \u0928\u092f\u093e \u0924\u0930\u0940\u0915\u093e \u0939\u0948 \u0915\u094d\u0932\u093e\u0907\u0902\u091f \u0922\u0942\u0901\u0922\u0928\u0947 \u0915\u093e? '2026' \u092e\u0924\u0932\u092c \u0906\u0917\u0947 \u0915\u0940 \u092c\u093e\u0924 \u0939\u0948, \u0924\u094b \u0936\u093e\u092f\u0926 \u0915\u0941\u091b \u0928\u092f\u093e \u0938\u0940\u0916\u0928\u0947 \u0915\u094b \u092e\u093f\u0932\u0947\u0917\u093e. '\u090f\u0915\u094d\u0938\u092a\u094b\u0930\u094d\u091f\u0930\u094d\u0938' \u0914\u0930 '\u0915\u094d\u0932\u093e\u0907\u0902\u091f \u090f\u0915\u094d\u0935\u093f\u091c\u093f\u0936\u0928' \u092e\u0947\u0930\u0947 \u0915\u093e\u092e \u0915\u0940 \u091a\u0940\u091c\u093c\u0947\u0902 \u0939\u0948\u0902. '\u0930\u091c\u093f\u0938\u094d\u091f\u0930 \u0928\u093e\u0909' \u092c\u094b\u0932 \u0930\u0939\u093e \u0939\u0948, \u0924\u094b \u0936\u093e\u092f\u0926 \u0915\u094b\u0908 \u092b\u094d\u0930\u0940 \u0935\u0947\u092c\u093f\u0928\u093e\u0930 \u092f\u093e \u0935\u0930\u094d\u0915\u0936\u0949\u092a \u0939\u094b\u0917\u0940. | [Audit] 2026 \u0905\u092d\u0940 \u0906\u092f\u093e \u0928\u0939\u0940\u0902, \u092f\u0947 \u0915\u0948\u0938\u0947 \u0905\u092d\u0940 \u0938\u0947 \u092c\u0924\u093e \u0930\u0939\u0947 \u0939\u0948\u0902 \u0915\u093f \u0924\u092c \u0915\u094d\u092f\u093e \u092b\u0947\u0932 \u0939\u094b \u0930\u0939\u093e \u0939\u0948? '\u0938\u093f\u0917\u094d\u0928\u0932-\u092c\u0947\u0938\u094d\u0921 \u0938\u093f\u0938\u094d\u091f\u092e\u094d\u0938' \u0915\u094d\u092f\u093e \u0939\u094b\u0924\u093e \u0939\u0948? \u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u092e\u0947\u0902 \u0932\u093f\u0916\u093e \u0939\u0948, \u0938\u092e\u091d\u0928\u0947 \u092e\u0947\u0902 \u0925\u094b\u0921\u093c\u0940 \u0926\u093f\u0915\u094d\u0915\u0924 \u0939\u094b \u0930\u0939\u0940 \u0939\u0948. \u0915\u0939\u0940\u0902 \u092f\u0947 \u092b\u093f\u0930 \u0915\u094b\u0908 \u0915\u094b\u0930\u094d\u0938 \u092c\u0947\u091a\u0928\u0947 \u0915\u0940 \u092c\u093e\u0924 \u0924\u094b \u0928\u0939\u0940\u0902, \u091c\u093f\u0938\u0915\u0947 \u0932\u093f\u090f \u092c\u093e\u0926 \u092e\u0947\u0902 \u092a\u0948\u0938\u0947 \u092e\u093e\u0901\u0917\u0947\u0902\u0917\u0947? \u092a\u093f\u091b\u0932\u0940 \u092c\u093e\u0930 \u092d\u0940 \u090f\u0915 \u0911\u0928\u0932\u093e\u0907\u0928 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u091a\u0915\u094d\u0915\u0930 \u092e\u0947\u0902 \u092a\u0948\u0938\u0947 \u092b\u0901\u0938 \u0917\u090f \u0925\u0947. '\u0905\u0924\u0941\u0932 \u092e\u094b\u0939\u0928 \u0938\u0947\u0932\u094d\u0938 \u0939\u0947\u0921' \u0915\u094c\u0928 \u0939\u0948\u0902? \u092a\u0939\u0932\u0947 \u0928\u093e\u092e \u0924\u094b \u0938\u0941\u0928\u093e \u0928\u0939\u0940\u0902. \u0917\u093e\u0901\u0935 \u092e\u0947\u0902 \u0915\u094b\u0908 \u0910\u0938\u093e \u0915\u0930\u0924\u093e \u0928\u0939\u0940\u0902, \u0924\u094b \u092a\u0942\u091b\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0940 \u0915\u094b\u0908 \u0928\u0939\u0940\u0902 \u0939\u0948. \u0905\u0917\u0930 \u0915\u0941\u091b \u0917\u0921\u093c\u092c\u0921\u093c \u0939\u0941\u0908 \u0924\u094b \u0918\u0930\u0935\u093e\u0932\u094b\u0902 \u0915\u094b \u0915\u094d\u092f\u093e \u092c\u0924\u093e\u090a\u0901\u0917\u093e? | [Decision] \u092e\u0947\u0930\u093e \u092e\u0928 \u0924\u094b \u0915\u0930 \u0930\u0939\u093e \u0925\u093e \u0915\u093f \u0915\u0941\u091b \u0928\u092f\u093e \u0938\u0940\u0916\u0928\u0947 \u0915\u094b \u092e\u093f\u0932\u0947\u0917\u093e, \u092e\u0947\u0930\u0947 \u0915\u093e\u092e \u0938\u0947 \u091c\u0941\u0921\u093c\u093e \u0939\u0948. \u092a\u0930 '2026' \u0935\u093e\u0932\u0940 \u092c\u093e\u0924 \u0914\u0930 '\u0915\u094b\u0932\u094d\u0921 \u0906\u0909\u091f\u092c\u093e\u0909\u0902\u0921 \u092b\u0947\u0932\u093f\u0902\u0917' \u091c\u0948\u0938\u0940 \u091a\u0940\u091c\u093c\u0947\u0902 \u0925\u094b\u0921\u093c\u0940 \u0905\u091c\u0940\u092c \u0932\u0917 \u0930\u0939\u0940 \u0939\u0948\u0902. \u0938\u092c\u0938\u0947 \u092c\u0921\u093c\u0940 \u092c\u093e\u0924, \u092e\u0941\u091d\u0947 \u092a\u093f\u091b\u0932\u0940 \u092c\u093e\u0930 \u0911\u0928\u0932\u093e\u0907\u0928 \u0915\u094b\u0930\u094d\u0938 \u0915\u0947 \u0928\u093e\u092e \u092a\u0930 \u0927\u094b\u0916\u093e \u0939\u094b \u091a\u0941\u0915\u093e \u0939\u0948, \u0924\u094b \u0905\u092c \u0921\u0930 \u0932\u0917\u0924\u093e \u0939\u0948. \u0905\u0917\u0930 \u092f\u0947 \u092b\u094d\u0930\u0940 \u092d\u0940 \u0939\u0941\u0906, \u0924\u094b \u0915\u0939\u0940\u0902 \u092c\u093e\u0926 \u092e\u0947\u0902 \u0915\u094b\u0908 \u092e\u0939\u0901\u0917\u093e \u0915\u094b\u0930\u094d\u0938 \u092c\u0947\u091a\u0928\u0947 \u0915\u0940 \u0915\u094b\u0936\u093f\u0936 \u0928 \u0915\u0930\u0947\u0902. \u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u092e\u0947\u0902 \u092d\u0940 \u0920\u0940\u0915 \u0938\u0947 \u0938\u092e\u091d \u0928\u0939\u0940\u0902 \u0906 \u0930\u0939\u093e \u0915\u093f '\u0938\u093f\u0917\u094d\u0928\u0932-\u092c\u0947\u0938\u094d\u0921 \u0938\u093f\u0938\u094d\u091f\u092e\u094d\u0938' \u0915\u094d\u092f\u093e \u0939\u0948. \u0917\u093e\u0901\u0935 \u092e\u0947\u0902 \u0915\u093f\u0938\u0940 \u0928\u0947 \u0910\u0938\u093e \u0915\u0941\u091b \u0915\u093f\u092f\u093e \u0928\u0939\u0940\u0902, \u0924\u094b \u092a\u0942\u091b\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092d\u0940 \u0915\u094b\u0908 \u0928\u0939\u0940\u0902 \u0939\u0948. \u0921\u0930 \u0939\u0948 \u0915\u093f \u0915\u0939\u0940\u0902 \u092b\u093f\u0930 \u0938\u0947 \u092a\u0948\u0938\u0947 \u0928 \u092b\u0901\u0938 \u091c\u093e\u090f\u0901.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "733323bed5c74d50a86d342a51f6ec2a",
+      "occupation": "Manager, Export",
+      "age": 21,
+      "location": "Panna, Madhya Pradesh",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 4,
+      "relevance_score": 7,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Arre wah! \u20b94 lakh ka seedha fayda? Ye toh bahut achhi baat hai. Humare sahib log bhi toh bolte hain ki FX charges mein paisa barbaad hota hai. Agar sach mein itna bach gaya toh humari company ko kitna fayda hoga aur humara bhi naam hoga. Lagta hai kuchh naya tareeka hai international payments ka. | [Audit] Ratan, dimaag laga. \u20b92 crore ka business toh abhi humari company ka nahi hai. Aur ye '0 lost in FX charges' kaise ho sakta hai? Bank toh hamesha kuchh na kuchh kaat-te hain. Pichli baar jab ek online payment app ka chakkar hua tha, toh \u20b95000 ka nuksaan ho gaya tha. Ye jo '30,000+ Customers' aur '500Mn+ Processed' likha hai, ye sab toh bade shehron ki companies ke liye hoga. Humare Panna mein kaun isko use karta hai? Aur 'RBI's PA-CB Framework' kya hota hai? Angrezi mein likha hai, samajh nahi aa raha poora. Kahin ye bhi koi naya jhanjhat na ho. Pehle pata karna padega ki ye kya cheez hai aur humare liye faydemand hai ya nahi. | [Decision] System 2 ne System 1 ko override kar diya. Mera pehla mann toh kiya ki jaanun kya hai, kyunki FX charges se bachne ki baat sunne mein acchi lagti hai. Lekin, '0 FX' wali baat aur itni badi rakam ka fayda sunkar shaq ho raha hai. Pichle scam ka darr baitha hua hai. Ad mein bahut saari angrezi hai jo poori tarah samajh nahi aa rahi, khaas kar ke technical terms. Aur humare gaon mein ya humare aas-paas kisi ne aisi cheez use nahi ki hai. Agar ye koi naya system hai, toh pehle kisi bharosemand se poochhna padega ya dekhna padega ki koi aur isko use kar raha hai ya nahi. Abhi bina soche-samjhe click karna theek nahi.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "digital comfort",
+        "PRIMARY: scam trauma",
+        "social stigma",
+        "language barrier",
+        "scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "733323bed5c74d50a86d342a51f6ec2a",
+      "occupation": "Manager, Export",
+      "age": 21,
+      "location": "Panna, Madhya Pradesh",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Arre wah! \u20b92 Crore revenue, aur FX charges mein kuch nahi gaya? Yeh toh kamaal ki cheez lag rahi hai. Agar mere export mein bhi itni bachat ho jaye toh kitna accha hoga. \u20b94 Lakh extra profit, yeh toh mere saalon ki mehnat ka phal ho sakta hai. Foreign payments lene mein abhi kitni dikkat aati hai, bank wale itne charges kaat lete hain. Shayad yeh koi naya tareeka hai jisse paisa bach sake. | [Audit] Ratan, ruk jaa! \u20b92 Crore revenue? Meri company abhi itna bhi nahi karti. Aur '\u20b90 lost in FX charges'? Aisa kaise ho sakta hai? Bank toh hamesha kuch na kuch kaat te hain. Pichli baar bhi ek aise hi app ke chakkar mein pad gaya tha, 'double your money' bol ke saara paisa le gaye the. Yeh 'Skydo' kaun hai? Maine toh pehle kabhi nahi suna inke baare mein. Aur yeh 'Service Exporter' likha hai, main toh stone export karta hoon, kya yeh mere liye bhi hai? Kahi yeh koi aur naya scam toh nahi hai? Aise bade-bade daave karne wale aksar dhokha hi dete hain. Meri monthly salary \u20b918,000 hai, \u20b94 Lakh extra profit ki baat toh sapne jaisi lag rahi hai. Aur 'Sign Up' karne se pehle kya charges lagenge, yeh bhi nahi bataya. Kahi free trial ke naam pe baad mein paisa na maang lein. | [Decision] System 2 ne System 1 ko override kar diya. Mera mann toh kar raha tha ki dekhun kya hai, par pichle scams ki yaad aa gayi. Itne bade-bade daave aur '\u20b90 lost' sunkar darr lagta hai. Meri kamai itni nahi hai ki main aise kisi bade risk mein pad sakun. English mein likha hai, puri baat samajh nahi aa rahi. Aur gaon mein kisi ne aise apps use nahi kiye, toh kaise bharosa karun? Kahi koi aur uljhan na ho jaye.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "Language barrier",
+        "Social stigma",
+        "Income constraint",
+        "PRIMARY: Scam trauma",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "b70431f24b454b1a8dac34e9b11d1f81",
+      "occupation": "Manager, Import and Export",
+      "age": 61,
+      "location": "Thiruvananthapuram, Kerala",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 9,
+      "relevance_score": 10,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Oh, this looks promising! Losing money on international payments is a constant headache, especially with all the small charges that add up. '3x cheaper' and 'No hidden charges' sounds like exactly what I need for my work. And it says 'Approved under RBI's OPGSP framework' \u2013 that's a big relief. I'm curious to see how this works. | [Audit] Hmm, '3x cheaper' is a bold claim. While the RBI approval is good, I need to understand the details. Is this for businesses only, or can I use it for personal transfers too? My company handles the main transactions, but sometimes I have smaller vendor payments or receive small consultancy fees myself where bank charges bite. My digital comfort is not high, so the app interface needs to be very straightforward. What kind of documentation would they need? And is it only for payments received, or can I send money too? It says 'receive international business payments,' so maybe not for sending. I should check their website for more information, especially about their fees structure and any minimum transaction amounts. I also need to ensure it integrates with SAP or at least provides easy reports for my accounting team. | [Decision] System 2 confirmed System 1's initial positive reaction. The RBI approval is a strong trust signal for me, as I've not had any scam trauma related to financial services. The ad directly addresses a significant pain point in my professional life \u2013 the cost and complexity of international payments. My income is sufficient that a small fee wouldn't be an issue, but the promise of 'no hidden charges' is appealing for transparency. While my digital comfort is moderate, the ad's clear visuals and professional tone suggest a user-friendly platform, and I'm confident in my ability to navigate new software, especially if it brings efficiency to my work. My family would appreciate any solution that makes my work smoother and saves company money, so no social stigma here. This is highly relevant to my professional goals of efficiency and cost-saving for my organization.",
+      "emotional_response": "Optimistic, Curious",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "b70431f24b454b1a8dac34e9b11d1f81",
+      "occupation": "Manager, Import and Export",
+      "age": 61,
+      "location": "Thiruvananthapuram, Kerala",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "High",
+      "reasoning": "[Gut] Ah, 'International Client Acquisition Playbook for Growth 2026' and 'How Top Exporters Win Clients in 2026' - this sounds exactly like what I need for improving our organization's reach and staying ahead. The date 2026 also makes it feel forward-thinking. It mentions 'replacing cold outreach' and 'targeting real buying intent', which aligns with my goal of incorporating more efficient digital tools. And 'Skydo' sounds professional. I am curious to know what these 'leading exporters' are doing. | [Audit] Wait, 'Skydo' and 'Atul Mohan Sales Head at Skydo.' Is this a webinar or a sales pitch for Skydo's services? They are talking about 'high-intent, signal-based systems' which sounds good, but what exactly does it mean? Is it free? They say 'Register Now!' but don't mention any cost. And while the topic is interesting, I need to be sure it's not just a product demonstration disguised as a playbook. I already have deep expertise; I need actionable insights, not just another tool pushed onto me. The 2026 date is a bit far off, but it implies forward-thinking strategies, which is good. Still, what is the catch? | [Decision] System 2 confirms that the topic is highly relevant to my professional goals of positioning my organization as a leader and incorporating digital tools for efficiency. While there's a slight doubt about it being a sales pitch, the potential benefit of learning 'what top service exporters are doing today' outweighs that concern, especially since there's no immediate indication of cost. My scam trauma is low, and the language is clear. I'm willing to register and see what it offers, keeping a cautious eye out for a hard sell.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "b70431f24b454b1a8dac34e9b11d1f81",
+      "occupation": "Manager, Import and Export",
+      "age": 61,
+      "location": "Thiruvananthapuram, Kerala",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 9,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Ah, 2 Crore revenue and no FX charges lost? That sounds very good for an import-export business like mine. Four lakhs extra profit is a lot. It makes me curious, how do they manage zero FX charges? This could be a real benefit if it's true. | [Audit] Zero loss in FX charges? That seems too good to be true. Even the banks take a cut, and they're usually much more than zero. While it says 'RBI's PA-CB Framework', I'd need to properly investigate what that means and if it truly guarantees zero FX loss for my specific transactions. 'Trusted by 30,000+ Customers' is a good number, but are they all import-export businesses like mine, or just general customers? I need to understand the fine print, the hidden fees, and the actual process. My company already has established banking relationships; switching or adding a new service would require a detailed cost-benefit analysis and approval from the finance department, not just my personal decision. I also need to verify if this applies to all currencies and all transaction sizes. | [Decision] My System 1 was excited by the promise of zero FX charges and higher profit, which is very relevant to my professional goals. However, System 2 quickly introduced skepticism. The claim of '0 lost in FX charges' is highly unusual in international trade. While the ad mentions RBI framework and customer numbers, it lacks specific details on *how* they achieve this zero-loss state, which raises a red flag. I cannot simply 'sign up' for a service that impacts my company's finances without thorough due diligence, involving our finance team and understanding the regulatory implications. It's not a personal expense I'm deciding on; it's a corporate decision with significant implications. Therefore, while relevant, the lack of immediate clarity and the 'too good to be true' aspect means I cannot act on this ad directly. I would need to research Skydo independently, perhaps through industry contacts or more detailed company information, before even considering a 'sign up'.",
+      "emotional_response": "Skeptical curiosity",
+      "barriers": [
+        "PRIMARY: Lack of detailed information and corporate decision-making process"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "b70431f24b454b1a8dac34e9b11d1f81",
+      "occupation": "Manager, Import and Export",
+      "age": 61,
+      "location": "Thiruvananthapuram, Kerala",
+      "zone": "Rural",
+      "income": 45000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 7,
+      "relevance_score": 9,
+      "action": "CLICK",
+      "intent_level": "Medium",
+      "reasoning": "[Gut] Ah, Skydo. I've seen their name come up in industry newsletters. '\u20b90 lost in FX charges' sounds very appealing, especially with the volumes we handle. 'More Savings to More Profit!' is exactly what we aim for. This looks like something that could genuinely help our operations and reduce costs, which is always a good thing for the balance sheet and for my goal of efficient, sustainable operations. I'm curious to see how they achieve this. | [Audit] While the promise of saving on FX charges is very attractive, especially for an import-export business like ours, I need to understand the mechanism. Is it truly zero, or are there hidden fees? What are the exchange rates they use? It mentions 'Built for Indian Businesses,' which is good, but I'd want to check their regulatory compliance and security protocols. My organization already has established banking relationships; how would this integrate or replace them? I'd also want to understand the '\u20b94 Lakhs additional profit' \u2013 is that a general estimate or based on some specific turnover? It sounds a bit like an aggressive sales tactic, though the overall message is professional. My digital comfort is moderate, so I'd need a user-friendly interface. While the ad is in English, which I'm fluent in, the underlying financial mechanisms can be complex, and I'd need clear, transparent information. | [Decision] System 1 was definitely interested because the core offering directly addresses a pain point in import-export: FX charges. System 2, while cautious, recognizes the potential benefit. My scam trauma is low, and the ad doesn't feel overtly 'scammy.' The language is clear, and it's relevant to my professional goals. The minor digital comfort constraint isn't a barrier here because the ad directly targets my professional expertise. I would click to explore further details, specifically looking for transparent pricing, regulatory information, and case studies or testimonials relevant to large-scale operations, not just generic 'service exporters.' This is a professional inquiry, not a personal expense, so family approval isn't a factor. The potential for cost savings for my organization is significant enough to warrant investigation.",
+      "emotional_response": "Intrigued",
+      "barriers": [
+        "PRIMARY: None"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3eb487edf69b4b7c8681e6e161dae0eb",
+      "occupation": "Wood Carver, Machine",
+      "age": 32,
+      "location": "Pathanamthitta, Kerala",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_1",
+      "name": "Creative 1",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/1.jpeg",
+      "copy": "Here is the text from the ad, in natural reading order:\n\n**Top Section**\nSkydo\nSponsored\n\n**Main Hea"
+    },
+    "reaction": {
+      "trust_score": 6,
+      "relevance_score": 9,
+      "action": "IGNORE",
+      "intent_level": "Medium",
+      "reasoning": "[Gut] Hmm, 'international business payments'. That's exactly what I need for the export market. '3x cheaper,' 'no hidden charges,' and 'live FX rates' sound good. The 'RBI approved' badge makes it seem legitimate, not like some of those fake investment ads. It's for receiving payments, not putting money in, so maybe it's safer. The amount on the screen, 5000 dollars converting to 4 lakh, that's a good amount. If I can get my carvings to Dubai, this could really help. | [Audit] RBI approval is a big thing, that makes me feel a bit safer than other ads. But 3x cheaper? How can it be so much cheaper than banks? Banks always have some hidden fees. What if there's a catch later? 'No hidden charges' is a big promise. And '24 hours' is very fast. I've heard stories about money getting stuck when sending internationally. What if my money gets stuck with this 'Skydo'? Will they have customer service in Malayalam? If something goes wrong, will I have to explain complicated financial terms in English? My English is okay for technical manuals, but for arguing about money, it's not strong enough. And my digital comfort is not high, what if the app is too complicated? I need to ask around in the village if anyone has heard of this. My cousin in Dubai sends money sometimes, maybe he knows. I've been scammed before with 'too good to be true' offers, so I need to be extra careful. | [Decision] My System 1 felt excited because it directly addresses a business need for my export ambitions, and the RBI approval offers some reassurance. However, System 2 overrides this. The '3x cheaper' claim, while appealing, triggers my scam trauma. I've seen too many offers that sound too good to be true turn out to be scams. While the RBI approval is a strong point, my low digital comfort and limited conversational English make me wary of managing international finances through a new app. If something goes wrong, I won't be able to troubleshoot or communicate effectively. More importantly, I need social proof. No one in my village uses something like this, and I can't risk my hard-earned money without checking with trusted contacts or seeing others use it successfully. I can't afford to lose money meant for my family and workshop. I'll ask my cousin in Dubai and some of the other artisans if they know this company. Until then, it's too risky.",
+      "emotional_response": "Cautious hope",
+      "barriers": [
+        "Social Stigma",
+        "PRIMARY: Scam trauma",
+        "Language & Communication",
+        "Digital comfort",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3eb487edf69b4b7c8681e6e161dae0eb",
+      "occupation": "Wood Carver, Machine",
+      "age": 32,
+      "location": "Pathanamthitta, Kerala",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_2",
+      "name": "Creative 2",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/2.jpeg",
+      "copy": "Based on the ad image, here is all the visible text in natural reading order:\n\n**Brand Name:**\nSkydo"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 5,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Oh, 'International Client Acquisition Playbook' for 'Indian Service Exporters'? This sounds like it could help me find overseas buyers for my carvings. Dubai, yes, I want to export there. 'Replace cold outreach,' that's good, I don't like cold calling. 'High-intent, signal-based systems' sounds professional, like something a big company would use. Maybe this is how I can get my work known outside Kerala. 'Register Now!' it says, for a webinar on Jan 27th. That's a specific date, so it feels real. Atul Mohan, Sales Head, sounds like a real person. | [Audit] Wait. 'Skydo' - never heard of them. 'Cold outbound failing in 2026'? It's 2024, are they talking about the future? This 'playbook' is for 'Service Exporters.' Am I a service exporter? I make wooden carvings, that's a product, not a service. Or is it? What does 'service exporter' even mean in this context? The language is very English, very corporate. 'Signal-based systems,' 'global revenue,' these are big words. My English is functional for manuals, not for understanding complex business jargon quickly. And 'Atul Mohan Sales Head at Skydo' - just a name, no company website, no reviews from other carvers I know. What if I register and they ask for money? I've lost money to online things before, they promise big and deliver nothing. 'How Top Exporters Win Clients' - but am I a 'top exporter'? I'm just starting to think about it. My family would ask what this is, and I don't even fully understand it myself. It says 'Sign Up,' but for what? Is it a free webinar, or will they try to sell me something expensive at the end? \u20b918,000 a month, I can't afford to waste a single rupee on something that might be a scam. | [Decision] System 2 completely overrode System 1. While the idea of exporting my art is very appealing and aligns with my goals, the ad uses too much complex English business jargon that I don't fully understand. My past experience with scams makes me highly suspicious of anything that promises big results without clear details or social proof from people in my community. I also don't know if 'service exporter' even applies to me as a wood carver. The risk of wasting time or money on something I don't understand, or that could be a scam, is too high given my income and past trauma.",
+      "emotional_response": "Skeptical",
+      "barriers": [
+        "Social Stigma Filter",
+        "PRIMARY: Scam trauma",
+        "Language & Communication",
+        "Digital comfort",
+        "Monthly earnings",
+        "Scam trauma"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3eb487edf69b4b7c8681e6e161dae0eb",
+      "occupation": "Wood Carver, Machine",
+      "age": 32,
+      "location": "Pathanamthitta, Kerala",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_3",
+      "name": "Creative 3",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/3.jpeg",
+      "copy": "Here is the text from the ad image in natural reading order:\n\n**Brand Name:**\nSkydo\nSponsored\n\n**Bod"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Hmm, 'Skydo' they say? '\u20b90 lost in FX charges' sounds very good. My carvings, sometimes I sell them to people in Dubai, and the money comes through different ways, sometimes less than what I expect. This 'Additional Profit of \u20b94 Lakhs' looks like a lot of money. Maybe this can help me get more for my work, especially when I send carvings abroad. It makes me curious, like finding a new wood to carve. Maybe this is a good way to get paid for my export ambitions. | [Audit] Wait. \u20b92 Crore revenue? My entire workshop, with the CNC machine I dream of, wouldn't cost that much. My monthly earnings are \u20b918000. How can I relate to \u20b92 Crore? And '\u20b90 lost in FX'? That sounds too good to be true. Every bank takes a cut. How can they take nothing? This 'Skydo' name, I've never heard it from anyone in Pathanamthitta. My neighbor, Jose, he exports spices, he uses his regular bank and grumbles about charges, but he never mentioned something like this. If it was so good, wouldn't he know? And it says 'Build for Indian Businesses', but it's all in English. If I have a problem, will I understand what they say? What if it's like that online investment thing that took my cousin's money last year? | [Decision] My gut felt a spark of hope for better payments from my export work. But my mind is full of questions. The numbers are too big, not for someone like me. '\u20b90 FX charges' is just not believable. I know how banks work. And if something sounds too good, it usually is a trap. I can't risk my hard-earned money, especially not after seeing what happened to my cousin. I wouldn't know how to use it properly, and my family would think I'm being foolish if I tried something so new and unknown. I'd rather ask Jose how he manages, or just stick to what I know, even if it means losing a little money.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "social_stigma",
+        "language_barrier",
+        "scam_trauma",
+        "PRIMARY: scam_trauma",
+        "income_constraints",
+        "digital_comfort"
+      ]
+    }
+  },
+  {
+    "persona": {
+      "uuid": "3eb487edf69b4b7c8681e6e161dae0eb",
+      "occupation": "Wood Carver, Machine",
+      "age": 32,
+      "location": "Pathanamthitta, Kerala",
+      "zone": "Rural",
+      "income": 18000,
+      "digital_literacy": 4,
+      "device": "Android"
+    },
+    "ad": {
+      "ad_id": "ad_4",
+      "name": "Creative 4",
+      "image": "/Users/rahul/CrediGo/Apriori/backend/ads/4.jpeg",
+      "copy": "Here is the text extracted from the ad image in natural reading order:\n\n**Brand Name & Sponsorship:*"
+    },
+    "reaction": {
+      "trust_score": 3,
+      "relevance_score": 6,
+      "action": "IGNORE",
+      "intent_level": "Low",
+      "reasoning": "[Gut] Hmm, '\u20b92 Crore revenue' and '\u20b94 Lakhs additional profit' sounds very good. No FX charges? That's interesting, especially for export. Maybe this could help with my goal of exporting carvings. It's about 'Global Payments' and 'Indian Businesses'. | [Audit] Two crore revenue? That's a huge number, sounds too good to be true for a small artisan like me. '\u20b90 lost in FX charges' also seems impossible; banks always take something. 'More Savings to More Profit!' - yes, that's what everyone wants, but how? They're talking about 'service exporters', am I even a service exporter? I carve wood, that's a product. The English is a bit technical for me to fully grasp the details without reading it several times. And 'Sign Up' - what will happen when I sign up? Will they ask for money? Will it be complicated? My cousin lost money to an online scheme that promised big profits for exports. | [Decision] My initial interest was because it mentioned exports and profits, which aligns with my ambition. However, the numbers sound exaggerated ('\u20b92 Crore revenue', '\u20b94 Lakhs additional profit') and that immediately triggers my scam trauma. I've seen too many schemes promising big money that just take your own. The English is also a bit too technical for me to fully understand the 'how' without a lot of effort, and I don't want to sign up for something I don't fully get. I also don't know anyone who uses this 'Skydo'. I can't risk even a small amount of money on something that feels so uncertain and potentially fake. My System 2 is screaming 'be careful'.",
+      "emotional_response": "Suspicious",
+      "barriers": [
+        "income constraint",
+        "PRIMARY: scam trauma",
+        "digital comfort",
+        "language barrier",
+        "scam trauma"
+      ]
+    }
+  }
+]
