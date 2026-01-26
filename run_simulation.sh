@@ -19,7 +19,7 @@ if [ -d "venv" ]; then
 fi
 
 # Ensure OpenRouter key and models are set for this run
-export OPENROUTER_API_KEY="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"
+export OPENROUTER_API_KEY="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"
 export GEMINI_PRO_MODEL="google/gemini-2.5-pro"
 export GEMINI_FLASH_MODEL="google/gemini-2.5-flash"
 export MAX_CONCURRENT_REQUESTS="5"

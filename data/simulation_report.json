@@ -1,52 +1,52 @@
 {
   "winning_portfolio": [
     {
-      "ad_id": "ad_2",
+      "ad_id": "ad_1",
       "role": "The Converter",
       "budget_split": 100.0,
       "target_segment": "Device_Android",
-      "unique_reach": 9,
-      "expected_conversions": 3
+      "unique_reach": 10,
+      "expected_conversions": 9
     }
   ],
   "all_performances": {
     "ad_1": {
       "ad_id": "ad_1",
-      "total_impressions": 9,
-      "clicks": 3,
-      "high_intent_leads": 2,
-      "click_rate": 33.33,
-      "conversion_rate": 22.22,
-      "unique_reach": 9,
+      "total_impressions": 10,
+      "clicks": 10,
+      "high_intent_leads": 9,
+      "click_rate": 100.0,
+      "conversion_rate": 90.0,
+      "unique_reach": 10,
       "overlap_with_others": {}
     },
     "ad_2": {
       "ad_id": "ad_2",
-      "total_impressions": 9,
-      "clicks": 3,
-      "high_intent_leads": 3,
-      "click_rate": 33.33,
-      "conversion_rate": 33.33,
-      "unique_reach": 9,
+      "total_impressions": 10,
+      "clicks": 9,
+      "high_intent_leads": 9,
+      "click_rate": 90.0,
+      "conversion_rate": 90.0,
+      "unique_reach": 10,
       "overlap_with_others": {}
     },
     "ad_3": {
       "ad_id": "ad_3",
       "total_impressions": 10,
-      "clicks": 3,
-      "high_intent_leads": 3,
-      "click_rate": 30.0,
-      "conversion_rate": 30.0,
+      "clicks": 10,
+      "high_intent_leads": 7,
+      "click_rate": 100.0,
+      "conversion_rate": 70.0,
       "unique_reach": 10,
       "overlap_with_others": {}
     },
     "ad_4": {
       "ad_id": "ad_4",
       "total_impressions": 10,
-      "clicks": 4,
-      "high_intent_leads": 1,
-      "click_rate": 40.0,
-      "conversion_rate": 10.0,
+      "clicks": 8,
+      "high_intent_leads": 7,
+      "click_rate": 80.0,
+      "conversion_rate": 70.0,
       "unique_reach": 10,
       "overlap_with_others": {}
     }
@@ -54,9 +54,9 @@
   "overlap_matrix": {
     "ad_1": {
       "ad_1": 1.0,
-      "ad_2": 0.75,
-      "ad_3": 0.75,
-      "ad_4": 0.75
+      "ad_2": 0.9,
+      "ad_3": 1.0,
+      "ad_4": 1.0
     },
     "ad_2": {
       "ad_1": 1.0,
@@ -66,69 +66,64 @@
     },
     "ad_3": {
       "ad_1": 1.0,
-      "ad_2": 1.0,
+      "ad_2": 0.9,
       "ad_3": 1.0,
       "ad_4": 1.0
     },
     "ad_4": {
-      "ad_1": 0.75,
-      "ad_2": 0.75,
-      "ad_3": 0.75,
+      "ad_1": 1.0,
+      "ad_2": 0.9,
+      "ad_3": 1.0,
       "ad_4": 1.0
     }
   },
   "audience_segments": {
     "ad_1": {
-      "Urban_High": 2,
-      "Digital_High": 2,
-      "Youth_18-24": 1,
-      "Device_Android": 4,
-      "Rural_Mid": 1,
+      "Urban_High": 9,
+      "Digital_High": 9,
+      "Middle_Age_35-49": 3,
+      "Device_Android": 10,
+      "Young_Adults_25-34": 5,
+      "Senior_50+": 2,
       "Digital_Medium": 1,
-      "Young_Adults_25-34": 2,
-      "Middle_Age_35-49": 1,
-      "Rural_Low": 1,
-      "Digital_Low": 1
+      "Urban_Mid": 1
     },
     "ad_2": {
-      "Urban_High": 2,
-      "Digital_High": 2,
-      "Youth_18-24": 1,
-      "Device_Android": 3,
-      "Rural_Mid": 1,
+      "Urban_High": 8,
+      "Digital_High": 8,
+      "Middle_Age_35-49": 3,
+      "Device_Android": 9,
+      "Young_Adults_25-34": 5,
       "Digital_Medium": 1,
-      "Young_Adults_25-34": 1,
-      "Middle_Age_35-49": 1
+      "Senior_50+": 1,
+      "Urban_Mid": 1
     },
     "ad_3": {
-      "Urban_High": 2,
-      "Digital_High": 2,
-      "Youth_18-24": 1,
-      "Device_Android": 3,
-      "Rural_Mid": 1,
+      "Urban_High": 9,
+      "Digital_High": 9,
+      "Middle_Age_35-49": 3,
+      "Device_Android": 10,
+      "Young_Adults_25-34": 5,
+      "Senior_50+": 2,
       "Digital_Medium": 1,
-      "Young_Adults_25-34": 1,
-      "Middle_Age_35-49": 1
+      "Urban_Mid": 1
     },
     "ad_4": {
-      "Urban_High": 2,
-      "Digital_High": 2,
-      "Youth_18-24": 1,
-      "Device_Android": 4,
-      "Rural_Mid": 2,
+      "Urban_High": 9,
+      "Digital_High": 9,
+      "Middle_Age_35-49": 3,
+      "Device_Android": 10,
+      "Young_Adults_25-34": 5,
+      "Senior_50+": 2,
       "Digital_Medium": 1,
-      "Young_Adults_25-34": 1,
-      "Middle_Age_35-49": 1,
-      "Digital_Low": 1,
-      "Senior_50+": 1
+      "Urban_Mid": 1
     }
   },
   "wasted_spend_alerts": [],
   "visual_heatmap": {
     "rows": [
-      "Rural_Low",
-      "Rural_Mid",
-      "Urban_High"
+      "Urban_High",
+      "Urban_Mid"
     ],
     "cols": [
       "ad_1",
@@ -138,78 +133,31 @@
     ],
     "matrix": [
       [
-        "\ud83d\udd34",
-        "\ud83d\udd34",
-        "\ud83d\udd34",
-        "\ud83d\udd34"
-      ],
-      [
-        "\ud83d\udfe2",
-        "\ud83d\udfe2",
-        "\ud83d\udfe2",
-        "\ud83d\udd34"
-      ],
-      [
         "\ud83d\udfe2",
         "\ud83d\udfe2",
         "\ud83d\udfe2",
         "\ud83d\udfe2"
+      ],
+      [
+        "\ud83d\udfe2",
+        "\ud83d\udfe2",
+        "\ud83d\udfe2",
+        "\ud83d\udd34"
       ]
     ]
   },
   "validation_summary": {
     "total": 40,
-    "valid": 38,
-    "flagged": 2,
-    "flagged_percentage": 5.0,
-    "flagged_reactions": [
-      {
-        "persona_uuid": "b70431f24b454b1a8dac34e9b11d1f81",
-        "ad_id": "ad_1",
-        "flags": [
-          "UNREALISTIC_CONVERSION_LOW_LITERACY: literacy=4, requires_form=True"
-        ],
-        "reaction": {
-          "persona_uuid": "b70431f24b454b1a8dac34e9b11d1f81",
-          "ad_id": "ad_1",
-          "trust_score": 9,
-          "relevance_score": 10,
-          "action": "CLICK",
-          "intent_level": "High",
-          "reasoning": "[Gut] Oh, this looks promising! Losing money on international payments is a constant headache, especially with all the small charges that add up. '3x cheaper' and 'No hidden charges' sounds like exactly what I need for my work. And it says 'Approved under RBI's OPGSP framework' \u2013 that's a big relief. I'm curious to see how this works. | [Audit] Hmm, '3x cheaper' is a bold claim. While the RBI approval is good, I need to understand the details. Is this for businesses only, or can I use it for personal transfers too? My company handles the main transactions, but sometimes I have smaller vendor payments or receive small consultancy fees myself where bank charges bite. My digital comfort is not high, so the app interface needs to be very straightforward. What kind of documentation would they need? And is it only for payments received, or can I send money too? It says 'receive international business payments,' so maybe not for sending. I should check their website for more information, especially about their fees structure and any minimum transaction amounts. I also need to ensure it integrates with SAP or at least provides easy reports for my accounting team. | [Decision] System 2 confirmed System 1's initial positive reaction. The RBI approval is a strong trust signal for me, as I've not had any scam trauma related to financial services. The ad directly addresses a significant pain point in my professional life \u2013 the cost and complexity of international payments. My income is sufficient that a small fee wouldn't be an issue, but the promise of 'no hidden charges' is appealing for transparency. While my digital comfort is moderate, the ad's clear visuals and professional tone suggest a user-friendly platform, and I'm confident in my ability to navigate new software, especially if it brings efficiency to my work. My family would appreciate any solution that makes my work smoother and saves company money, so no social stigma here. This is highly relevant to my professional goals of efficiency and cost-saving for my organization.",
-          "emotional_response": "Optimistic, Curious",
-          "barriers": [
-            "PRIMARY: None"
-          ]
-        }
-      },
-      {
-        "persona_uuid": "b70431f24b454b1a8dac34e9b11d1f81",
-        "ad_id": "ad_2",
-        "flags": [
-          "UNREALISTIC_CONVERSION_LOW_LITERACY: literacy=4, requires_form=True"
-        ],
-        "reaction": {
-          "persona_uuid": "b70431f24b454b1a8dac34e9b11d1f81",
-          "ad_id": "ad_2",
-          "trust_score": 7,
-          "relevance_score": 9,
-          "action": "CLICK",
-          "intent_level": "High",
-          "reasoning": "[Gut] Ah, 'International Client Acquisition Playbook for Growth 2026' and 'How Top Exporters Win Clients in 2026' - this sounds exactly like what I need for improving our organization's reach and staying ahead. The date 2026 also makes it feel forward-thinking. It mentions 'replacing cold outreach' and 'targeting real buying intent', which aligns with my goal of incorporating more efficient digital tools. And 'Skydo' sounds professional. I am curious to know what these 'leading exporters' are doing. | [Audit] Wait, 'Skydo' and 'Atul Mohan Sales Head at Skydo.' Is this a webinar or a sales pitch for Skydo's services? They are talking about 'high-intent, signal-based systems' which sounds good, but what exactly does it mean? Is it free? They say 'Register Now!' but don't mention any cost. And while the topic is interesting, I need to be sure it's not just a product demonstration disguised as a playbook. I already have deep expertise; I need actionable insights, not just another tool pushed onto me. The 2026 date is a bit far off, but it implies forward-thinking strategies, which is good. Still, what is the catch? | [Decision] System 2 confirms that the topic is highly relevant to my professional goals of positioning my organization as a leader and incorporating digital tools for efficiency. While there's a slight doubt about it being a sales pitch, the potential benefit of learning 'what top service exporters are doing today' outweighs that concern, especially since there's no immediate indication of cost. My scam trauma is low, and the language is clear. I'm willing to register and see what it offers, keeping a cautious eye out for a hard sell.",
-          "emotional_response": "Intrigued",
-          "barriers": [
-            "PRIMARY: None"
-          ]
-        }
-      }
-    ]
+    "valid": 40,
+    "flagged": 0,
+    "flagged_percentage": 0.0,
+    "flagged_reactions": []
   },
   "metadata": {
     "num_personas": 10,
     "num_ads": 4,
     "total_reactions": 40,
-    "valid_reactions": 38,
-    "execution_time_seconds": 255.8
+    "valid_reactions": 40,
+    "execution_time_seconds": 264.57
   }
 }

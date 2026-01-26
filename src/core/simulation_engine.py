@@ -72,6 +72,8 @@ Return as JSON:
     IDENTITY IMMERSION PROTOCOL - YOU ARE NOT SIMULATING, YOU ARE BEING
     ═══════════════════════════════════════════════════════════
     
+    📅 TODAY'S DATE: Monday, January 27, 2026
+    
     YOU ARE: {occupation}, {age} years old, {sex}
     LOCATION: {district}, {state} — a {zone} environment
     
@@ -139,10 +141,25 @@ Return as JSON:
     - Is this something a "{your_identity}" should be doing?
     
     PHASE 3: THE VERDICT — SYSTEM 2 OVERRIDES SYSTEM 1 IF NEEDED
+    
+    ⚠️  ACTION THRESHOLD - BE BRUTALLY REALISTIC:
+    B2B professionals see 100+ ads daily. They click on maybe 2%.
+    
+    ONLY choose "CLICK" if ALL of these are true:
+    ✓ Final Trust Score > 7 (you genuinely trust this company)
+    ✓ Final Relevance Score > 8 (this solves a REAL pain point you have RIGHT NOW)
+    ✓ You have TIME and BUDGET to act on this TODAY
+    ✓ The effort/cost is worth it
+    
+    Otherwise:
+    • Interesting but not urgent → "SCROLL_PAST" (most common!)
+    • Irrelevant or suspicious → "IGNORE"  
+    • Clear scam → "REPORT"
+    
     Let the skeptical voice WIN if ANY of these are true:
-    - Scam trauma + High vulnerability + Slick ad = IGNORE
+    - Scam trauma + High vulnerability + Slick ad = SCROLL_PAST/IGNORE
     - Language barrier + Complex form = IGNORE  
-    - Monthly income < ₹20k + No social proof = IGNORE
+    - Monthly income < ₹20k + No social proof = SCROLL_PAST
     - Family might disapprove = IGNORE (even if you want it)
     
     ═══════════════════════════════════════════════════════════
@@ -157,7 +174,7 @@ Return as JSON:
         "social_pressure": "<What your family/community would think, 1 sentence>",
         "final_trust_score": <0-10, AFTER audit, not gut>,
         "final_relevance_score": <0-10>,
-        "final_action": "CLICK|IGNORE|REPORT",
+        "final_action": "CLICK|SCROLL_PAST|IGNORE|REPORT",
         "intent_level": "High|Medium|Low|None",
         "reasoning": "<Final synthesis: Why did System 2 confirm OR override System 1?>",
         "emotional_response": "<Your TRUE feeling in 1-2 words>",
@@ -169,6 +186,8 @@ Return as JSON:
     REACTION_PROMPT_TIER2 = """╔══════════════════════════════════════════════════════════╗
     ║  IDENTITY LOCK: YOU ARE THIS PERSON, NOT AN OBSERVER   ║
     ╚══════════════════════════════════════════════════════════╝
+    
+    📅 TODAY'S DATE: Monday, January 27, 2026
     
     PERSONA EMBODIMENT:
     You are {occupation}, {age}yo {sex}, living in {district}, {state} ({zone})
@@ -231,6 +250,22 @@ Return as JSON:
     - Do people in your circle use such things?
     
     STEP 3: THE FINAL CALL
+    
+    ⚠️  ACTION THRESHOLD - BE REALISTIC:
+    In B2B Fintech, people are EXTREMELY cautious with clicks.
+    
+    ONLY choose "CLICK" if ALL of these are true:
+    ✓ Trust Score > 7 (you genuinely trust this company)
+    ✓ Relevance Score > 8 (this solves a REAL pain point you have RIGHT NOW)
+    ✓ You have TIME and INTENT to act on this TODAY
+    
+    Otherwise:
+    • If it's interesting but not urgent → "SCROLL_PAST" (most common!)
+    • If it's irrelevant or suspicious → "IGNORE"
+    • If it's a clear scam → "REPORT"
+    
+    Remember: Seeing something doesn't mean clicking it. Most ads are scrolled past.
+    
     Let your System 2 (rational brain) OVERRIDE your System 1 (gut feeling) IF:
     - You're vulnerable to scams AND ad looks too good
     - You can't afford the risk
@@ -247,7 +282,7 @@ Return as JSON:
         "constraint_hits": ["<Which of YOUR life constraints blocked this? List ALL that apply>"],
         "trust_score": <0-10, AFTER audit>,
         "relevance_score": <0-10>,
-        "action": "CLICK|IGNORE|REPORT",
+        "action": "CLICK|SCROLL_PAST|IGNORE|REPORT",
         "intent_level": "High|Medium|Low|None",
         "reasoning": "<Final decision: Did System 2 confirm or override System 1? Why?>",
         "emotional_response": "<1-2 words>",
@@ -583,8 +618,16 @@ Red Flags: {visual_anchor.scam_indicators}
         
         relevance = 5  # Neutral
         
-        action = "CLICK" if trust >= 6 else "IGNORE"
-        intent = "Medium" if trust >= 6 else "Low"
+        # Realistic action: most people scroll past, not click
+        if trust >= 7 and relevance >= 8:
+            action = "CLICK"
+            intent = "Medium"
+        elif trust >= 5:
+            action = "SCROLL_PAST"
+            intent = "Low"
+        else:
+            action = "IGNORE"
+            intent = "None"
         
         return AdReaction(
             persona_uuid=persona.uuid,

@@ -94,7 +94,11 @@ class GeminiClient:
                 return response.choices[0].message.content
                 
             except Exception as e:
-                raise RuntimeError(f"OpenRouter API error (Pro): {str(e)}")
+                error_msg = str(e)
+                print(f"❌ OpenRouter API error (Pro): {error_msg}")
+                if "model" in error_msg.lower():
+                    print(f"   Model '{self.pro_model}' might not be available. Check OpenRouter.ai for available models.")
+                raise RuntimeError(f"OpenRouter API error (Pro): {error_msg}")
     
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=10))
     async def generate_flash(self, prompt: str, system_prompt: Optional[str] = None) -> str:

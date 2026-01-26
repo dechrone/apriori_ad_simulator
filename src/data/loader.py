@@ -67,30 +67,51 @@ class PersonaDataLoader:
             raise
     
     def filter_exporters_freelancers_smes(self, count: int = 10) -> List[RawPersona]:
-        """Filter personas for exporters, freelancers, SMEs doing business outside India."""
+        """Filter personas for B2B fintech: business owners, managers, professionals doing international business/payments."""
+        print("\n🎯 FILTERING FOR B2B FINTECH PERSONAS")
+        print("="*80)
+        print("Target: Business decision-makers who use international payment solutions")
+        print("-"*80)
+        
         self.connect()
         
-        # STRICT filter: Must have international/overseas/export context
-        # Not just "freelance" but "freelance" + international indicators
-        international_keywords = [
-            'international client', 'overseas client', 'global client', 'foreign client',
-            'export business', 'exporting', 'international trade', 'cross-border',
-            'offshore', 'overseas', 'international market', 'export market',
-            'international business', 'global business', 'foreign market'
+        # Target: Business decision-makers who would use B2B fintech for international payments
+        # Relevant occupations: Business owners, managers (especially export/import), finance professionals, entrepreneurs
+        relevant_occupations = [
+            'manager, export', 'manager, import', 'export manager', 'import manager',
+            'business owner', 'entrepreneur', 'ceo', 'cfo', 'finance manager',
+            'managing director', 'director', 'proprietor', 'founder',
+            'export agent', 'export consultant', 'international trade',
+            'freelance', 'consultant', 'business consultant',
+            'accountant', 'chartered accountant', 'finance professional',
+            'supply chain manager', 'logistics manager', 'operations manager',
+            'procurement manager', 'purchase manager'
         ]
+        print(f"✓ Occupation types: {len(relevant_occupations)} categories")
         
-        # Occupation keywords (must be export-related)
-        export_occupations = ['export', 'exporter', 'export manager', 'export agent', 
-                            'export consultant', 'international trade']
+        # International business indicators - must have actual business dealings
+        business_keywords = [
+            'international payment', 'cross-border payment', 'foreign exchange',
+            'export business', 'import business', 'international trade',
+            'overseas client', 'foreign client', 'global client',
+            'international buyer', 'overseas buyer', 'export market',
+            'international market', 'global business', 'cross-border',
+            'international transaction', 'foreign transaction',
+            'remittance', 'wire transfer', 'swift payment'
+        ]
+        print(f"✓ Business keywords: {len(business_keywords)} international payment indicators")
         
-        # Build SQL filter - require BOTH freelance/export AND international context
-        occupation_filter = " OR ".join([f"LOWER(occupation) LIKE '%{kw}%'" for kw in export_occupations])
+        # Education filter - B2B fintech users are typically educated
+        education_filter = """
+            (LOWER(education_level) LIKE '%graduate%' 
+             OR LOWER(education_level) LIKE '%diploma%'
+             OR LOWER(education_level) LIKE '%higher secondary%'
+             OR LOWER(education_level) LIKE '%secondary%')
+        """
+        print(f"✓ Education filter: Graduate/Diploma/Secondary+ required")
         
-        # Professional persona must contain international business context
-        professional_filter = " OR ".join([f"LOWER(professional_persona) LIKE '%{kw}%'" for kw in international_keywords])
-        
-        # Skills must indicate international work
-        skills_filter = " OR ".join([f"LOWER(skills_and_expertise_list) LIKE '%{kw}%'" for kw in international_keywords])
+        # Build SQL filters
+        occupation_filter = " OR ".join([f"LOWER(occupation) LIKE '%{kw}%'" for kw in relevant_occupations])
         
         # Try with professional_persona field first, fallback to occupation/skills
         try:
@@ -101,9 +122,12 @@ class PersonaDataLoader:
         except:
             has_professional = False
         
-        # Require international context in professional_persona OR skills
-        # OR explicit export occupation
+        # STRICT FILTER: Must have relevant occupation AND (business keywords OR high education)
         if has_professional:
+            # Professional persona must contain actual business context
+            business_filter = " OR ".join([f"LOWER(professional_persona) LIKE '%{kw}%'" for kw in business_keywords])
+            skills_business_filter = " OR ".join([f"LOWER(skills_and_expertise) LIKE '%{kw}%'" for kw in business_keywords])
+            
             query = f"""
             SELECT 
                 uuid, occupation, first_language, second_language, third_language,
@@ -115,11 +139,15 @@ class PersonaDataLoader:
                 hobbies_and_interests, skills_and_expertise, 
                 career_goals_and_ambitions, linguistic_background
             FROM personas 
-            WHERE ({occupation_filter} OR ({professional_filter}) OR ({skills_filter}))
+            WHERE ({occupation_filter})
+                AND ({education_filter})
+                AND (({business_filter}) OR ({skills_business_filter}) OR LOWER(occupation) LIKE '%export%' OR LOWER(occupation) LIKE '%import%')
             ORDER BY RANDOM() 
-            LIMIT {count}
+            LIMIT {count * 3}
             """
         else:
+            skills_business_filter = " OR ".join([f"LOWER(skills_and_expertise_list) LIKE '%{kw}%'" for kw in business_keywords])
+            
             query = f"""
             SELECT 
                 uuid, occupation, first_language, second_language, third_language,
@@ -127,16 +155,36 @@ class PersonaDataLoader:
                 state, district, zone, country,
                 hobbies_and_interests_list, skills_and_expertise_list
             FROM personas 
-            WHERE ({occupation_filter} OR {skills_filter})
+            WHERE ({occupation_filter})
+                AND ({education_filter})
+                AND ({skills_business_filter} OR LOWER(occupation) LIKE '%export%' OR LOWER(occupation) LIKE '%import%')
             ORDER BY RANDOM() 
-            LIMIT {count}
+            LIMIT {count * 3}
             """
         
         try:
+            print(f"\n⏳ Querying database for relevant personas...")
             df = self.conn.execute(query).df()
+            print(f"✓ Found {len(df)} initial matches")
+            
+            # Score and rank personas by relevance
+            print(f"\n📊 Scoring personas by B2B fintech relevance...")
+            df = self._score_b2b_fintech_relevance(df)
+            
+            # Take top N by relevance score
+            df = df.nsmallest(count, 'relevance_rank')
+            
+            print(f"\n✅ Selected top {len(df)} most relevant personas:")
+            print("="*80)
+            for idx, (_, row) in enumerate(df.iterrows(), 1):
+                score = row.get('relevance_score', 0)
+                print(f"{idx}. {row['occupation']}")
+                print(f"   Age: {row['age']}, Education: {row['education_level']}, Zone: {row['zone']}")
+                print(f"   Relevance Score: {score:.1f}")
+            print("="*80)
             
             if len(df) < count:
-                print(f"⚠️ Only found {len(df)} matching personas, generating synthetic ones to reach {count}...")
+                print(f"\n⚠️ Only found {len(df)} matching personas, generating synthetic ones to reach {count}...")
                 # Fill with synthetic if needed
                 synthetic_needed = count - len(df)
                 synthetic = self._generate_exporters_freelancers(synthetic_needed)
@@ -203,6 +251,71 @@ class PersonaDataLoader:
             print("💡 Generating synthetic exporters/freelancers instead...")
             self.close()
             return self._generate_exporters_freelancers(count)
+    
+    def _score_b2b_fintech_relevance(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Score and rank personas by relevance to B2B fintech/international payments."""
+        
+        def calculate_score(row):
+            score = 0
+            
+            # Occupation scoring (higher is better)
+            occupation_lower = str(row['occupation']).lower()
+            if 'export' in occupation_lower or 'import' in occupation_lower:
+                score += 10  # Direct export/import managers are top priority
+            if 'manager' in occupation_lower:
+                score += 5   # Business managers are good
+            if 'owner' in occupation_lower or 'entrepreneur' in occupation_lower or 'director' in occupation_lower:
+                score += 8   # Business owners/decision-makers are high priority
+            if 'finance' in occupation_lower or 'accountant' in occupation_lower:
+                score += 6   # Finance professionals understand payment systems
+            if 'consultant' in occupation_lower:
+                score += 4   # Consultants may advise on payments
+                
+            # Exclude manual labor occupations (should be filtered already but double-check)
+            manual_labor_keywords = ['forklift', 'driver', 'operator', 'worker', 'labor', 
+                                    'carpenter', 'plumber', 'electrician', 'mason',
+                                    'weaver', 'tailor', 'dyer', 'carver', 'embroiderer']
+            if any(kw in occupation_lower for kw in manual_labor_keywords):
+                score -= 100  # Strongly penalize manual labor
+            
+            # Education scoring
+            education = str(row.get('education_level', '')).lower()
+            if 'graduate' in education or 'post graduate' in education:
+                score += 5
+            elif 'diploma' in education:
+                score += 3
+            elif 'higher secondary' in education or 'secondary' in education:
+                score += 2
+            else:
+                score -= 5  # Penalize low education for B2B fintech
+            
+            # Age scoring (prime business age is better)
+            age = int(row.get('age', 30))
+            if 25 <= age <= 55:
+                score += 3  # Prime working age for business decision-makers
+            elif age < 25:
+                score -= 2  # Too young to be decision-maker
+            elif age > 60:
+                score -= 1  # May be less tech-savvy
+            
+            # Zone scoring
+            zone = str(row.get('zone', '')).lower()
+            if 'urban' in zone:
+                score += 2  # Urban businesses more likely to use fintech
+            
+            # Professional persona scoring (if available)
+            if 'professional_persona' in row and pd.notna(row['professional_persona']):
+                prof = str(row['professional_persona']).lower()
+                business_terms = ['international payment', 'cross-border', 'export', 'import', 
+                                'international trade', 'overseas', 'global business', 'foreign']
+                score += sum(3 for term in business_terms if term in prof)
+            
+            return score
+        
+        df['relevance_score'] = df.apply(calculate_score, axis=1)
+        df['relevance_rank'] = df['relevance_score'].rank(ascending=False, method='first')
+        
+        return df
     
     def _generate_exporters_freelancers(self, count: int) -> List[RawPersona]:
         """Generate synthetic exporters/freelancers/SMEs."""
