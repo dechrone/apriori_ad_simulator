@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "total_personas": 20,
+    "total_views": 8,
+    "execution_time_seconds": 147.57
+  },
+  "overall_metrics": {
+    "completed_flow": 8,
+    "dropped_off": 12,
+    "completion_rate": 40.0
+  },
+  "drop_off_by_view": {
+    "8": 6,
+    "7": 6
+  },
+  "view_scores": {
+    "view_1": {
+      "view_number": 1,
+      "clarity_score": 7.95,
+      "value_score": 6.95,
+      "trust_score": 6.4
+    },
+    "view_2": {
+      "view_number": 2,
+      "clarity_score": 7.85,
+      "value_score": 6.65,
+      "trust_score": 6.35
+    },
+    "view_3": {
+      "view_number": 3,
+      "clarity_score": 6.7,
+      "value_score": 6.15,
+      "trust_score": 5.5
+    },
+    "view_4": {
+      "view_number": 4,
+      "clarity_score": 7.35,
+      "value_score": 6.85,
+      "trust_score": 5.65
+    },
+    "view_5": {
+      "view_number": 5,
+      "clarity_score": 7.95,
+      "value_score": 6.95,
+      "trust_score": 6.35
+    },
+    "view_6": {
+      "view_number": 6,
+      "clarity_score": 8.05,
+      "value_score": 7.15,
+      "trust_score": 6.6
+    },
+    "view_7": {
+      "view_number": 7,
+      "clarity_score": 7.8,
+      "value_score": 5.85,
+      "trust_score": 5.85
+    },
+    "view_8": {
+      "view_number": 8,
+      "clarity_score": 8.29,
+      "value_score": 5.86,
+      "trust_score": 6.43
+    }
+  }
+}

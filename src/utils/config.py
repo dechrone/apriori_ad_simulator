@@ -13,12 +13,13 @@ DATA_DIR = BASE_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
 # API Configuration
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 # Model Configuration (OpenRouter model IDs)
-GEMINI_PRO_MODEL = os.getenv("GEMINI_PRO_MODEL", "google/gemini-2.0-flash-exp:free")
-GEMINI_FLASH_MODEL = os.getenv("GEMINI_FLASH_MODEL", "google/gemini-2.0-flash-exp:free")
+# Using Claude for Pro tasks (vision capable) and GPT-3.5 for Flash tasks (fast/cheap)
+GEMINI_PRO_MODEL = os.getenv("GEMINI_PRO_MODEL", "anthropic/claude-3.5-sonnet")
+GEMINI_FLASH_MODEL = os.getenv("GEMINI_FLASH_MODEL", "openai/gpt-3.5-turbo")
 
 # Simulation Configuration
 TIER1_SAMPLE_SIZE = int(os.getenv("TIER1_SAMPLE_SIZE", "100"))

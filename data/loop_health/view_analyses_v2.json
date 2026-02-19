@@ -1,0 +1,58 @@
+{
+  "view_1": {
+    "main_content": "Welcome screen for Healthflex Loop healthcare platform featuring a telehealth consultation image and green/white color scheme",
+    "key_information": "Offers unlimited healthcare from top 10% doctors with benefits designed to prevent hospitalization, includes personalized welcome message",
+    "required_action": "User needs to click 'Next' button to proceed with onboarding",
+    "design_quality": "Clean, modern design with professional color scheme, clear hierarchy, and good use of white space and imagery",
+    "friction_points": "Limited information about specific benefits or coverage details, no immediate way to access more details about the top 10% doctors claim, progress indicator shows 1/8 screens which may seem lengthy"
+  },
+  "view_2": {
+    "main_content": "An onboarding screen highlighting 24/7 claims expert support service, featuring a green-themed layout with customer service representatives in a call center setting",
+    "key_information": "The screen emphasizes round-the-clock support availability and complete assistance throughout the claims process from submission to settlement",
+    "required_action": "User needs to navigate using 'Back' or 'Next' buttons at the bottom of the screen, with progress dots indicating step 2 of 8",
+    "design_quality": "Clean, professional design with good use of brand colors (green), clear typography, and supporting imagery. Layout effectively combines text and visual elements",
+    "friction_points": "Progress indicator shows this is only step 2 of 8, which might feel lengthy. No clear indication of what previous or next steps entail. Limited interactive elements on the screen"
+  },
+  "view_3": {
+    "main_content": "Welcome screen for health insurance registration showing a family looking at a device together, with the heading 'Easy registration to start your family's coverage'",
+    "key_information": "The screen emphasizes quick enrollment process with the subheading 'Spend just a few minutes to enroll and unlock coverage and peace of mind'",
+    "required_action": "User needs to click 'Get Started' button to proceed or 'Back' to return to previous screen",
+    "design_quality": "Clean, professional design with good use of green brand colors, clear typography, and welcoming imagery that creates trust and comfort",
+    "friction_points": "Limited information about what the actual registration process entails or how many steps are involved, which may cause uncertainty for users"
+  },
+  "view_4": {
+    "main_content": "Health insurance plan selection screen showing two options: Gold Management and Platinum Management, with detailed coverage information and pricing",
+    "key_information": "Coverage details including sum insured (46L/20L), family structure options, maternity benefits, room rent limits, and various medical expense coverages. Prices start from \u20b954,544 for Gold and \u20b957,634 for Platinum plans",
+    "required_action": "User needs to select between Gold or Platinum Management plans and choose their desired family structure from available options",
+    "design_quality": "Clean, well-organized layout with clear plan comparison, good use of icons and hierarchical information display. Important notes highlighted at top",
+    "friction_points": "Large amount of information to process, multiple coverage details to compare, family structure selection requires additional click on edit icon, premium variations based on structure may cause uncertainty"
+  },
+  "view_5": {
+    "main_content": "Health insurance plan selection screen showing two options - Gold Management and Platinum Management, with detailed coverage information and pricing",
+    "key_information": "Coverage amounts (41L/48L sum insured), family structure options, maternity benefits, hospitalization coverage, and various medical expense details for both plans",
+    "required_action": "User needs to select between Gold or Platinum plan, confirm family structure, and manage dependents before proceeding",
+    "design_quality": "Clean, organized layout with clear plan comparison, good use of icons and spacing, helpful tooltips and expandable sections for detailed information",
+    "friction_points": "Large amount of information to process, multiple expandable sections that require clicking, premium calculations that update automatically may cause confusion, dependency management might be complex for larger families"
+  },
+  "view_6": {
+    "main_content": "Health insurance plan selection screen showing two options: Gold Management and Platinum Management, with detailed coverage information and pricing",
+    "key_information": "Coverage details for both plans including sum insured (40-47L), family structure options, maternity benefits, room rent, ambulance coverage, and various medical treatments. Premium amounts start from \u20b954,544 for Gold and \u20b957,634 for Platinum",
+    "required_action": "User needs to select one of the two plans (Gold or Platinum) and proceed with 6 members already added to the policy. Total amount to pay is \u20b995,671",
+    "design_quality": "Clean, well-organized layout with clear comparison between plans. Good use of icons and expandable sections for detailed information. Professional color scheme with green theme",
+    "friction_points": "Large amount of information to process, multiple expandable sections that require clicking to view full details, complex coverage terms that may need explanation, relatively high premium amount that might cause hesitation"
+  },
+  "view_7": {
+    "main_content": "Insurance onboarding view",
+    "key_information": "Plan details and options",
+    "required_action": "Review and proceed",
+    "design_quality": "Standard corporate interface",
+    "friction_points": "May require careful review"
+  },
+  "view_8": {
+    "main_content": "Final review and confirmation screen for health insurance selection showing selected plans, dependents, and total costs",
+    "key_information": "Group Medical Coverage (\u20b957,634), multiple add-on plans including health checkup, dental care, and pet care, total premium of \u20b995,671 payable in 9 EMIs at \u20b910,631/month",
+    "required_action": "User must review selections and click 'Complete Registration' or optionally save as draft; can also change base plan or benefits if needed",
+    "design_quality": "Clean, organized layout with clear pricing breakdown, good use of icons and sections to display different coverage components and family members",
+    "friction_points": "Large amount of information to review, multiple add-ons may cause decision fatigue, EMI commitment might need more prominent display, edit mode warning could be clearer"
+  }
+}

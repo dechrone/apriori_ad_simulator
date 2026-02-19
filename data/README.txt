@@ -39,7 +39,13 @@ FILES:
    - Final aggregated report with portfolio optimization
    - Upload this to the dashboard
 
+9. founder_report.txt
+   - ✨ FOUNDER-READY REPORT with 'oddly specific' segment insights
+   - Shows which ad owns which niche and why
+   - Budget allocation based on segment value
+
 ====================================================================================================
-TIP: Start with 'persona_comparison.txt' and 'ad_comparison.txt'
-     to understand why results might be similar across ads.
+TIP: Start with 'founder_report.txt' for the strategic verdict,
+     then dive into 'persona_comparison.txt' and 'ad_comparison.txt'
+     for detailed analysis.
 ====================================================================================================

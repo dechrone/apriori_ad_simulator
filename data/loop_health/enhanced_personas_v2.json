@@ -1,0 +1,1369 @@
+[
+  {
+    "uuid": "enhanced_001",
+    "occupation": "Software Engineer",
+    "age": 24,
+    "sex": "Male",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "education_level": "Graduate",
+    "monthly_income_inr": 75000,
+    "digital_literacy": 9,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Excellent",
+      "ongoing_conditions": [],
+      "recent_health_events": [],
+      "medication_count": 0,
+      "doctor_visit_frequency": "never",
+      "health_anxiety_level": "low",
+      "fitness_level": "very_active",
+      "bmi_category": "normal",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Never Married",
+      "has_children": false,
+      "children_count": 0,
+      "children_ages": [],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 1,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 9,
+      "decision_speed": "impulsive",
+      "research_intensity": "minimal",
+      "peer_influence_susceptibility": 0.7,
+      "authority_trust": 0.5,
+      "loss_aversion_strength": 0.3,
+      "gamification_response": 0.8,
+      "social_proof_sensitivity": 0.7,
+      "urgency_response": 0.4,
+      "financial_anxiety": 0.3
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "startup",
+      "recent_life_events": [],
+      "insurance_experience": "none",
+      "previous_claim_experience": "none",
+      "time_in_company": "new_joiner",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 2.0,
+    "engagement_likelihood": 0.35,
+    "value_sensitivity": 0.7499999999999999,
+    "feature_exploration_probability": 0.0
+  },
+  {
+    "uuid": "enhanced_002",
+    "occupation": "Product Manager",
+    "age": 28,
+    "sex": "Female",
+    "state": "Delhi",
+    "district": "Gurgaon",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 120000,
+    "digital_literacy": 9,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [
+        "Mild Anxiety"
+      ],
+      "recent_health_events": [
+        "therapy_started_6mo"
+      ],
+      "medication_count": 1,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "active",
+      "bmi_category": "normal",
+      "family_health_history": [
+        "Diabetes in family"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": false,
+      "children_count": 0,
+      "children_ages": [],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": true,
+      "spouse_has_insurance": true,
+      "family_size_total": 2,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 5,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.5,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.6,
+      "gamification_response": 0.4,
+      "social_proof_sensitivity": 0.6,
+      "urgency_response": 0.7,
+      "financial_anxiety": 0.4
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [
+        "wedding"
+      ],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "none",
+      "time_in_company": "established",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 9.5,
+    "engagement_likelihood": 0.9,
+    "value_sensitivity": 0.76,
+    "feature_exploration_probability": 0.4166666666666667
+  },
+  {
+    "uuid": "enhanced_003",
+    "occupation": "Data Analyst",
+    "age": 26,
+    "sex": "Male",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "education_level": "Graduate",
+    "monthly_income_inr": 60000,
+    "digital_literacy": 9,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [],
+      "recent_health_events": [],
+      "medication_count": 0,
+      "doctor_visit_frequency": "yearly",
+      "health_anxiety_level": "low",
+      "fitness_level": "moderate",
+      "bmi_category": "overweight",
+      "family_health_history": [
+        "Hypertension in family"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Never Married",
+      "has_children": false,
+      "children_count": 0,
+      "children_ages": [],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 1,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 8,
+      "decision_speed": "slow",
+      "research_intensity": "obsessive",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.6,
+      "loss_aversion_strength": 0.7,
+      "gamification_response": 0.3,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.5,
+      "financial_anxiety": 0.6
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "none",
+      "time_in_company": "established",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 4.5,
+    "engagement_likelihood": 0.6000000000000001,
+    "value_sensitivity": 1.0,
+    "feature_exploration_probability": 0.08666666666666667
+  },
+  {
+    "uuid": "enhanced_004",
+    "occupation": "Marketing Executive",
+    "age": 25,
+    "sex": "Female",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "education_level": "Graduate",
+    "monthly_income_inr": 55000,
+    "digital_literacy": 8,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Excellent",
+      "ongoing_conditions": [],
+      "recent_health_events": [],
+      "medication_count": 0,
+      "doctor_visit_frequency": "never",
+      "health_anxiety_level": "low",
+      "fitness_level": "active",
+      "bmi_category": "normal",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Never Married",
+      "has_children": false,
+      "children_count": 0,
+      "children_ages": [],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 1,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 7,
+      "decision_speed": "quick",
+      "research_intensity": "minimal",
+      "peer_influence_susceptibility": 0.9,
+      "authority_trust": 0.6,
+      "loss_aversion_strength": 0.4,
+      "gamification_response": 0.7,
+      "social_proof_sensitivity": 0.9,
+      "urgency_response": 0.6,
+      "financial_anxiety": 0.5
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "startup",
+      "recent_life_events": [],
+      "insurance_experience": "none",
+      "previous_claim_experience": "none",
+      "time_in_company": "new_joiner",
+      "job_security": "uncertain"
+    },
+    "health_urgency_score": 2.0,
+    "engagement_likelihood": 0.44999999999999996,
+    "value_sensitivity": 0.9199999999999999,
+    "feature_exploration_probability": 0.0
+  },
+  {
+    "uuid": "enhanced_005",
+    "occupation": "Business Analyst",
+    "age": 29,
+    "sex": "Male",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 85000,
+    "digital_literacy": 8,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Lower Back Pain"
+      ],
+      "recent_health_events": [
+        "physiotherapy_2mo"
+      ],
+      "medication_count": 1,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "sedentary",
+      "bmi_category": "overweight",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 1,
+      "children_ages": [
+        1
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 3,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 6,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.4,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.7,
+      "gamification_response": 0.3,
+      "social_proof_sensitivity": 0.5,
+      "urgency_response": 0.6,
+      "financial_anxiety": 0.6
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [
+        "new_baby"
+      ],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "established",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.9299999999999999,
+    "feature_exploration_probability": 0.53
+  },
+  {
+    "uuid": "enhanced_006",
+    "occupation": "UI/UX Designer",
+    "age": 27,
+    "sex": "Female",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "education_level": "Graduate",
+    "monthly_income_inr": 70000,
+    "digital_literacy": 9,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [
+        "PCOS"
+      ],
+      "recent_health_events": [
+        "gynec_visit_1mo"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "monthly",
+      "health_anxiety_level": "high",
+      "fitness_level": "moderate",
+      "bmi_category": "normal",
+      "family_health_history": [
+        "Thyroid in family"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Never Married",
+      "has_children": false,
+      "children_count": 0,
+      "children_ages": [],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 1,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 4,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.6,
+      "authority_trust": 0.6,
+      "loss_aversion_strength": 0.7,
+      "gamification_response": 0.5,
+      "social_proof_sensitivity": 0.7,
+      "urgency_response": 0.7,
+      "financial_anxiety": 0.5
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "startup",
+      "recent_life_events": [],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "none",
+      "time_in_company": "established",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 0.9500000000000001,
+    "value_sensitivity": 0.9099999999999999,
+    "feature_exploration_probability": 0.5033333333333333
+  },
+  {
+    "uuid": "enhanced_007",
+    "occupation": "Senior Software Engineer",
+    "age": 34,
+    "sex": "Male",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 150000,
+    "digital_literacy": 9,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Pre-diabetes",
+        "High Cholesterol"
+      ],
+      "recent_health_events": [
+        "blood_test_1mo",
+        "cardiologist_visit_3mo"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "high",
+      "fitness_level": "sedentary",
+      "bmi_category": "obese",
+      "family_health_history": [
+        "Diabetes",
+        "Heart Disease"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        5,
+        2
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 3,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.8,
+      "loss_aversion_strength": 0.9,
+      "gamification_response": 0.2,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.8,
+      "financial_anxiety": 0.5
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "mnc",
+      "recent_life_events": [
+        "health_scare"
+      ],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.87,
+    "feature_exploration_probability": 0.7100000000000001
+  },
+  {
+    "uuid": "enhanced_008",
+    "occupation": "Engineering Manager",
+    "age": 37,
+    "sex": "Male",
+    "state": "Delhi",
+    "district": "Gurgaon",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 200000,
+    "digital_literacy": 8,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [
+        "Hypertension"
+      ],
+      "recent_health_events": [
+        "annual_checkup_2mo"
+      ],
+      "medication_count": 1,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "moderate",
+      "bmi_category": "overweight",
+      "family_health_history": [
+        "Hypertension",
+        "Stroke"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 1,
+      "children_ages": [
+        8
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 3,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 4,
+      "decision_speed": "quick",
+      "research_intensity": "moderate",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.8,
+      "gamification_response": 0.3,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.7,
+      "financial_anxiety": 0.4
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "mnc",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 0.85,
+    "value_sensitivity": 0.8200000000000001,
+    "feature_exploration_probability": 0.3533333333333334
+  },
+  {
+    "uuid": "enhanced_009",
+    "occupation": "Finance Manager",
+    "age": 38,
+    "sex": "Female",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 180000,
+    "digital_literacy": 7,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [
+        "Thyroid"
+      ],
+      "recent_health_events": [
+        "thyroid_test_2mo"
+      ],
+      "medication_count": 1,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "active",
+      "bmi_category": "normal",
+      "family_health_history": [
+        "Thyroid",
+        "Diabetes"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        10,
+        7
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 3,
+      "decision_speed": "deliberate",
+      "research_intensity": "obsessive",
+      "peer_influence_susceptibility": 0.2,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.9,
+      "gamification_response": 0.2,
+      "social_proof_sensitivity": 0.3,
+      "urgency_response": 0.6,
+      "financial_anxiety": 0.7
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "difficult",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.91,
+    "feature_exploration_probability": 0.55
+  },
+  {
+    "uuid": "enhanced_010",
+    "occupation": "HR Manager",
+    "age": 35,
+    "sex": "Female",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 130000,
+    "digital_literacy": 7,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [],
+      "recent_health_events": [
+        "annual_checkup_6mo"
+      ],
+      "medication_count": 0,
+      "doctor_visit_frequency": "yearly",
+      "health_anxiety_level": "low",
+      "fitness_level": "active",
+      "bmi_category": "normal",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 1,
+      "children_ages": [
+        4
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 3,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 5,
+      "decision_speed": "quick",
+      "research_intensity": "moderate",
+      "peer_influence_susceptibility": 0.5,
+      "authority_trust": 0.8,
+      "loss_aversion_strength": 0.6,
+      "gamification_response": 0.4,
+      "social_proof_sensitivity": 0.7,
+      "urgency_response": 0.6,
+      "financial_anxiety": 0.4
+    },
+    "contextual_factors": {
+      "season": "year_end",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 5.5,
+    "engagement_likelihood": 0.6,
+    "value_sensitivity": 0.76,
+    "feature_exploration_probability": 0.1766666666666667
+  },
+  {
+    "uuid": "enhanced_011",
+    "occupation": "Sales Manager",
+    "age": 36,
+    "sex": "Male",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "education_level": "Graduate",
+    "monthly_income_inr": 160000,
+    "digital_literacy": 6,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Chronic Stress",
+        "Insomnia"
+      ],
+      "recent_health_events": [
+        "sleep_study_4mo"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "moderate",
+      "bmi_category": "normal",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 1,
+      "children_ages": [
+        6
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 3,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 6,
+      "decision_speed": "impulsive",
+      "research_intensity": "minimal",
+      "peer_influence_susceptibility": 0.6,
+      "authority_trust": 0.6,
+      "loss_aversion_strength": 0.5,
+      "gamification_response": 0.8,
+      "social_proof_sensitivity": 0.7,
+      "urgency_response": 0.9,
+      "financial_anxiety": 0.5
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "none",
+      "time_in_company": "established",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.75,
+    "feature_exploration_probability": 0.39999999999999997
+  },
+  {
+    "uuid": "enhanced_012",
+    "occupation": "Operations Manager",
+    "age": 39,
+    "sex": "Male",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "education_level": "Graduate",
+    "monthly_income_inr": 140000,
+    "digital_literacy": 6,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Chronic Back Pain",
+        "Cervical Spondylosis"
+      ],
+      "recent_health_events": [
+        "mri_3mo",
+        "physiotherapy_ongoing"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "monthly",
+      "health_anxiety_level": "high",
+      "fitness_level": "sedentary",
+      "bmi_category": "overweight",
+      "family_health_history": [
+        "Arthritis"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        12,
+        9
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 2,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.9,
+      "gamification_response": 0.2,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.8,
+      "financial_anxiety": 0.7
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.91,
+    "feature_exploration_probability": 0.7766666666666667
+  },
+  {
+    "uuid": "enhanced_013",
+    "occupation": "Product Manager",
+    "age": 33,
+    "sex": "Female",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 190000,
+    "digital_literacy": 9,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [],
+      "recent_health_events": [
+        "pregnancy_planning"
+      ],
+      "medication_count": 0,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "active",
+      "bmi_category": "normal",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": false,
+      "children_count": 0,
+      "children_ages": [],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": true,
+      "spouse_has_insurance": true,
+      "family_size_total": 2,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 3,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.4,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.8,
+      "gamification_response": 0.4,
+      "social_proof_sensitivity": 0.6,
+      "urgency_response": 0.7,
+      "financial_anxiety": 0.4
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "mnc",
+      "recent_life_events": [
+        "planning_pregnancy"
+      ],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "none",
+      "time_in_company": "established",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 7.0,
+    "engagement_likelihood": 0.7999999999999999,
+    "value_sensitivity": 0.8200000000000001,
+    "feature_exploration_probability": 0.39999999999999997
+  },
+  {
+    "uuid": "enhanced_014",
+    "occupation": "Vice President",
+    "age": 48,
+    "sex": "Male",
+    "state": "Delhi",
+    "district": "Gurgaon",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 400000,
+    "digital_literacy": 7,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Hypertension",
+        "High Cholesterol",
+        "Fatty Liver"
+      ],
+      "recent_health_events": [
+        "cardiac_stress_test_3mo",
+        "annual_executive_checkup_1mo"
+      ],
+      "medication_count": 3,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "high",
+      "fitness_level": "moderate",
+      "bmi_category": "overweight",
+      "family_health_history": [
+        "Heart Disease",
+        "Diabetes"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        18,
+        15
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 2,
+      "decision_speed": "quick",
+      "research_intensity": "minimal",
+      "peer_influence_susceptibility": 0.2,
+      "authority_trust": 0.8,
+      "loss_aversion_strength": 0.7,
+      "gamification_response": 0.1,
+      "social_proof_sensitivity": 0.3,
+      "urgency_response": 0.6,
+      "financial_anxiety": 0.1
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "mnc",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.63,
+    "feature_exploration_probability": 0.5566666666666668
+  },
+  {
+    "uuid": "enhanced_015",
+    "occupation": "Director",
+    "age": 52,
+    "sex": "Female",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 350000,
+    "digital_literacy": 6,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Diabetes Type 2",
+        "Hypertension",
+        "Osteoarthritis"
+      ],
+      "recent_health_events": [
+        "endocrinologist_visit_1mo",
+        "orthopedic_consult_2mo"
+      ],
+      "medication_count": 4,
+      "doctor_visit_frequency": "monthly",
+      "health_anxiety_level": "high",
+      "fitness_level": "sedentary",
+      "bmi_category": "obese",
+      "family_health_history": [
+        "Diabetes",
+        "Heart Disease",
+        "Arthritis"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        22,
+        19
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 1,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.2,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.9,
+      "gamification_response": 0.1,
+      "social_proof_sensitivity": 0.2,
+      "urgency_response": 0.9,
+      "financial_anxiety": 0.2
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.7100000000000001,
+    "feature_exploration_probability": 0.8133333333333334
+  },
+  {
+    "uuid": "enhanced_016",
+    "occupation": "CTO",
+    "age": 45,
+    "sex": "Male",
+    "state": "Karnataka",
+    "district": "Bengaluru",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 500000,
+    "digital_literacy": 9,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [
+        "Sleep Apnea"
+      ],
+      "recent_health_events": [
+        "sleep_study_6mo",
+        "cpap_machine_prescribed"
+      ],
+      "medication_count": 1,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "moderate",
+      "bmi_category": "overweight",
+      "family_health_history": []
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        14,
+        11
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 4,
+      "decision_speed": "quick",
+      "research_intensity": "moderate",
+      "peer_influence_susceptibility": 0.2,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.6,
+      "gamification_response": 0.2,
+      "social_proof_sensitivity": 0.3,
+      "urgency_response": 0.5,
+      "financial_anxiety": 0.1
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "mnc",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 0.85,
+    "value_sensitivity": 0.6,
+    "feature_exploration_probability": 0.33333333333333337
+  },
+  {
+    "uuid": "enhanced_017",
+    "occupation": "CFO",
+    "age": 51,
+    "sex": "Male",
+    "state": "Maharashtra",
+    "district": "Mumbai",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 600000,
+    "digital_literacy": 7,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Poor",
+      "ongoing_conditions": [
+        "Diabetes Type 2",
+        "Hypertension",
+        "High Cholesterol",
+        "Chronic Kidney Disease Stage 2"
+      ],
+      "recent_health_events": [
+        "hospitalization_6mo",
+        "nephrologist_ongoing",
+        "cardiac_evaluation_2mo"
+      ],
+      "medication_count": 6,
+      "doctor_visit_frequency": "monthly",
+      "health_anxiety_level": "high",
+      "fitness_level": "sedentary",
+      "bmi_category": "obese",
+      "family_health_history": [
+        "Diabetes",
+        "Heart Disease",
+        "Kidney Disease"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        20,
+        17
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 0,
+      "decision_speed": "quick",
+      "research_intensity": "obsessive",
+      "peer_influence_susceptibility": 0.1,
+      "authority_trust": 0.8,
+      "loss_aversion_strength": 1.0,
+      "gamification_response": 0.0,
+      "social_proof_sensitivity": 0.1,
+      "urgency_response": 1.0,
+      "financial_anxiety": 0.4
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [
+        "health_crisis"
+      ],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "difficult",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.7800000000000001,
+    "feature_exploration_probability": 0.91
+  },
+  {
+    "uuid": "enhanced_018",
+    "occupation": "Senior Manager",
+    "age": 44,
+    "sex": "Male",
+    "state": "Tamil Nadu",
+    "district": "Chennai",
+    "education_level": "Graduate",
+    "monthly_income_inr": 220000,
+    "digital_literacy": 6,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Thyroid",
+        "Vitamin D Deficiency"
+      ],
+      "recent_health_events": [
+        "thyroid_test_1mo"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "moderate",
+      "bmi_category": "normal",
+      "family_health_history": [
+        "Thyroid"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        16,
+        13
+      ],
+      "has_aging_parents": false,
+      "parent_health_concerns": false,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 4,
+      "decision_speed": "deliberate",
+      "research_intensity": "moderate",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.7,
+      "gamification_response": 0.3,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.6,
+      "financial_anxiety": 0.4
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.79,
+    "feature_exploration_probability": 0.5533333333333335
+  },
+  {
+    "uuid": "enhanced_019",
+    "occupation": "Director",
+    "age": 49,
+    "sex": "Female",
+    "state": "Maharashtra",
+    "district": "Pune",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 380000,
+    "digital_literacy": 7,
+    "primary_device": "iPhone",
+    "health_profile": {
+      "status": "Good",
+      "ongoing_conditions": [
+        "Menopause Management"
+      ],
+      "recent_health_events": [
+        "gynec_visit_2mo",
+        "bone_density_test_3mo"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "active",
+      "bmi_category": "normal",
+      "family_health_history": [
+        "Osteoporosis",
+        "Breast Cancer"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 1,
+      "children_ages": [
+        21
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 3,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 3,
+      "decision_speed": "deliberate",
+      "research_intensity": "thorough",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.8,
+      "gamification_response": 0.2,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.7,
+      "financial_anxiety": 0.2
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "mnc",
+      "recent_life_events": [],
+      "insurance_experience": "positive",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 0.95,
+    "value_sensitivity": 0.68,
+    "feature_exploration_probability": 0.51
+  },
+  {
+    "uuid": "enhanced_020",
+    "occupation": "General Manager",
+    "age": 46,
+    "sex": "Male",
+    "state": "Telangana",
+    "district": "Hyderabad",
+    "education_level": "Post Graduate",
+    "monthly_income_inr": 250000,
+    "digital_literacy": 6,
+    "primary_device": "Android",
+    "health_profile": {
+      "status": "Fair",
+      "ongoing_conditions": [
+        "Pre-diabetes",
+        "Hypertension"
+      ],
+      "recent_health_events": [
+        "annual_checkup_2mo"
+      ],
+      "medication_count": 2,
+      "doctor_visit_frequency": "quarterly",
+      "health_anxiety_level": "medium",
+      "fitness_level": "moderate",
+      "bmi_category": "overweight",
+      "family_health_history": [
+        "Diabetes",
+        "Heart Disease"
+      ]
+    },
+    "family_profile": {
+      "marital_status": "Currently Married",
+      "has_children": true,
+      "children_count": 2,
+      "children_ages": [
+        17,
+        14
+      ],
+      "has_aging_parents": true,
+      "parent_health_concerns": true,
+      "spouse_employed": false,
+      "spouse_has_insurance": false,
+      "family_size_total": 4,
+      "primary_health_decision_maker": true
+    },
+    "behavioral_profile": {
+      "inertia_level": 4,
+      "decision_speed": "quick",
+      "research_intensity": "moderate",
+      "peer_influence_susceptibility": 0.3,
+      "authority_trust": 0.7,
+      "loss_aversion_strength": 0.7,
+      "gamification_response": 0.2,
+      "social_proof_sensitivity": 0.4,
+      "urgency_response": 0.7,
+      "financial_anxiety": 0.3
+    },
+    "contextual_factors": {
+      "season": "regular",
+      "work_culture": "corporate",
+      "recent_life_events": [],
+      "insurance_experience": "neutral",
+      "previous_claim_experience": "smooth",
+      "time_in_company": "long_term",
+      "job_security": "secure"
+    },
+    "health_urgency_score": 10.0,
+    "engagement_likelihood": 1.0,
+    "value_sensitivity": 0.77,
+    "feature_exploration_probability": 0.5433333333333334
+  }
+]

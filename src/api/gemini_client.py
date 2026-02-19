@@ -144,6 +144,9 @@ class GeminiClient:
     
     def parse_json_response(self, response: str) -> Dict[str, Any]:
         """Extract JSON from LLM response with fallback parsing."""
+        if not response:
+            raise ValueError("Empty response from API")
+            
         # Try to find JSON in markdown code blocks
         if "```json" in response:
             json_str = response.split("```json")[1].split("```")[0].strip()
@@ -152,11 +155,38 @@ class GeminiClient:
         else:
             json_str = response.strip()
         
+        # Clean up common JSON issues
+        # Replace newlines within strings with spaces
+        import re
+        
         try:
             return json.loads(json_str)
-        except json.JSONDecodeError:
-            # Fallback: try to extract key-value pairs
-            raise ValueError(f"Failed to parse JSON from response: {response[:200]}")
+        except json.JSONDecodeError as e:
+            # Try to fix common issues
+            try:
+                # Remove invalid control characters
+                json_str_cleaned = json_str.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+                # Remove multiple spaces
+                json_str_cleaned = re.sub(r'\s+', ' ', json_str_cleaned)
+                return json.loads(json_str_cleaned)
+            except:
+                pass
+            
+            # Fallback: try to extract from raw response even if it has extra text
+            # Find first { and last }
+            try:
+                start_idx = response.find('{')
+                end_idx = response.rfind('}')
+                if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+                    json_str = response[start_idx:end_idx+1]
+                    # Clean it
+                    json_str = json_str.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+                    json_str = re.sub(r'\s+', ' ', json_str)
+                    return json.loads(json_str)
+            except:
+                pass
+            
+            raise ValueError(f"Failed to parse JSON from response. Error: {str(e)}. Response preview: {response[:300]}")
 
 
 # Global singleton

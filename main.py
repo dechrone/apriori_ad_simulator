@@ -1,6 +1,7 @@
 """Main orchestrator - End-to-end simulation pipeline."""
 
 import asyncio
+import shutil
 import time
 import json
 import os
@@ -16,7 +17,8 @@ from src.utils.config import DATA_DIR
 from src.utils.report_generator import (
     generate_persona_comparison_report,
     generate_ad_comparison_report,
-    generate_summary_report
+    generate_summary_report,
+    generate_founder_ready_report
 )
 from src.utils.ad_copy_extractor import extract_copy_for_all_ads
 
@@ -41,38 +43,44 @@ class AprioriOrchestrator:
         
         # STEP 1: Load Personas
         print("\n📚 STEP 1: Loading Persona Dataset...")
-        print(f"   Target: {target_segment}")
-        print(f"   Count: {num_personas} personas")
-        
-        # Try to load from HuggingFace first
-        try:
-            if not data_loader.conn:
-                print("   📥 Attempting to load from HuggingFace (Nvidia Nemotron Personas India)...")
-                data_loader.load_from_huggingface()
-        except Exception as e:
-            print(f"   ⚠️ Could not load from HuggingFace: {e}")
-            print("   💡 Will use local data or generate synthetic personas")
-        
-        # Filter for target segment
-        if target_segment == "exporters_freelancers_smes":
-            raw_personas = data_loader.filter_exporters_freelancers_smes(count=num_personas)
+        personas_file_env = os.getenv("PERSONAS_FILE")
+        if personas_file_env:
+            path = Path(personas_file_env)
+            if not path.is_absolute():
+                path = (Path(__file__).parent / path).resolve()
+            print(f"   Source: {path}")
+            raw_personas = data_loader.load_from_json(path)
+            print(f"   Count: {len(raw_personas)} personas (from file)")
         else:
-            raw_personas = data_loader.load_sample_personas(count=num_personas)
+            print(f"   Target: {target_segment}")
+            print(f"   Count: {num_personas} personas")
+            try:
+                if not data_loader.conn:
+                    print("   📥 Attempting to load from HuggingFace (Nvidia Nemotron Personas India)...")
+                    data_loader.load_from_huggingface()
+            except Exception as e:
+                print(f"   ⚠️ Could not load from HuggingFace: {e}")
+                print("   💡 Will use local data or generate synthetic personas")
+            if target_segment == "exporters_freelancers_smes":
+                raw_personas = data_loader.filter_exporters_freelancers_smes(count=num_personas)
+            else:
+                raw_personas = data_loader.load_sample_personas(count=num_personas)
         
         print(f"\n✅ Loaded {len(raw_personas)} personas")
         
-        # Save personas to file for review
-        personas_file = DATA_DIR / "selected_personas.json"
-        with open(personas_file, 'w') as f:
+        selected_file = DATA_DIR / "selected_personas.json"
+        with open(selected_file, 'w') as f:
             json.dump([p.model_dump() for p in raw_personas], f, indent=2)
-        print(f"📄 Personas saved to: {personas_file}")
+        print(f"📄 Personas saved to: {selected_file}")
         
         print("\n📋 SELECTED PERSONAS:")
         print("-" * 80)
+        skills_preview = lambda p: (p.skills_and_expertise_list or p.skills_and_expertise or "")[:60]
         for i, p in enumerate(raw_personas, 1):
             print(f"{i}. {p.occupation} | {p.age}yo {p.sex} | {p.district}, {p.state} ({p.zone})")
             print(f"   Education: {p.education_level} | Language: {p.first_language}")
-            print(f"   Skills: {p.skills_and_expertise_list[:60]}...")
+            s = skills_preview(p)
+            print(f"   Skills: {s}..." if s else "   Skills: —")
             print()
         
         # STEP 2: Hydrate Personas
@@ -348,6 +356,11 @@ class AprioriOrchestrator:
         
         generate_persona_comparison_report(enriched_personas, valid_reactions, ads, DATA_DIR)
         generate_ad_comparison_report(enriched_personas, valid_reactions, ads, DATA_DIR)
+        
+        # Generate Founder-Ready Report with "Oddly Specific" Insights
+        print("\n✨ Generating Founder-Ready Portfolio Report...")
+        generate_founder_ready_report(optimization_result, DATA_DIR)
+        
         generate_summary_report(DATA_DIR)
         
         # STEP 8: Compile Final Report
@@ -370,6 +383,21 @@ class AprioriOrchestrator:
             ]
         }
         
+        # Prepare segment ownership data for JSON (convert persona objects to simplified dicts)
+        serialized_segment_ownership = {}
+        if "segment_ownership" in optimization_result:
+            for cluster_id, ownership in optimization_result["segment_ownership"].items():
+                serialized_segment_ownership[cluster_id] = {
+                    "winning_ad": ownership["winning_ad"],
+                    "trust_score": ownership["trust_score"],
+                    "relevance_score": ownership["relevance_score"],
+                    "conversion_rate": ownership["conversion_rate"],
+                    "high_intent_count": ownership["high_intent_count"],
+                    "persona_count": len(ownership["personas"]),
+                    "reasoning": ownership["reasoning"],
+                    "all_ad_scores": ownership["all_ad_scores"]
+                }
+        
         final_report = {
             "winning_portfolio": [rec.model_dump() for rec in optimization_result["winning_portfolio"]],
             "all_performances": {
@@ -378,6 +406,8 @@ class AprioriOrchestrator:
             },
             "overlap_matrix": optimization_result["overlap_matrix"],
             "audience_segments": optimization_result["audience_segments"],
+            "segment_ownership": serialized_segment_ownership,
+            "clusters": optimization_result.get("clusters", {}),
             "wasted_spend_alerts": optimization_result["wasted_spend_alerts"],
             "visual_heatmap": heatmap,
             "validation_summary": serialized_validation,
@@ -419,6 +449,7 @@ class AprioriOrchestrator:
         
         print(f"\n📁 Output Files:")
         print(f"   • Full Report (JSON): {output_file if output_path else 'Not saved'}")
+        print(f"   • ✨ Founder-Ready Report: {DATA_DIR}/founder_report.txt")
         print(f"   • Persona Comparison: {DATA_DIR}/persona_comparison.txt")
         print(f"   • Ad Comparison: {DATA_DIR}/ad_comparison.txt")
         print(f"   • Heatmap: Available in JSON report under 'visual_heatmap' key")
@@ -483,10 +514,17 @@ async def main():
         target_segment="exporters_freelancers_smes"
     )
     
-    print(f"\n🎯 To view the dashboard:")
-    print(f"   streamlit run src/ui/app.py")
-    print(f"\n📄 Or view the raw report at:")
-    print(f"   {output_path}")
+    # Copy outputs to dashboard public data for UI
+    dashboard_data = Path(__file__).parent / "dashboard" / "public" / "data"
+    dashboard_data.mkdir(parents=True, exist_ok=True)
+    for name in ("simulation_report.json", "raw_reactions.json", "enriched_personas.json"):
+        src = DATA_DIR / name
+        if src.exists():
+            shutil.copy2(src, dashboard_data / name)
+            print(f"   📋 Copied {name} → dashboard/public/data/")
+    
+    print(f"\n🎯 To view the dashboard: cd dashboard && npm run dev")
+    print(f"📄 Raw report: {output_path}")
 
 
 if __name__ == "__main__":

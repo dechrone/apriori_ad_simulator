@@ -1,0 +1,500 @@
+[
+  {
+    "persona_uuid": "5cfbc1fdfd6f4b5a837597c3152bc15b",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Ooh, finally a bra that actually looks comfortable and stylish - I'm always looking for good lingerie that doesn't dig in! | [Audit] Never heard of this 'oh, so u' brand before - need to check reviews and return policy. Website domain ohsou.com seems new, and pricing isn't clearly mentioned which makes me a bit cautious. | [Decision] As a fashion professional with disposable income and experience in online shopping, exploring new lingerie brands is low-risk. The aesthetics and messaging align with current trends, and while the brand is new, the product promises address common pain points.",
+    "emotional_response": "Cautiously intrigued",
+    "barriers": [
+      "PRIMARY: Brand unfamiliarity",
+      "New unknown brand needs verification",
+      "No clear pricing in ad",
+      "Can't see user reviews in the ad"
+    ]
+  },
+  {
+    "persona_uuid": "5cfbc1fdfd6f4b5a837597c3152bc15b",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "High",
+    "reasoning": "[Gut] Ooh, this looks chic and the messaging around self-love really speaks to my aesthetic sensibilities as a fashion stylist! | [Audit] Need to check reviews and return policy carefully. While the pricing seems reasonable, I should verify the fabric quality claims and size chart before committing. | [Decision] The professional styling and comfort-focused messaging align with my expertise and needs. At my income level, the risk is minimal, and the potential for discovering a new quality brand is worth exploring.",
+    "emotional_response": "Intrigued and excited",
+    "barriers": [
+      "New brand I haven't heard of before",
+      "Need to verify size consistency",
+      "PRIMARY: Brand awareness"
+    ]
+  },
+  {
+    "persona_uuid": "5cfbc1fdfd6f4b5a837597c3152bc15b",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Ooh, this looks super sleek and professional - loving the minimalist aesthetic and inclusive sizing! | [Audit] Need to check reviews and return policy before committing. While the photography is professional, I haven't heard of this brand in my stylist circles yet. Should compare prices with Zivame and Clovia first. | [Decision] The professional presentation, inclusive sizing, and clean aesthetic align with my professional standards. While it's a new brand, the production quality and attention to detail suggest legitimacy. My income level allows for experimental purchases, and my industry experience helps me spot quality indicators.",
+    "emotional_response": "Intrigued",
+    "barriers": [
+      "PRIMARY: Brand unfamiliarity",
+      "New brand without established reputation",
+      "Would want to see more product angles",
+      "Need to verify size chart accuracy"
+    ]
+  },
+  {
+    "persona_uuid": "5cfbc1fdfd6f4b5a837597c3152bc15b",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 7,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "High",
+    "reasoning": "[Gut] Ooh, this looks sleek and professional - I'm always hunting for comfy everyday bras that don't compromise on style! | [Audit] Haven't heard of 'oh, so u' before - need to check reviews and return policy. Price point isn't shown which makes me slightly cautious. But the brand aesthetic and messaging feels aligned with other legitimate D2C lingerie brands. | [Decision] The brand aesthetics and messaging are sophisticated, and as someone in fashion, I'm always looking for new quality basics. My income allows me to take calculated risks on new brands, and the wireless comfort angle is exactly what I look for.",
+    "emotional_response": "Intrigued",
+    "barriers": [
+      "PRIMARY: None",
+      "New brand without established reputation",
+      "No visible price in ad"
+    ]
+  },
+  {
+    "persona_uuid": "041788f455094a3791e1e2170bbd4ae7",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does this bra really provide the comfort and lift it claims? Can I trust the website selling it? | [Decision] System 2 confirmed System 1. The ad seems relevant to my interests, and the website looks decent enough to explore.",
+    "emotional_response": "Intrigued",
+    "barriers": [
+      "Monthly earnings: \u20b910000"
+    ]
+  },
+  {
+    "persona_uuid": "041788f455094a3791e1e2170bbd4ae7",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "IGNORE",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is this product something I really need right now? Can I afford to spend on comfort-first bras with my current budget? | [Decision] System 2 confirmed that while the ad is tempting, the expense on comfort-first bras is not a priority given my current budget constraints.",
+    "emotional_response": "Tempted",
+    "barriers": [
+      "Income Constraint",
+      "PRIMARY: Income Constraint"
+    ]
+  },
+  {
+    "persona_uuid": "041788f455094a3791e1e2170bbd4ae7",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "IGNORE",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Can I really afford this right now? Is it necessary for me at this moment? | [Decision] Even though the ad seems legitimate and the product is relevant, I don't have an immediate need for it and I want to prioritize my expenses wisely.",
+    "emotional_response": "Curious",
+    "barriers": [
+      "Social Acceptance",
+      "Income Constraint",
+      "PRIMARY: Not an urgent purchase"
+    ]
+  },
+  {
+    "persona_uuid": "041788f455094a3791e1e2170bbd4ae7",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is this brand known for quality products? Can I trust their sizing guide for a good fit? | [Decision] System 2 confirmed the curiosity and relevance of the product, and the trust score, while not perfect, is acceptable for exploration.",
+    "emotional_response": "Curiosity",
+    "barriers": [
+      "Social acceptance",
+      "Monthly earnings"
+    ]
+  },
+  {
+    "persona_uuid": "3da5614316964db9bd417639dcdc8f81",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Interested | [Audit] Is this bra really different from what I already have? Can I find similar options at a lower price point? Will the quality of the product match the description? | [Decision] System 2 confirmed System 1. The ad seems relevant to my interests, and the brand feels moderately trustworthy. I am curious to explore the product further.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "3da5614316964db9bd417639dcdc8f81",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is this sale really a good deal or just a marketing tactic to get me to spend money unnecessarily? | [Decision] System 2 confirmed System 1. The sale seems genuine and the products are relevant to my interests. I'm curious to explore the offers.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "3da5614316964db9bd417639dcdc8f81",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 8,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is this a legitimate brand? Can I trust the quality and sizing information provided? Is the price point reasonable for the product being offered? | [Decision] System 2 confirmed the legitimacy of the brand and the product offering. The ad seemed relevant to my interests and needs, and the pricing appeared reasonable for a quality product. I feel confident in exploring further.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "3da5614316964db9bd417639dcdc8f81",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is this product really unique compared to what I already own? Can I trust this brand with my personal information and payment details? | [Decision] System 2 confirmed System 1's curiosity and interest in exploring new lingerie options. The brand seems moderately trustworthy, and the product is relevant to my interests in wellness and comfort.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "4fde83f47f7b4edf8253dffe725b89d7",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is this bra really as comfortable as they claim? Can I trust the quality and fit without trying it on first? | [Decision] System 2 confirmed the excitement from System 1 after considering the trustworthiness of the brand and the relevance of the product to my needs and interests.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "4fde83f47f7b4edf8253dffe725b89d7",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is this offer too good to be true? Can I really get quality bras at a discount with a surprise gift? What's the catch? | [Decision] System 2 did not find any major red flags, the offer seems reasonable, and it aligns with my interest in fashion and self-care.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "4fde83f47f7b4edf8253dffe725b89d7",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 8,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is the price point reasonable for the quality offered? Can I find similar products at a better value elsewhere? | [Decision] System 2 confirmed that the ad seemed trustworthy and the product was highly relevant to my interests and needs. The price point also seemed reasonable for the quality offered.",
+    "emotional_response": "Intrigued",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "4fde83f47f7b4edf8253dffe725b89d7",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is this brand well-known in the lingerie industry? Can I trust the quality of the product they are offering? | [Decision] System 2 confirmed the curiosity and interest from System 1. The brand seems reputable, and the product is relevant to my interests.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "6361ed37ad3c4c848789472e8f1ebc79",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 8,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "High",
+    "reasoning": "[Gut] Excited! I love finding comfortable and supportive bras that are perfect for everyday wear. | [Audit] This ad seems to promise a lot in terms of comfort and fit. I need to ensure it's not just marketing hype and that the product will actually deliver on its promises. | [Decision] System 2 confirmed the excitement from System 1 after considering the relevance of the product to my interests and the trustworthiness of the ad. The ad seems legitimate and the product aligns well with what I look for in a bra.",
+    "emotional_response": "Excited",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "6361ed37ad3c4c848789472e8f1ebc79",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited and curious | [Audit] Is this sale really offering a good discount or are the prices inflated to make it seem like a deal? Will the surprise gift be something useful or just a gimmick to make me spend more? | [Decision] System 1 and System 2 are aligned in seeing this as a potentially good deal that aligns with my interests. The brand seems moderately trustworthy and the product features are appealing. I am curious to explore further.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "6361ed37ad3c4c848789472e8f1ebc79",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Can I afford to spend on this right now? Is the brand well-known or trustworthy? | [Decision] System 2 confirmed that the ad looks legitimate and the product is relevant to my interests. The price point seems reasonable for my income level. I am curious to explore the brand and products.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "6361ed37ad3c4c848789472e8f1ebc79",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited to explore new lingerie options | [Audit] Is this brand well-known in the lingerie industry? Can I trust the quality of their products? Is the price reasonable for what they offer? | [Decision] System 2 confirmed the excitement from System 1. The brand seems reputable based on the ad content, and the product is relevant to my interests. The price seems reasonable for the quality offered.",
+    "emotional_response": "Curious",
+    "barriers": [
+      "Monthly earnings"
+    ]
+  },
+  {
+    "persona_uuid": "8fb657fb0ed844aca7d98177952cf625",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does this bra really provide the comfort and support claimed? Are the seamless cups actually comfortable for daily wear? Is the underwire truly 'barely there' as advertised? | [Decision] System 2 confirmed System 1. The ad seems relevant to my needs and interests, and the brand looks legitimate. I'm curious to explore the product further.",
+    "emotional_response": "Intrigued",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "8fb657fb0ed844aca7d98177952cf625",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited to explore new comfort-first bras with discounts and surprise gifts. | [Audit] Does the brand oh, so u seem legitimate and trustworthy? Can I really afford to spend on new bras this month? | [Decision] System 2 confirmed the legitimacy of the brand and the affordability of the purchase. The offer aligns with my interest in self-care and comfort.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "8fb657fb0ed844aca7d98177952cf625",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 8,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does the brand and product seem legitimate and relevant to my needs? Can I afford to spend on this without hiding it from my family? | [Decision] System 2 confirmed the legitimacy of the brand and product, and I feel comfortable exploring without immediate purchase intent.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "8fb657fb0ed844aca7d98177952cf625",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is the brand known for quality products? Can I find reviews online to verify their credibility? | [Decision] System 2 confirmed the initial curiosity. The brand seems legitimate, and the product is relevant to my needs and interests. I feel comfortable exploring the website.",
+    "emotional_response": "Curiosity",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "077291b6e6bd497296f40fbbc8fdbaeb",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does this bra really offer the comfort and support it claims? Are the seamless cups as comfortable as they say? | [Decision] System 2 confirmed System 1. The ad seems relevant to my interests and the brand looks trustworthy.",
+    "emotional_response": "Intrigued",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "077291b6e6bd497296f40fbbc8fdbaeb",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is the discount too good to be true? Can I really trust this brand? | [Decision] System 2 confirmed the legitimacy of the brand and the relevance of the product to my interests. The discount seems reasonable, and I am curious to explore.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "077291b6e6bd497296f40fbbc8fdbaeb",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "IGNORE",
+    "intent_level": "Low",
+    "reasoning": "[Gut] Curious | [Audit] Is this product something I really need right now? Can I afford to spend on lingerie this month without impacting my budget for essentials? | [Decision] While the ad looks professional and the product seems relevant, I don't have an immediate need for lingerie and prefer to prioritize my budget for other essentials.",
+    "emotional_response": "Neutral",
+    "barriers": [
+      "Monthly earnings: \u20b950000",
+      "PRIMARY: Budget constraints"
+    ]
+  },
+  {
+    "persona_uuid": "077291b6e6bd497296f40fbbc8fdbaeb",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "IGNORE",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does the brand look legitimate? Can I afford this without hiding it from family? | [Decision] System 2 confirmed System 1. While I am curious about the product, the price point might be significant for me, and I would prefer to discuss this purchase with my family before considering it further.",
+    "emotional_response": "Curious",
+    "barriers": [
+      "Social Acceptance",
+      "Income Constraint",
+      "PRIMARY: Income Constraint"
+    ]
+  },
+  {
+    "persona_uuid": "b8002615373744488aa75dc483475b96",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does the price fit my budget? Can I trust this brand for online purchases? | [Decision] System 2 confirmed the curiosity and interest in exploring the product. The brand seems moderately trustworthy, and the product is relevant to my needs and interests. While there are some constraints like affordability and social acceptance, I feel comfortable exploring the product further.",
+    "emotional_response": "Curious",
+    "barriers": [
+      "Social acceptance",
+      "Monthly earnings"
+    ]
+  },
+  {
+    "persona_uuid": "b8002615373744488aa75dc483475b96",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "IGNORE",
+    "intent_level": "Low",
+    "reasoning": "[Gut] Curious | [Audit] Is this sale too good to be true? Can I really afford to spend money on comfort bras right now? | [Decision] System 2 confirmed that while the ad is interesting, the financial constraints of my current income level make it impractical to spend on non-essential items like comfort bras. It's better to save this money for more important expenses.",
+    "emotional_response": "Practical",
+    "barriers": [
+      "Income level",
+      "PRIMARY: Financial constraints",
+      "Monthly earnings"
+    ]
+  },
+  {
+    "persona_uuid": "b8002615373744488aa75dc483475b96",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 7,
+    "relevance_score": 9,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is the product affordable for me? Can I trust this brand? Will my family have concerns about this purchase? | [Decision] System 2 confirmed System 1's curiosity. The brand seems legitimate, the product is relevant to my interests, and the price seems reasonable. I am willing to explore further.",
+    "emotional_response": "Curious",
+    "barriers": [
+      "Social Acceptance",
+      "Income Constraint"
+    ]
+  },
+  {
+    "persona_uuid": "b8002615373744488aa75dc483475b96",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is the website secure and reputable? Can I afford this without hiding it from my family? | [Decision] System 2 confirmed that the brand looks legitimate and the product is relevant to my interests. The price point seems reasonable for my income level, and online shopping for intimate wear is normalized in urban areas.",
+    "emotional_response": "Curious",
+    "barriers": [
+      "Income Constraint",
+      "Social Acceptance Filter"
+    ]
+  },
+  {
+    "persona_uuid": "63859d54bb5c4c488f72afdbcdd3a96f",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 6,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is this bra really as comfortable as they claim? Can I trust this brand? | [Decision] System 2 confirmed the comfort claims seem reasonable and the brand looks decent. I'm curious to explore more about the product.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "63859d54bb5c4c488f72afdbcdd3a96f",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is this sale really offering a significant discount or is it just a marketing tactic? Can I trust the quality of the products being sold? | [Decision] System 2 confirmed System 1. The ad seems genuine, the products are relevant to me, and the discount is attractive.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "63859d54bb5c4c488f72afdbcdd3a96f",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 8,
+    "relevance_score": 7,
+    "action": "IGNORE",
+    "intent_level": "Low",
+    "reasoning": "[Gut] Curious | [Audit] Is this product really necessary right now? Can I find similar products at a more affordable price? Will this purchase align with my current budget and financial goals? | [Decision] System 2 overrode System 1 as the purchase didn't align with my current financial goals and I could potentially find similar products at a more affordable price.",
+    "emotional_response": "Curiosity",
+    "barriers": [
+      "PRIMARY: Financial constraint",
+      "Monthly earnings at \u20b925000"
+    ]
+  },
+  {
+    "persona_uuid": "63859d54bb5c4c488f72afdbcdd3a96f",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Is the website legitimate? Can I afford to spend on this right now? | [Decision] System 2 confirmed that the brand seems legitimate and the product is relevant to my interests. I can afford to consider this purchase.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "a64a143e73754a319173bb2e6ffd7b70",
+    "ad_id": "ohsou_ad_1",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does the bra really provide the comfort and support as advertised? Is the price reasonable for the quality offered? | [Decision] System 2 confirmed System 1. The ad seems genuine and the product aligns with my interests. I believe it's worth exploring.",
+    "emotional_response": "Intrigued",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "a64a143e73754a319173bb2e6ffd7b70",
+    "ad_id": "ohsou_ad_2",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Excited | [Audit] Is this sale really offering a good discount that I can't miss out on, or is it just a marketing tactic to get me to spend money? | [Decision] System 2 confirmed the legitimacy of the brand and the relevance of the product to my interests. The discount seems reasonable for me, and I'm curious to explore the offer further.",
+    "emotional_response": "Curious",
+    "barriers": []
+  },
+  {
+    "persona_uuid": "a64a143e73754a319173bb2e6ffd7b70",
+    "ad_id": "ohsou_ad_3",
+    "trust_score": 8,
+    "relevance_score": 9,
+    "action": "IGNORE",
+    "intent_level": "Low",
+    "reasoning": "[Gut] Curious | [Audit] Is the pricing suitable for my income level? Can I afford this without feeling guilty? Do I really need a new bra right now? | [Decision] While the ad seems legitimate and the product is relevant, I don't feel the need to make this purchase right now. I can always explore later if I need to.",
+    "emotional_response": "Content",
+    "barriers": [
+      "PRIMARY: Not an urgent need",
+      "Monthly earnings"
+    ]
+  },
+  {
+    "persona_uuid": "a64a143e73754a319173bb2e6ffd7b70",
+    "ad_id": "ohsou_ad_4",
+    "trust_score": 7,
+    "relevance_score": 8,
+    "action": "CLICK",
+    "intent_level": "Medium",
+    "reasoning": "[Gut] Curious | [Audit] Does the brand look legitimate? Can I afford this without hiding it from my family? | [Decision] System 2 confirmed the legitimacy of the brand and the affordability of the product. The ad seems relevant to my interests and needs, so I'm curious to explore.",
+    "emotional_response": "Curious",
+    "barriers": []
+  }
+]

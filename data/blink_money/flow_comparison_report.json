@@ -1,0 +1,58 @@
+{
+  "winning_flow_id": "flow1",
+  "winning_flow_name": "Flow1",
+  "winning_completion_rate": 40.0,
+  "why_winner_wins": "Flow1 achieves 40.0% completion rate. Main drop-off point for others: View 6 (reason: Unexpected loan structure with higher-rate personal loan component introduced at...). Beats next best flow by 20.0 percentage points.",
+  "flow_rankings": [
+    {
+      "flow_id": "flow1",
+      "flow_name": "Flow1",
+      "completion_rate": 40.0,
+      "completed": 4,
+      "dropped": 6,
+      "dominant_drop_off_view": 6,
+      "dominant_drop_off_reason": "Unexpected loan structure with higher-rate personal loan component introduced at..."
+    },
+    {
+      "flow_id": "flow2",
+      "flow_name": "Flow2",
+      "completion_rate": 20.0,
+      "completed": 2,
+      "dropped": 8,
+      "dominant_drop_off_view": 4,
+      "dominant_drop_off_reason": "No transparency on LAMF terms, rates, and lending partner. Screen focuses on per..."
+    }
+  ],
+  "per_flow_analysis": {
+    "flow1": {
+      "completion_rate": 40.0,
+      "dominant_drop_off_view": 6,
+      "dominant_drop_off_reason": "Unexpected loan structure with higher-rate personal loan component introduced at...",
+      "dominant_reason_count": 1
+    },
+    "flow2": {
+      "completion_rate": 20.0,
+      "dominant_drop_off_view": 4,
+      "dominant_drop_off_reason": "No transparency on LAMF terms, rates, and lending partner. Screen focuses on per...",
+      "dominant_reason_count": 1
+    }
+  },
+  "improvement_recommendations": {
+    "flow1": [
+      "Address dominant drop-off at View 6: Unexpected loan structure with higher-rate personal loan component introduced at...",
+      "Overall completion is 40.0% - consider simplifying mandatory steps or adding progress indicators.",
+      "Multiple friction points (Views [3, 6]) - prioritize the highest drop-off first."
+    ],
+    "flow2": [
+      "Address dominant drop-off at View 4: No transparency on LAMF terms, rates, and lending partner. Screen focuses on per...",
+      "Overall completion is 20.0% - consider simplifying mandatory steps or adding progress indicators.",
+      "Multiple friction points (Views [1, 4, 5]) - prioritize the highest drop-off first."
+    ]
+  },
+  "metadata": {
+    "company": "blink_money",
+    "num_personas": 10,
+    "num_flows": 2,
+    "execution_time_seconds": 241.85
+  }
+}

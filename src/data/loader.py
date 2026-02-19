@@ -367,6 +367,43 @@ class PersonaDataLoader:
         
         return personas
     
+    def load_from_json(self, path: Path) -> List[RawPersona]:
+        """Load personas from a JSON file (e.g. test_100_personas.json)."""
+        import json
+        with open(path) as f:
+            data = json.load(f)
+        personas = []
+        for row in data:
+            zone = row.get("zone", "Urban")
+            if zone not in ("Urban", "Rural"):
+                zone = "Urban"
+            persona_data = {
+                "uuid": str(row["uuid"]),
+                "occupation": row["occupation"],
+                "first_language": row.get("first_language", "English"),
+                "sex": row["sex"],
+                "age": int(row["age"]),
+                "marital_status": row.get("marital_status", "Unknown"),
+                "education_level": row.get("education_level", "Graduate & above"),
+                "state": row["state"],
+                "district": row["district"],
+                "zone": zone,
+                "country": "India",
+            }
+            if row.get("professional_persona"):
+                persona_data["professional_persona"] = row["professional_persona"]
+            if row.get("cultural_background"):
+                persona_data["cultural_background"] = row["cultural_background"]
+            if row.get("hobbies_and_interests"):
+                persona_data["hobbies_and_interests"] = row["hobbies_and_interests"]
+            if row.get("skills_and_expertise"):
+                persona_data["skills_and_expertise"] = row["skills_and_expertise"]
+                persona_data["skills_and_expertise_list"] = row["skills_and_expertise"]
+            if row.get("career_goals_and_ambitions"):
+                persona_data["career_goals_and_ambitions"] = row["career_goals_and_ambitions"]
+            personas.append(RawPersona(**persona_data))
+        return personas
+
     def load_sample_personas(self, count: int = 1000) -> List[RawPersona]:
         """Load a random sample of personas with full narrative context."""
         self.connect()

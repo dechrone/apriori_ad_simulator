@@ -1,0 +1,58 @@
+{
+  "view_1": {
+    "main_content": "Welcome/introduction screen for Loop healthcare service by Healthflex",
+    "key_information": "Offering unlimited healthcare from top 10% doctors with health benefits designed to prevent hospitalizations. Shows telemedicine capability through phone interface image.",
+    "required_action": "User needs to click 'Next' button to proceed with onboarding",
+    "design_quality": "Clean and professional design with modern aesthetic. Good use of white space, green brand colors, and clear typography. Welcoming personalized greeting.",
+    "friction_points": "Progress indicator shows 1/8 screens which may seem lengthy. Limited detail about what makes doctors 'top 10%' or what specific benefits are included."
+  },
+  "view_2": {
+    "main_content": "An informational onboarding screen highlighting claims support services",
+    "key_information": "24/7 claims expert support availability, with full support from submission to settlement process",
+    "required_action": "User needs to navigate through the onboarding flow using Back/Next buttons at bottom of screen",
+    "design_quality": "Professional and clean design with emerald green color scheme, clear typography, and supporting imagery. Progress dots indicate multi-step flow.",
+    "friction_points": "Limited information about actual claims process details. View 2/8 suggests a potentially lengthy onboarding process with multiple screens to navigate through."
+  },
+  "view_3": {
+    "main_content": "Welcome/registration screen for family health coverage enrollment",
+    "key_information": "The screen emphasizes easy registration process and promises quick enrollment for family coverage, with a message stating it takes just a few minutes to enroll and unlock coverage and peace of mind",
+    "required_action": "User needs to click 'Get Started' button to begin enrollment process, or 'Back' to return to previous screen",
+    "design_quality": "Professional and welcoming design with clean layout, using a green color scheme that suggests health and wellbeing. The interface includes the Healthflex logo and appears modern and user-friendly",
+    "friction_points": "Limited information about what the actual registration process entails or how many steps are involved, which may cause uncertainty about time commitment needed"
+  },
+  "view_4": {
+    "main_content": "Health insurance plan selection screen showing two options: Gold Management and Platinum Management plans",
+    "key_information": "Coverage details for both plans including sum insured (41-46L), family structure options, premium amounts (\u20b954,544 vs \u20b957,634), and specific benefits like maternity cover, room rent, ambulance services, and treatments",
+    "required_action": "User needs to select between Gold or Platinum plan by comparing features and costs, then confirm family structure from the provided options",
+    "design_quality": "Professional and organized layout with clear comparison format. Good use of icons and structured information presentation. Clean interface with important details highlighted",
+    "friction_points": "Large amount of information to process at once. Premium updates automatically based on family structure which may cause confusion. Multiple coverage options and terms may need additional explanation for clarity"
+  },
+  "view_5": {
+    "main_content": "Health insurance plan selection screen showing two options: Gold Management and Platinum Management plans",
+    "key_information": "Coverage details for both plans including sum insured (41L vs 46L), covered members options, maternity benefits, room rent, ambulance coverage, and other medical benefits. Pricing starts from \u20b954,544 for Gold and \u20b957,634 for Platinum",
+    "required_action": "User needs to select one of the two insurance plans and add dependants to continue with the policy. Currently shows 6 members added",
+    "design_quality": "Professional and clean design with clear comparison layout. Important information is well-organized and hierarchical. Good use of icons and spacing to improve readability",
+    "friction_points": "Large amount of detailed information might be overwhelming. Some terms like 'SI' and 'IPD/OPD' may need explanation. The family structure selection process could be clearer"
+  },
+  "view_6": {
+    "main_content": "Health insurance plan selection screen showing two options: Gold Management and Platinum Management",
+    "key_information": "Two insurance plans with different coverage levels and premiums - Gold (\u20b954,544) and Platinum (\u20b957,634). Both cover employee, spouse, children, parents and in-laws. Detailed benefits listed including maternity cover, hospitalization, room rent, ambulance, etc.",
+    "required_action": "User needs to select one of the two insurance plans by clicking on either Gold or Platinum option, then click Proceed button at bottom to continue",
+    "design_quality": "Professional and clean design with clear comparison layout. Good use of icons and organized information hierarchy. Important details are well-highlighted and easy to scan",
+    "friction_points": "Large amount of detailed information may be overwhelming. Premium calculation note at top could be more prominent. View Complete Coverage links add an extra step to see full details. Total amount to pay (\u20b995,671) shown at bottom without clear breakdown of calculation"
+  },
+  "view_7": {
+    "main_content": "Health insurance onboarding screen with plan details and options",
+    "key_information": "Insurance plan information, coverage details, and pricing options are displayed",
+    "required_action": "Review the information and select plan options to continue",
+    "design_quality": "Standard corporate health insurance interface with organized layout",
+    "friction_points": "May contain multiple options requiring careful review"
+  },
+  "view_8": {
+    "main_content": "Final review and confirmation page for health insurance selection",
+    "key_information": "Selected policy details including Group Medical Coverage (\u20b957,634), multiple add-ons (KPIT OPD, Annual Health Checkup, Cult Pro, Toothlens, Pet Care), coverage for family members, total premium of \u20b995,671 with EMI option of \u20b910,631/month for 9 months",
+    "required_action": "User needs to review all selections and either save as draft or complete registration via buttons at bottom",
+    "design_quality": "Professional and well-organized layout with clear sections for policy details, add-ons, and dependants. Clean visual hierarchy with pricing clearly displayed",
+    "friction_points": "Multiple add-on services may make total cost higher than expected, edit mode warning at top could cause concern about losing changes, some items have information icons (i) that may contain important details users might miss"
+  }
+}

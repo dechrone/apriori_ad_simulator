@@ -1,147 +1,246 @@
 {
   "winning_portfolio": [
     {
-      "ad_id": "ad_1",
-      "role": "The Converter",
-      "budget_split": 100.0,
-      "target_segment": "Device_Android",
+      "ad_id": "ohsou_ad_1",
+      "role": "The Youth Engager",
+      "budget_split": 50.7,
+      "target_segment": "Young Adults 25-34 in Karnataka Tech-Comfortable",
       "unique_reach": 10,
-      "expected_conversions": 9
+      "expected_conversions": 1,
+      "reasoning": "Best performing ad for this segment"
+    },
+    {
+      "ad_id": "ohsou_ad_4",
+      "role": "The Youth Engager",
+      "budget_split": 49.3,
+      "target_segment": "Young Adults 25-34 CA (Chartered Accountant) (Urban) High-Income Tech-Comfortable",
+      "unique_reach": 10,
+      "expected_conversions": 1,
+      "reasoning": "Best performing ad for this segment"
     }
   ],
   "all_performances": {
-    "ad_1": {
-      "ad_id": "ad_1",
+    "ohsou_ad_1": {
+      "ad_id": "ohsou_ad_1",
       "total_impressions": 10,
       "clicks": 10,
-      "high_intent_leads": 9,
+      "high_intent_leads": 1,
       "click_rate": 100.0,
-      "conversion_rate": 90.0,
+      "conversion_rate": 10.0,
       "unique_reach": 10,
       "overlap_with_others": {}
     },
-    "ad_2": {
-      "ad_id": "ad_2",
-      "total_impressions": 10,
-      "clicks": 9,
-      "high_intent_leads": 9,
-      "click_rate": 90.0,
-      "conversion_rate": 90.0,
-      "unique_reach": 10,
-      "overlap_with_others": {}
-    },
-    "ad_3": {
-      "ad_id": "ad_3",
-      "total_impressions": 10,
-      "clicks": 10,
-      "high_intent_leads": 7,
-      "click_rate": 100.0,
-      "conversion_rate": 70.0,
-      "unique_reach": 10,
-      "overlap_with_others": {}
-    },
-    "ad_4": {
-      "ad_id": "ad_4",
+    "ohsou_ad_2": {
+      "ad_id": "ohsou_ad_2",
       "total_impressions": 10,
       "clicks": 8,
-      "high_intent_leads": 7,
+      "high_intent_leads": 1,
       "click_rate": 80.0,
-      "conversion_rate": 70.0,
+      "conversion_rate": 10.0,
+      "unique_reach": 10,
+      "overlap_with_others": {}
+    },
+    "ohsou_ad_3": {
+      "ad_id": "ohsou_ad_3",
+      "total_impressions": 10,
+      "clicks": 6,
+      "high_intent_leads": 0,
+      "click_rate": 60.0,
+      "conversion_rate": 0.0,
+      "unique_reach": 10,
+      "overlap_with_others": {}
+    },
+    "ohsou_ad_4": {
+      "ad_id": "ohsou_ad_4",
+      "total_impressions": 10,
+      "clicks": 9,
+      "high_intent_leads": 1,
+      "click_rate": 90.0,
+      "conversion_rate": 10.0,
       "unique_reach": 10,
       "overlap_with_others": {}
     }
   },
   "overlap_matrix": {
-    "ad_1": {
-      "ad_1": 1.0,
-      "ad_2": 0.9,
-      "ad_3": 1.0,
-      "ad_4": 1.0
+    "ohsou_ad_1": {
+      "ohsou_ad_1": 1.0,
+      "ohsou_ad_2": 0.9,
+      "ohsou_ad_3": 0.7,
+      "ohsou_ad_4": 1.0
     },
-    "ad_2": {
-      "ad_1": 1.0,
-      "ad_2": 1.0,
-      "ad_3": 1.0,
-      "ad_4": 1.0
+    "ohsou_ad_2": {
+      "ohsou_ad_1": 1.0,
+      "ohsou_ad_2": 1.0,
+      "ohsou_ad_3": 0.667,
+      "ohsou_ad_4": 1.0
     },
-    "ad_3": {
-      "ad_1": 1.0,
-      "ad_2": 0.9,
-      "ad_3": 1.0,
-      "ad_4": 1.0
+    "ohsou_ad_3": {
+      "ohsou_ad_1": 1.0,
+      "ohsou_ad_2": 0.857,
+      "ohsou_ad_3": 1.0,
+      "ohsou_ad_4": 1.0
     },
-    "ad_4": {
-      "ad_1": 1.0,
-      "ad_2": 0.9,
-      "ad_3": 1.0,
-      "ad_4": 1.0
+    "ohsou_ad_4": {
+      "ohsou_ad_1": 1.0,
+      "ohsou_ad_2": 0.9,
+      "ohsou_ad_3": 0.7,
+      "ohsou_ad_4": 1.0
     }
   },
   "audience_segments": {
-    "ad_1": {
-      "Urban_High": 9,
-      "Digital_High": 9,
-      "Middle_Age_35-49": 3,
+    "ohsou_ad_1": {
+      "Urban_High": 4,
+      "Digital_Medium": 6,
+      "Middle_Age_35-49": 2,
       "Device_Android": 10,
-      "Young_Adults_25-34": 5,
-      "Senior_50+": 2,
-      "Digital_Medium": 1,
-      "Urban_Mid": 1
+      "Urban_Low": 2,
+      "Youth_18-24": 4,
+      "Digital_High": 4,
+      "Young_Adults_25-34": 4,
+      "Urban_Mid": 4
     },
-    "ad_2": {
-      "Urban_High": 8,
-      "Digital_High": 8,
-      "Middle_Age_35-49": 3,
+    "ohsou_ad_2": {
+      "Urban_High": 4,
+      "Digital_Medium": 5,
+      "Middle_Age_35-49": 2,
       "Device_Android": 9,
-      "Young_Adults_25-34": 5,
-      "Digital_Medium": 1,
-      "Senior_50+": 1,
+      "Urban_Low": 1,
+      "Youth_18-24": 3,
+      "Digital_High": 4,
+      "Young_Adults_25-34": 4,
+      "Urban_Mid": 4
+    },
+    "ohsou_ad_3": {
+      "Urban_High": 4,
+      "Digital_Medium": 5,
+      "Middle_Age_35-49": 2,
+      "Device_Android": 7,
+      "Urban_Low": 2,
+      "Youth_18-24": 2,
+      "Digital_High": 2,
+      "Young_Adults_25-34": 3,
       "Urban_Mid": 1
     },
-    "ad_3": {
-      "Urban_High": 9,
-      "Digital_High": 9,
-      "Middle_Age_35-49": 3,
+    "ohsou_ad_4": {
+      "Urban_High": 4,
+      "Digital_Medium": 6,
+      "Middle_Age_35-49": 2,
       "Device_Android": 10,
-      "Young_Adults_25-34": 5,
-      "Senior_50+": 2,
-      "Digital_Medium": 1,
-      "Urban_Mid": 1
-    },
-    "ad_4": {
-      "Urban_High": 9,
-      "Digital_High": 9,
-      "Middle_Age_35-49": 3,
-      "Device_Android": 10,
-      "Young_Adults_25-34": 5,
-      "Senior_50+": 2,
-      "Digital_Medium": 1,
-      "Urban_Mid": 1
+      "Urban_Low": 2,
+      "Youth_18-24": 4,
+      "Digital_High": 4,
+      "Young_Adults_25-34": 4,
+      "Urban_Mid": 4
     }
   },
-  "wasted_spend_alerts": [],
+  "segment_ownership": {
+    "Urban_High": {
+      "winning_ad": "ohsou_ad_4",
+      "trust_score": 6.8,
+      "relevance_score": 8.2,
+      "conversion_rate": 25.0,
+      "high_intent_count": 1,
+      "persona_count": 4,
+      "reasoning": "Best performing ad for this segment",
+      "all_ad_scores": {
+        "ohsou_ad_1": {
+          "score": 0.0,
+          "trust": 6.8,
+          "conversion": 0.0
+        },
+        "ohsou_ad_2": {
+          "score": 1407.7,
+          "trust": 6.5,
+          "conversion": 25.0
+        },
+        "ohsou_ad_3": {
+          "score": 0.0,
+          "trust": 7.8,
+          "conversion": 0.0
+        },
+        "ohsou_ad_4": {
+          "score": 1461.8,
+          "trust": 6.8,
+          "conversion": 25.0
+        }
+      }
+    },
+    "Urban_Mid": {
+      "winning_ad": "ohsou_ad_1",
+      "trust_score": 7.0,
+      "relevance_score": 8.2,
+      "conversion_rate": 25.0,
+      "high_intent_count": 1,
+      "persona_count": 4,
+      "reasoning": "Best performing ad for this segment",
+      "all_ad_scores": {
+        "ohsou_ad_1": {
+          "score": 1515.9,
+          "trust": 7.0,
+          "conversion": 25.0
+        },
+        "ohsou_ad_2": {
+          "score": 0.0,
+          "trust": 7.0,
+          "conversion": 0.0
+        },
+        "ohsou_ad_3": {
+          "score": 0.0,
+          "trust": 7.5,
+          "conversion": 0.0
+        },
+        "ohsou_ad_4": {
+          "score": 0.0,
+          "trust": 6.8,
+          "conversion": 0.0
+        }
+      }
+    }
+  },
+  "clusters": {
+    "Urban_High": {
+      "size": 4,
+      "owner": "ohsou_ad_4",
+      "value": 5.575999999999999
+    },
+    "Urban_Mid": {
+      "size": 4,
+      "owner": "ohsou_ad_1",
+      "value": 5.739999999999999
+    }
+  },
+  "wasted_spend_alerts": [
+    "Ad ohsou_ad_3 has 60.0% click rate but only 0.0% high-intent conversion. This is a 'Clickbait Trap' - generating curiosity clicks without real purchase intent."
+  ],
   "visual_heatmap": {
     "rows": [
       "Urban_High",
+      "Urban_Low",
       "Urban_Mid"
     ],
     "cols": [
-      "ad_1",
-      "ad_2",
-      "ad_3",
-      "ad_4"
+      "ohsou_ad_1",
+      "ohsou_ad_2",
+      "ohsou_ad_3",
+      "ohsou_ad_4"
     ],
     "matrix": [
       [
-        "\ud83d\udfe2",
-        "\ud83d\udfe2",
-        "\ud83d\udfe2",
-        "\ud83d\udfe2"
+        "\ud83d\udd34",
+        "\ud83d\udfe1",
+        "\ud83d\udd34",
+        "\ud83d\udfe1"
       ],
       [
-        "\ud83d\udfe2",
-        "\ud83d\udfe2",
-        "\ud83d\udfe2",
+        "\ud83d\udd34",
+        "\ud83d\udd34",
+        "\ud83d\udd34",
+        "\ud83d\udd34"
+      ],
+      [
+        "\ud83d\udfe1",
+        "\ud83d\udd34",
+        "\ud83d\udd34",
         "\ud83d\udd34"
       ]
     ]
@@ -154,10 +253,12 @@
     "flagged_reactions": []
   },
   "metadata": {
+    "brand": "ohsou",
+    "target_segment": "Girls aged 15-40 in Tier 1 cities",
     "num_personas": 10,
     "num_ads": 4,
     "total_reactions": 40,
     "valid_reactions": 40,
-    "execution_time_seconds": 264.57
+    "execution_time_seconds": 84.18
   }
 }

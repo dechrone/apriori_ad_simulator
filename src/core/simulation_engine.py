@@ -25,6 +25,15 @@ class Ad:
 class TieredSimulationEngine:
     """10/90 split: Pro for visual grounding, Flash for scale."""
     
+    def __init__(self, product_category: str = "fintech"):
+        """
+        Initialize with product category to adjust thresholds.
+        
+        Args:
+            product_category: "fintech" (B2B), "d2c_fashion" (consumer), "d2c_wellness", etc.
+        """
+        self.product_category = product_category
+    
     # System prompt for persona simulation - REFLEXIVE SELF-CORRECTION ARCHITECTURE
     PERSONA_SIMULATION_SYSTEM_PROMPT = """You are a hyper-realistic persona simulator running dual-process cognition.
 
@@ -126,9 +135,9 @@ Return as JSON:
     - Do you understand terms like "{technical_term_from_ad}"?
     
     👥 SOCIAL PROOF CHECK:
-    - Do you know ANYONE in your circle using this?
-    - Would your {peer_group} laugh at you for trying this?
-    - Is this "for people like us" or "for city people"?
+    - Do you know anyone using this brand/category?
+    - For D2C fashion: If category (lingerie/fashion) is normalized, brand recognition matters less
+    - For B2B/fintech: Need stronger social proof before trusting
     
     📱 CAPABILITY CHECK:
     - Can your {primary_device} even handle this app/website?
@@ -136,31 +145,23 @@ Return as JSON:
     - If something goes wrong, can you fix it yourself?
     
     🚩 CULTURAL FIT CHECK:
-    - Does this align with your values/religion/traditions?
-    - Would using this affect your family's reputation?
-    - Is this something a "{your_identity}" should be doing?
+    - Does this align with your values and comfort level?
+    - For intimate wear: Tier 1 city women 18-40 are comfortable with online shopping
+    - For other products: Consider if this fits your lifestyle and identity
     
     PHASE 3: THE VERDICT — SYSTEM 2 OVERRIDES SYSTEM 1 IF NEEDED
     
-    ⚠️  ACTION THRESHOLD - BE BRUTALLY REALISTIC:
-    B2B professionals see 100+ ads daily. They click on maybe 2%.
+    ⚠️  ACTION THRESHOLD - BE REALISTIC FOR THIS PRODUCT:
+    {action_threshold_guidance}
     
-    ONLY choose "CLICK" if ALL of these are true:
-    ✓ Final Trust Score > 7 (you genuinely trust this company)
-    ✓ Final Relevance Score > 8 (this solves a REAL pain point you have RIGHT NOW)
-    ✓ You have TIME and BUDGET to act on this TODAY
-    ✓ The effort/cost is worth it
+    {click_criteria}
     
     Otherwise:
-    • Interesting but not urgent → "SCROLL_PAST" (most common!)
+    • Interesting but not urgent → "IGNORE" (most common!)
     • Irrelevant or suspicious → "IGNORE"  
     • Clear scam → "REPORT"
     
-    Let the skeptical voice WIN if ANY of these are true:
-    - Scam trauma + High vulnerability + Slick ad = SCROLL_PAST/IGNORE
-    - Language barrier + Complex form = IGNORE  
-    - Monthly income < ₹20k + No social proof = SCROLL_PAST
-    - Family might disapprove = IGNORE (even if you want it)
+    {skeptical_overrides}
     
     ═══════════════════════════════════════════════════════════
     OUTPUT YOUR DECISION AS JSON (NO MARKDOWN, PURE JSON)
@@ -174,7 +175,7 @@ Return as JSON:
         "social_pressure": "<What your family/community would think, 1 sentence>",
         "final_trust_score": <0-10, AFTER audit, not gut>,
         "final_relevance_score": <0-10>,
-        "final_action": "CLICK|SCROLL_PAST|IGNORE|REPORT",
+        "final_action": "CLICK|IGNORE|REPORT",
         "intent_level": "High|Medium|Low|None",
         "reasoning": "<Final synthesis: Why did System 2 confirm OR override System 1?>",
         "emotional_response": "<Your TRUE feeling in 1-2 words>",
@@ -244,33 +245,26 @@ Return as JSON:
     - If this needs an app and you have a basic phone, it won't work
     - Can you troubleshoot if something breaks?
     
-    [SOCIAL STIGMA FILTER]
-    - What would your {family_structure} say about this?
-    - Is this "respectable" for someone of your background?
-    - Do people in your circle use such things?
+    [SOCIAL ACCEPTANCE FILTER]
+    - Would your {family_structure} have concerns about this purchase?
+    - For D2C fashion/wellness: Urban women regularly shop online, it's normalized
+    - For financial products: Higher scrutiny needed from family/spouse
     
     STEP 3: THE FINAL CALL
     
-    ⚠️  ACTION THRESHOLD - BE REALISTIC:
-    In B2B Fintech, people are EXTREMELY cautious with clicks.
+    ⚠️  ACTION THRESHOLD - BE REALISTIC FOR THIS PRODUCT:
+    {action_threshold_guidance}
     
-    ONLY choose "CLICK" if ALL of these are true:
-    ✓ Trust Score > 7 (you genuinely trust this company)
-    ✓ Relevance Score > 8 (this solves a REAL pain point you have RIGHT NOW)
-    ✓ You have TIME and INTENT to act on this TODAY
+    {click_criteria}
     
     Otherwise:
-    • If it's interesting but not urgent → "SCROLL_PAST" (most common!)
+    • If it's interesting but not urgent → "IGNORE" (most common!)
     • If it's irrelevant or suspicious → "IGNORE"
     • If it's a clear scam → "REPORT"
     
-    Remember: Seeing something doesn't mean clicking it. Most ads are scrolled past.
+    Remember: Seeing something doesn't mean clicking it. Most ads are ignored.
     
-    Let your System 2 (rational brain) OVERRIDE your System 1 (gut feeling) IF:
-    - You're vulnerable to scams AND ad looks too good
-    - You can't afford the risk
-    - Language/tech barriers are too high
-    - Social approval is low
+    {skeptical_overrides}
     
     ╔══════════════════════════════════════════════════════════╗
     ║  RESPONSE FORMAT (Pure JSON, no markdown)              ║
@@ -282,7 +276,7 @@ Return as JSON:
         "constraint_hits": ["<Which of YOUR life constraints blocked this? List ALL that apply>"],
         "trust_score": <0-10, AFTER audit>,
         "relevance_score": <0-10>,
-        "action": "CLICK|SCROLL_PAST|IGNORE|REPORT",
+        "action": "CLICK|IGNORE|REPORT",
         "intent_level": "High|Medium|Low|None",
         "reasoning": "<Final decision: Did System 2 confirm or override System 1? Why?>",
         "emotional_response": "<1-2 words>",
@@ -290,6 +284,57 @@ Return as JSON:
     }}
     
     CRITICAL: If your scam_vulnerability is "High" AND the ad has red flags, your trust_score CANNOT exceed 5, even if you want to believe it. Trauma overrides optimism."""
+    
+    def _get_action_threshold_guidance(self) -> dict:
+        """Get product-category specific action thresholds."""
+        if self.product_category == "d2c_fashion" or self.product_category == "d2c_wellness":
+            return {
+                "action_threshold_guidance": """For D2C consumer products (fashion/wellness):
+    • Urban women 15-40 in tier 1 cities regularly shop online for fashion/intimate wear
+    • Brands like Zivame, Clovia, Nykaa Fashion have normalized online shopping for intimate wear
+    • Click rates are typically 2-5% for relevant, well-targeted ads
+    • Trust threshold is LOWER than B2B - people will click to explore even at 5-6/10 trust
+    • Social stigma around buying intimate wear online is LOW in tier 1 cities""",
+                
+                "click_criteria": """CHOOSE "CLICK" if MOST of these are true:
+    ✓ Trust Score > 5 (brand looks legitimate, not sketchy)
+    ✓ Relevance Score > 6 (product is relevant to your needs/interests)
+    ✓ You're curious enough to explore, even if not buying TODAY
+    ✓ Price point seems reasonable for your income level
+    
+    You DON'T need all criteria - if 3/4 are met, you'll likely click to explore.""",
+                
+                "skeptical_overrides": """Let your System 2 OVERRIDE System 1 only if:
+    - Ad has clear scam indicators (fake urgency, no contact info, suspiciously low prices)
+    - You absolutely cannot afford ANY discretionary spending this month
+    - Website looks completely unprofessional or has security warnings
+    - Product is completely irrelevant to your life
+    
+    DO NOT override just because:
+    - Brand is new to you (D2C brands are often new)
+    - You haven't bought intimate wear online before (it's normalized now)
+    - You're not sure of your size (most sites have size guides and returns)
+    - Your family might see the order (discreet packaging is standard)"""
+            }
+        else:  # fintech or B2B
+            return {
+                "action_threshold_guidance": """For B2B Fintech products:
+    • Business professionals are EXTREMELY cautious with financial products
+    • Click rates are typically <1% for financial services ads
+    • High trust threshold required due to regulatory/security concerns""",
+                
+                "click_criteria": """ONLY choose "CLICK" if ALL of these are true:
+    ✓ Final Trust Score > 7 (you genuinely trust this company)
+    ✓ Final Relevance Score > 8 (this solves a REAL pain point you have RIGHT NOW)
+    ✓ You have TIME and BUDGET to act on this TODAY
+    ✓ The effort/cost is worth it""",
+                
+                "skeptical_overrides": """Let the skeptical voice WIN if ANY of these are true:
+    - Scam trauma + High vulnerability + Slick ad = IGNORE
+    - Language barrier + Complex form = IGNORE  
+    - Monthly income < ₹20k + No social proof = IGNORE
+    - Family might disapprove = IGNORE (even if you want it)"""
+            }
     
     def _build_persona_narrative(self, persona: EnrichedPersona) -> str:
         """Build rich narrative from all available persona fields (Issue #3: Use ALL data)."""
@@ -456,6 +501,9 @@ Red Flags: {visual_anchor.scam_indicators}
         technical_term = self._extract_technical_term(ad.copy)
         identity_label = self._infer_identity_label(persona)
         
+        # Get product-category specific thresholds
+        threshold_config = self._get_action_threshold_guidance()
+        
         prompt = self.REACTION_PROMPT_TIER1.format(
             occupation=persona.occupation,
             age=persona.age,
@@ -475,7 +523,8 @@ Red Flags: {visual_anchor.scam_indicators}
             technical_term_from_ad=technical_term,
             peer_group=peer_group,
             family_structure=family_structure,
-            your_identity=identity_label
+            your_identity=identity_label,
+            **threshold_config
         )
         
         try:
@@ -546,6 +595,9 @@ Red Flags: {visual_anchor.scam_indicators}
         # Calculate contextual variables
         family_structure = self._infer_family_structure(persona)
         
+        # Get product-category specific thresholds
+        threshold_config = self._get_action_threshold_guidance()
+        
         prompt = self.REACTION_PROMPT_TIER2.format(
             occupation=persona.occupation,
             age=persona.age,
@@ -561,7 +613,8 @@ Red Flags: {visual_anchor.scam_indicators}
             scam_vulnerability=persona.scam_vulnerability,
             visual_anchor=anchor_text,
             ad_copy=ad.copy,
-            family_structure=family_structure
+            family_structure=family_structure,
+            **threshold_config
         )
         
         try:
@@ -618,12 +671,12 @@ Red Flags: {visual_anchor.scam_indicators}
         
         relevance = 5  # Neutral
         
-        # Realistic action: most people scroll past, not click
+        # Realistic action: most people ignore or click
         if trust >= 7 and relevance >= 8:
             action = "CLICK"
             intent = "Medium"
         elif trust >= 5:
-            action = "SCROLL_PAST"
+            action = "IGNORE"
             intent = "Low"
         else:
             action = "IGNORE"
@@ -688,5 +741,5 @@ Red Flags: {visual_anchor.scam_indicators}
         return all_reactions
 
 
-# Global singleton
-simulation_engine = TieredSimulationEngine()
+# Global singleton (default to fintech for backwards compatibility)
+simulation_engine = TieredSimulationEngine(product_category="fintech")

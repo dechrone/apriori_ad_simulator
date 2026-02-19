@@ -1,6 +1,6 @@
 """Enhanced report generation with detailed logging."""
 
-from typing import List, Dict
+from typing import List, Dict, Any
 from pathlib import Path
 import json
 
@@ -125,6 +125,110 @@ def generate_ad_comparison_report(
     print(f"📊 Ad comparison report saved to: {comparison_file}")
 
 
+def generate_founder_ready_report(
+    portfolio_result: Dict,
+    output_dir: Path
+):
+    """
+    Generate a founder-ready portfolio report with 'oddly specific' insights.
+    
+    This is the "Precision Media Planner" output format.
+    """
+    
+    output_dir.mkdir(parents=True, exist_ok=True)
+    report_file = output_dir / "founder_report.txt"
+    
+    recommendations = portfolio_result.get("winning_portfolio", [])
+    segment_ownership = portfolio_result.get("segment_ownership", {})
+    clusters = portfolio_result.get("clusters", {})
+    
+    with open(report_file, 'w') as f:
+        f.write("="*100 + "\n")
+        f.write("🎯 WINNING PORTFOLIO: THE PRECISION SPREAD\n")
+        f.write("="*100 + "\n\n")
+        
+        f.write("This is not a 'Winner-Take-All' allocation. Each ad owns a specific niche.\n\n")
+        
+        # Create the table header
+        f.write(f"{'AD':<8} {'BUDGET':<8} {'ROLE':<25} {'TARGET SEGMENT':<45} REASONING\n")
+        f.write("-"*100 + "\n")
+        
+        # Format each recommendation
+        for rec in recommendations:
+            ad_id = rec.ad_id if hasattr(rec, 'ad_id') else rec.get('ad_id', 'N/A')
+            budget = f"{rec.budget_split if hasattr(rec, 'budget_split') else rec.get('budget_split', 0):.0f}%"
+            role = rec.role if hasattr(rec, 'role') else rec.get('role', 'N/A')
+            target = rec.target_segment if hasattr(rec, 'target_segment') else rec.get('target_segment', 'N/A')
+            reasoning = rec.reasoning if hasattr(rec, 'reasoning') else rec.get('reasoning', 'N/A')
+            
+            # Truncate long target segments for table formatting
+            if len(target) > 43:
+                target = target[:40] + "..."
+            
+            f.write(f"{ad_id:<8} {budget:<8} {role:<25} {target:<45} {reasoning}\n")
+        
+        f.write("\n" + "="*100 + "\n\n")
+        
+        # Detailed breakdown section
+        f.write("DETAILED SEGMENT ANALYSIS\n")
+        f.write("="*100 + "\n\n")
+        
+        for rec in recommendations:
+            ad_id = rec.ad_id if hasattr(rec, 'ad_id') else rec.get('ad_id', 'N/A')
+            role = rec.role if hasattr(rec, 'role') else rec.get('role', 'N/A')
+            budget = rec.budget_split if hasattr(rec, 'budget_split') else rec.get('budget_split', 0)
+            target = rec.target_segment if hasattr(rec, 'target_segment') else rec.get('target_segment', 'N/A')
+            conversions = rec.expected_conversions if hasattr(rec, 'expected_conversions') else rec.get('expected_conversions', 0)
+            
+            f.write(f"{ad_id}: {role}\n")
+            f.write("-"*100 + "\n")
+            f.write(f"Budget Allocation: {budget:.1f}%\n")
+            f.write(f"Target Segment: {target}\n")
+            f.write(f"Expected High-Intent Leads: {conversions}\n")
+            
+            # Find segments owned by this ad
+            owned_clusters = [
+                cluster_id for cluster_id, cluster_info in clusters.items()
+                if cluster_info.get("owner") == ad_id
+            ]
+            
+            if owned_clusters:
+                f.write(f"\nOwned Segments ({len(owned_clusters)}):\n")
+                for cluster_id in owned_clusters:
+                    cluster_info = clusters[cluster_id]
+                    ownership = segment_ownership.get(cluster_id, {})
+                    
+                    f.write(f"  • {cluster_id}: {cluster_info.get('size', 0)} personas\n")
+                    f.write(f"    - Trust Score: {ownership.get('trust_score', 0):.1f}/10\n")
+                    f.write(f"    - Conversion Rate: {ownership.get('conversion_rate', 0):.1f}%\n")
+                    f.write(f"    - Segment Value: {cluster_info.get('value', 0):.1f}\n")
+            
+            f.write("\n\n")
+        
+        # Add strategic insights
+        f.write("="*100 + "\n")
+        f.write("STRATEGIC INSIGHTS\n")
+        f.write("="*100 + "\n\n")
+        
+        f.write("Why This Allocation?\n")
+        f.write("-"*100 + "\n")
+        f.write("This portfolio uses Sub-Segment Dominance Analysis, not Winner-Take-All.\n\n")
+        f.write("Instead of asking 'Which ad gets the most clicks?', we asked:\n")
+        f.write("  1. Which ad has the HIGHEST TRUST SCORE for each specific niche?\n")
+        f.write("  2. Which ad drives the HIGHEST INTENT (not just clicks) for each segment?\n")
+        f.write("  3. How do we allocate budget based on SEGMENT VALUE, not just volume?\n\n")
+        
+        f.write("This means:\n")
+        f.write(f"  • Each ad 'owns' a specific niche where it's a 10/10, not an 8/10\n")
+        f.write(f"  • Budget follows INTENSITY of intent, not just reach\n")
+        f.write(f"  • You get 'oddly specific' targeting that actually converts\n\n")
+        
+        f.write("="*100 + "\n")
+    
+    print(f"✨ Founder-ready report saved to: {report_file}")
+    return report_file
+
+
 def generate_summary_report(output_dir: Path):
     """Generate a summary of all reports created."""
     
@@ -171,9 +275,15 @@ def generate_summary_report(output_dir: Path):
         f.write("   - Final aggregated report with portfolio optimization\n")
         f.write("   - Upload this to the dashboard\n\n")
         
+        f.write("9. founder_report.txt\n")
+        f.write("   - ✨ FOUNDER-READY REPORT with 'oddly specific' segment insights\n")
+        f.write("   - Shows which ad owns which niche and why\n")
+        f.write("   - Budget allocation based on segment value\n\n")
+        
         f.write("="*100 + "\n")
-        f.write("TIP: Start with 'persona_comparison.txt' and 'ad_comparison.txt'\n")
-        f.write("     to understand why results might be similar across ads.\n")
+        f.write("TIP: Start with 'founder_report.txt' for the strategic verdict,\n")
+        f.write("     then dive into 'persona_comparison.txt' and 'ad_comparison.txt'\n")
+        f.write("     for detailed analysis.\n")
         f.write("="*100 + "\n")
     
     print(f"📄 Report guide saved to: {summary_file}")

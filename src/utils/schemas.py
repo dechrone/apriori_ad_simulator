@@ -132,6 +132,7 @@ class PortfolioRecommendation(BaseModel):
     target_segment: str
     unique_reach: int
     expected_conversions: int
+    reasoning: Optional[str] = None
 
 
 class ClientReport(BaseModel):
