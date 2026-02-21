@@ -4,16 +4,17 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
-
-# Project Paths
+# Project Paths (before load_dotenv so BASE_DIR is available for .env.local path)
 BASE_DIR = Path(__file__).parent.parent.parent
+
+# Load environment variables: .env first, then .env.local (local overrides)
+load_dotenv(BASE_DIR / ".env")
+load_dotenv(BASE_DIR / ".env.local")
 DATA_DIR = BASE_DIR / "data"
 DATA_DIR.mkdir(exist_ok=True)
 
 # API Configuration
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "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")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 # Model Configuration (OpenRouter model IDs)
@@ -28,6 +29,21 @@ MAX_CONCURRENT_REQUESTS = int(os.getenv("MAX_CONCURRENT_REQUESTS", "5"))
 
 # DuckDB Configuration
 DB_PATH = os.getenv("DB_PATH", str(DATA_DIR / "apriori.db"))
+
+# Firestore (frontend / Clerk integration)
+FIRESTORE_USERS_COLLECTION = os.getenv("FIRESTORE_USERS_COLLECTION", "apriori_users")
+
+# Firebase (optional: path to service account JSON; default backend/firebase-credentials.json)
+FIREBASE_SERVICE_ACCOUNT_PATH = os.getenv(
+    "FIREBASE_SERVICE_ACCOUNT_PATH",
+    str(BASE_DIR / "firebase-credentials.json"),
+)
+FIREBASE_STORAGE_BUCKET = os.getenv("FIREBASE_STORAGE_BUCKET", "")
+
+# Cloudinary (optional: for signed URLs or API if asset URLs need auth)
+CLOUDINARY_CLOUD_NAME = os.getenv("CLOUDINARY_CLOUD_NAME", "")
+CLOUDINARY_API_KEY = os.getenv("CLOUDINARY_API_KEY", "")
+CLOUDINARY_API_SECRET = os.getenv("CLOUDINARY_API_SECRET", "")
 
 # Model Generation Parameters
 GENERATION_CONFIG = {

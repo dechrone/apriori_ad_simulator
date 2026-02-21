@@ -2,6 +2,15 @@
 openai>=1.68.2  # OpenRouter uses OpenAI-compatible API
 python-dotenv==1.0.1
 
+# Web API
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12  # multipart/form-data file uploads
+httpx>=0.28.0             # async HTTP client for image downloads
+
+# Firebase
+firebase-admin>=6.5.0
+
 # Data Processing
 duckdb==1.1.3
 pandas==2.2.3

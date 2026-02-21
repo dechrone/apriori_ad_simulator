@@ -1,5 +1,7 @@
-# Environment
+# Environment & secrets
 .env
+.env.local
+firebase-credentials.json
 .venv/
 venv/
 env/

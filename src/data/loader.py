@@ -57,7 +57,7 @@ class PersonaDataLoader:
             self.conn.execute("DROP TABLE IF EXISTS personas")
             self.conn.execute("CREATE TABLE personas AS SELECT * FROM df")
             print(f"✅ Loaded {len(df)} personas from HuggingFace into DuckDB")
-            self.close()
+            # Do not close() here so filter_by_keywords / load_sample_personas can reuse this connection
             return df
         except ImportError:
             print("⚠️ datasets library not installed. Install with: pip install datasets")
@@ -489,6 +489,90 @@ class PersonaDataLoader:
             self.close()
             return self._generate_synthetic_personas(count)
     
+    def filter_by_keywords(self, keywords: List[str], count: int = 10) -> List[RawPersona]:
+        """
+        Filter personas from the DB whose occupation or professional_persona
+        matches any of the provided keywords (case-insensitive LIKE).
+        Falls back to load_sample_personas if no matches found.
+        """
+        if not self.conn:
+            self.connect()
+
+        # Build LIKE clauses across occupation and professional_persona
+        conditions = []
+        for kw in keywords[:10]:  # cap to avoid overly large queries
+            safe = kw.replace("'", "''")
+            conditions.append(f"LOWER(occupation) LIKE '%{safe}%'")
+            conditions.append(f"LOWER(COALESCE(professional_persona, '')) LIKE '%{safe}%'")
+            conditions.append(f"LOWER(COALESCE(skills_and_expertise, '')) LIKE '%{safe}%'")
+
+        where_clause = " OR ".join(conditions)
+
+        try:
+            base_cols = (
+                "uuid, occupation, first_language, second_language, third_language, "
+                "sex, age, marital_status, education_level, education_degree, "
+                "state, district, zone, country"
+            )
+            # Try with rich narrative columns
+            try:
+                df = self.conn.execute(
+                    f"SELECT {base_cols}, professional_persona, linguistic_persona, "
+                    f"cultural_background, sports_persona, arts_persona, travel_persona, "
+                    f"culinary_persona, persona, hobbies_and_interests_list, "
+                    f"skills_and_expertise_list, hobbies_and_interests, skills_and_expertise, "
+                    f"career_goals_and_ambitions, linguistic_background "
+                    f"FROM personas WHERE {where_clause} LIMIT {count * 3}"
+                ).df()
+            except Exception:
+                df = self.conn.execute(
+                    f"SELECT {base_cols} FROM personas WHERE {where_clause} LIMIT {count * 3}"
+                ).df()
+
+            if df.empty:
+                self.close()
+                return self.load_sample_personas(count=count)
+
+            df = df.sample(min(count, len(df))).reset_index(drop=True)
+            personas = []
+            for _, row in df.iterrows():
+                try:
+                    persona_data = {
+                        "uuid": str(row["uuid"]),
+                        "occupation": row["occupation"],
+                        "first_language": row["first_language"],
+                        "second_language": row.get("second_language"),
+                        "third_language": row.get("third_language"),
+                        "sex": row["sex"],
+                        "age": int(row["age"]),
+                        "marital_status": row["marital_status"],
+                        "education_level": row["education_level"],
+                        "education_degree": row.get("education_degree"),
+                        "state": row["state"],
+                        "district": row["district"],
+                        "zone": row["zone"],
+                        "country": row.get("country", "India"),
+                    }
+                    for field in (
+                        "professional_persona", "linguistic_persona", "cultural_background",
+                        "sports_persona", "arts_persona", "travel_persona", "culinary_persona",
+                        "persona", "hobbies_and_interests_list", "skills_and_expertise_list",
+                        "hobbies_and_interests", "skills_and_expertise",
+                        "career_goals_and_ambitions", "linguistic_background",
+                    ):
+                        if field in row and pd.notna(row[field]):
+                            persona_data[field] = row[field]
+                    personas.append(RawPersona(**persona_data))
+                except Exception:
+                    continue
+            self.close()
+            return personas if personas else self.load_sample_personas(count=count)
+        except Exception as exc:
+            print(f"[PERSONA] [filter_by_keywords] FAILED | error={exc!r} | error_type={type(exc).__name__}")
+            self.close()
+            print(f"[PERSONA] [filter_by_keywords] Falling back to load_sample_personas(count={count})")
+            return self.load_sample_personas(count=count)
+
     def _generate_synthetic_personas(self, count: int) -> List[RawPersona]:
         """Generate synthetic personas for demo purposes."""
         import random

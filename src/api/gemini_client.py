@@ -6,6 +6,15 @@ from typing import List, Optional, Dict, Any
 from tenacity import retry, stop_after_attempt, wait_exponential
 from openai import AsyncOpenAI
 
+
+def _log_llm(step: str, message: str, **kwargs: Any) -> None:
+    """Console log for LLM layer."""
+    extra = " | ".join(f"{k}={v}" for k, v in kwargs.items()) if kwargs else ""
+    line = f"[OPENROUTER] [{step}] {message}"
+    if extra:
+        line += f" | {extra}"
+    print(line)
+
 from src.utils.config import (
     OPENROUTER_API_KEY,
     OPENROUTER_BASE_URL,
@@ -83,6 +92,7 @@ class GeminiClient:
                         "content": prompt
                     })
                 
+                _log_llm("REQUEST", "Pro", model=self.pro_model, prompt_len=len(prompt), has_image=bool(image_data))
                 response = await self.client.chat.completions.create(
                     model=self.pro_model,
                     messages=messages,
@@ -91,13 +101,21 @@ class GeminiClient:
                     extra_headers=self.extra_headers
                 )
                 
-                return response.choices[0].message.content
+                content = response.choices[0].message.content
+                _log_llm("RESPONSE", "Pro", model=self.pro_model, response_len=len(content or ""))
+                return content
                 
             except Exception as e:
                 error_msg = str(e)
-                print(f"❌ OpenRouter API error (Pro): {error_msg}")
-                if "model" in error_msg.lower():
-                    print(f"   Model '{self.pro_model}' might not be available. Check OpenRouter.ai for available models.")
+                _log_llm("ERROR", "Pro", model=self.pro_model, error=error_msg)
+                if hasattr(e, "response") and e.response is not None:
+                    try:
+                        body = e.response.text if hasattr(e.response, "text") else str(e.response)
+                        _log_llm("ERROR", "Pro response body", body_preview=(body[:500] if body else ""))
+                    except Exception:
+                        pass
+                if "model" in error_msg.lower() or "401" in error_msg:
+                    _log_llm("ERROR", "Pro hint", hint="Check OPENROUTER_API_KEY and model availability on OpenRouter.ai")
                 raise RuntimeError(f"OpenRouter API error (Pro): {error_msg}")
     
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=10))
@@ -124,6 +142,7 @@ class GeminiClient:
                     "content": prompt
                 })
                 
+                _log_llm("REQUEST", "Flash", model=self.flash_model, prompt_len=len(prompt))
                 response = await self.client.chat.completions.create(
                     model=self.flash_model,
                     messages=messages,
@@ -132,10 +151,20 @@ class GeminiClient:
                     extra_headers=self.extra_headers
                 )
                 
-                return response.choices[0].message.content
+                content = response.choices[0].message.content
+                _log_llm("RESPONSE", "Flash", model=self.flash_model, response_len=len(content or ""))
+                return content
                 
             except Exception as e:
-                raise RuntimeError(f"OpenRouter API error (Flash): {str(e)}")
+                error_msg = str(e)
+                _log_llm("ERROR", "Flash", model=self.flash_model, error=error_msg)
+                if hasattr(e, "response") and e.response is not None:
+                    try:
+                        body = e.response.text if hasattr(e.response, "text") else str(e.response)
+                        _log_llm("ERROR", "Flash response body", body_preview=(body[:500] if body else ""))
+                    except Exception:
+                        pass
+                raise RuntimeError(f"OpenRouter API error (Flash): {error_msg}")
     
     async def batch_generate_flash(self, prompts: List[str]) -> List[str]:
         """Batch generate using Flash for high throughput."""
